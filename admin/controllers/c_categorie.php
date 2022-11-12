@@ -9,10 +9,10 @@ class c_categorie
             $id = NULL;
             $categorie_name = $_POST['categorie_name'];
             $categorie_mean = $_POST['categorie_mean'];
-
+            $categorie_image="";
             $m_categorie = new m_categorie();
-            $result = $m_categorie->insert_categorie($id, $categorie_name, $categorie_mean);
-//            header('location:admin_member_add.php?result=' . $username);
+            $m_categorie->insert_categorie($id, $categorie_name, $categorie_mean,$categorie_image);
+            header('location:?ctr=categorie_list');
         }
         include_once("view/categorie/v_categories_add.php");
     }
