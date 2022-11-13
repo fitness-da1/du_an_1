@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
-                        <form class="form-horizontal" action="?ctr=categorie_update" method="post">
+                        <form class="form-horizontal" action="?ctr=categorie_update" method="post" enctype="multipart/form-data">
                             <div class="card-body">
                                 <h4 class="card-title">Categorie Info</h4>
                                 <input type="text" class="form-control" id="id" name="id" value="<?=$categorie->id?>" hidden>
@@ -18,6 +18,23 @@
                                     <label for="categorie_mean" class="col-sm-3 text-right control-label col-form-label">Categorie meaningful</label>
                                     <div class="col-sm-9">
                                         <input type="text" class="form-control" id="categorie_mean" name="categorie_mean" placeholder="Categorie mean Here" value="<?=$categorie->categories_meaningful?>">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="categorie_mean" class="col-sm-3 text-right control-label col-form-label">Categorie image</label>
+                                    <div class="col-sm-9">
+                                        <img src="./view/assets/images/upload/<?=$categorie->categories_image?>" height="50" width="50" alt="categorie image">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-3 text-right control-label col-form-label">Upload Image</label>
+                                    <div class="col-md-9">
+                                        <div class="custom-file">
+                                            <input type="file" name="image" class="custom-file-input" id="validatedCustomFile">
+                                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -34,4 +51,4 @@
             </div>
         </div>
     </div>
-<?php include_once 'layout/footer.php'; ?>
+<?php include_once '././view/layout/footer.php'; ?>

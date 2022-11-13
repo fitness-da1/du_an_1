@@ -29,14 +29,8 @@
                                 <label class="col-sm-3 text-right control-label col-form-label">Upload Image</label>
                                 <div class="col-md-9">
                                     <div class="custom-file">
-                                        <input type="file" name="image" class="custom-file-input" id="validatedCustomFile" oninput="this.form.submit()">
-                                        <label class="custom-file-label" for="validatedCustomFile">
-                                            <?php if (!isset($trainer_image)){
-                                            echo 'Choose file...';}else{
-                                                echo $trainer_image;
-                                            }
-                                            ?>
-                                        </label>
+                                        <input type="file" name="image" class="custom-file-input" id="validatedCustomFile">
+                                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
                                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                                     </div>
                                 </div>
