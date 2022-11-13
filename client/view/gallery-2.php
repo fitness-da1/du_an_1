@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from andit.co/projects/html/heroism/demo/gallery-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 13:25:38 GMT -->
+<!-- Mirrored from andit.co/projects/html/heroism/demo/gallery-2.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 13:25:38 GMT -->
 <head>
 
     <meta charset="utf-8">
@@ -47,7 +47,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-sm-none d-md-block d-lg-block d-xl-block"
             id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/img/gym-logo.png" alt="gym logo"></a>
+                <a class="navbar-brand" href="index.php"><img src="assets/img/gym-logo.png" alt="gym logo"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
@@ -58,15 +58,15 @@
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Home<i
                                     class="fas fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><a href="index-2.html">Home Two</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.php">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="classes.html">Classes</a>
+                            <a class="nav-link" href="categorie.php">Classes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="trainers.html">Trainers</a>
@@ -75,7 +75,7 @@
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Gallery<i
                                     class="fas fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="gallery.html">Masonry Gallery</a></li>
+                                <li><a href="gallery.php">Masonry Gallery</a></li>
                                 <li><a href="gallery-2.html">Grid Gallery</a></li>
                             </ul>
                         </li>
@@ -83,23 +83,23 @@
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Pages<i
                                     class="fas fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="calculate-bmi.html">BMI Calculator Page</a></li>
+                                <li><a href="calculate-bmi.php">BMI Calculator Page</a></li>
                                 <li><a href="pricing-table.html">Pricing Table Page</a></li>
-                                <li><a href="blog.html">Blog Page</a></li>
-                                <li><a href="single-blog.html">Single Blog Page</a></li>
-                                <li><a href="404.html">404 Page</a></li>
+                                <li><a href="blog.php">Blog Page</a></li>
+                                <li><a href="single-blog.php">Single Blog Page</a></li>
+                                <li><a href="404.php">404 Page</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Blog<i
                                     class="fas fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="single-blog.html">Single Blog</a></li>
+                                <li><a href="blog.php">Blog</a></li>
+                                <li><a href="single-blog.php">Single Blog</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase section-button btn btn-effect"
@@ -113,16 +113,16 @@
 
         <!-- Mobile Menu Start -->
         <nav class="mobile_menu hidden d-none">
-            <a href="index.html"><img class="mobile-logo" src="assets/img/gym-logo.png" alt="Gym"></a>
+            <a href="index.php"><img class="mobile-logo" src="assets/img/gym-logo.png" alt="Gym"></a>
             <ul class="nav navbar-nav navbar-right menu">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="classes.html">Classes</a>
+                    <a class="nav-link" href="categorie.php">Classes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="trainers.html">Trainers</a>
@@ -130,29 +130,29 @@
                 <li class="dropdown">
                     <a>Gallery</a>
                     <ul class="sub_menu">
-                        <li><a href="gallery.html">Masonry Gallery</a></li>
+                        <li><a href="gallery.php">Masonry Gallery</a></li>
                         <li><a href="gallery-2.html">Grid Gallery</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a>Pages</a>
                     <ul class="sub_menu">
-                        <li><a href="calculate-bmi.html">BMI Calculator Page</a></li>
+                        <li><a href="calculate-bmi.php">BMI Calculator Page</a></li>
                         <li><a href="pricing-table.html">Pricing Table Page</a></li>
-                        <li><a href="blog.html">Blog Page</a></li>
-                        <li><a href="single-blog.html">Single Blog Page</a></li>
-                        <li><a href="404.html">404 Page</a></li>
+                        <li><a href="blog.php">Blog Page</a></li>
+                        <li><a href="single-blog.php">Single Blog Page</a></li>
+                        <li><a href="404.php">404 Page</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a>Blog</a>
                     <ul class="sub_menu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="single-blog.html">Single Blog</a></li>
+                        <li><a href="blog.php">Blog</a></li>
+                        <li><a href="single-blog.php">Single Blog</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link section-button btn btn-effect text-uppercase font-14 para-color"
@@ -173,7 +173,7 @@
                         data-wow-delay=".5s">Gallery</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
-                            <li class="breadcrumb-item text-capitalize"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item text-capitalize"><a href="index.php">Home</a></li>
                             <li class="breadcrumb-item active text-capitalize" aria-current="page">Grid Gallery</li>
                         </ol>
                     </nav>
@@ -377,7 +377,7 @@
                     <!-- Column Start-->
                     <div class="col-12 col-sm-8 col-md-8 col-lg-4">
                         <div class="footer-about">
-                            <a href="index.html"><img src="assets/img/footer-logo.png" alt="logo"></a>
+                            <a href="index.php"><img src="assets/img/footer-logo.png" alt="logo"></a>
                             <p>Pellentesque convallis, diam et feugiat volutpat, tellus ligula consequat augue, quis
                                 malesuada nisi ante nec metus.
                                 Sed id pretium nunc. Mauris vitae porttitor tortor. Fusce aliquet ac metus eget egestas.
@@ -396,12 +396,12 @@
                         <div class="footer-widget quick-links">
                             <h4 class="text-uppercase">Quick Links</h4>
                             <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="classes.html">Classes</a></li>
-                                <li><a href="classes.html">Time Schedule</a></li>
+                                <li><a href="about.php">About</a></li>
+                                <li><a href="categorie.php">Classes</a></li>
+                                <li><a href="categorie.php">Time Schedule</a></li>
                                 <li><a href="pricing-table.html">Pricing Table</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="blog.php">Blog</a></li>
+                                <li><a href="contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -412,17 +412,17 @@
                         <div class="footer-widget footer-recent-posts">
                             <h4 class="text-uppercase">Recent Post</h4>
                             <ul>
-                                <li><a href="single-blog.html">
+                                <li><a href="single-blog.php">
                                         <figure><img src="assets/img/footer-img/recent-post1.jpg" alt="recent"></figure>
                                         <p>Pellentesque convallis, diam et feugiat volutpat, tellus ligula<span>Sep 09,
                                                 2019</span></p>
                                     </a></li>
-                                <li><a href="single-blog.html">
+                                <li><a href="single-blog.php">
                                         <figure><img src="assets/img/footer-img/recent-post2.jpg" alt="recent"></figure>
                                         <p>Praesent vehicula odio ut erat posuere, nec malesuada dolor<span>Sep 06,
                                                 2019</span></p>
                                     </a></li>
-                                <li><a href="single-blog.html">
+                                <li><a href="single-blog.php">
                                         <figure><img src="assets/img/footer-img/recent-post3.jpg" alt="recent"></figure>
                                         <p>Nulla rhoncus condimentum ante, molestie mattis lorem<span>Sep 02,
                                                 2019</span></p>
@@ -437,22 +437,22 @@
                         <div class="footer-widget footer-gallery">
                             <h4 class="text-uppercase">Our Gallery</h4>
                             <ul>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery1.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery2.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery3.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery4.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery5.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery6.jpg" alt="gallery"></figure>
                                     </a></li>
                             </ul>
@@ -565,5 +565,5 @@
 </body>
 
 
-<!-- Mirrored from andit.co/projects/html/heroism/demo/gallery-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 13:25:42 GMT -->
+<!-- Mirrored from andit.co/projects/html/heroism/demo/gallery-2.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 13:25:42 GMT -->
 </html>

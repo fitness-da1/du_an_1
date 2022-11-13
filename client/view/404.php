@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from andit.co/projects/html/heroism/demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 13:25:52 GMT -->
+<!-- Mirrored from andit.co/projects/html/heroism/demo/404.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 13:25:52 GMT -->
 <head>
 
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Heroism Gym Theme - Contact Page</title>
+    <title>Heroism Gym Theme - 404 Page</title>
 
     <!--=======================================
       All Css Style link
@@ -47,7 +47,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-sm-none d-md-block d-lg-block d-xl-block"
             id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/img/gym-logo.png" alt="gym logo"></a>
+                <a class="navbar-brand" href="index.php"><img src="assets/img/gym-logo.png" alt="gym logo"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
@@ -58,15 +58,15 @@
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Home<i
                                     class="fas fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li><a href="index-2.html">Home Two</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.php">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="classes.html">Classes</a>
+                            <a class="nav-link" href="categorie.php">Classes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="trainers.html">Trainers</a>
@@ -75,18 +75,18 @@
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Gallery<i
                                     class="fas fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="gallery.html">Masonry Gallery</a></li>
-                                <li><a href="gallery-2.html">Grid Gallery</a></li>
+                                <li><a href="gallery.php">Masonry Gallery</a></li>
+                                <li><a href="gallery-2.php">Grid Gallery</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Pages<i
                                     class="fas fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="calculate-bmi.html">BMI Calculator Page</a></li>
+                                <li><a href="calculate-bmi.php">BMI Calculator Page</a></li>
                                 <li><a href="pricing-table.html">Pricing Table Page</a></li>
-                                <li><a href="blog.html">Blog Page</a></li>
-                                <li><a href="single-blog.html">Single Blog Page</a></li>
+                                <li><a href="blog.php">Blog Page</a></li>
+                                <li><a href="single-blog.php">Single Blog Page</a></li>
                                 <li><a href="404.html">404 Page</a></li>
                             </ul>
                         </li>
@@ -94,12 +94,12 @@
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown">Blog<i
                                     class="fas fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="single-blog.html">Single Blog</a></li>
+                                <li><a href="blog.php">Blog</a></li>
+                                <li><a href="single-blog.php">Single Blog</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.php">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase section-button btn btn-effect"
@@ -113,16 +113,16 @@
 
         <!-- Mobile Menu Start -->
         <nav class="mobile_menu hidden d-none">
-            <a href="index.html"><img class="mobile-logo" src="assets/img/gym-logo.png" alt="Gym"></a>
+            <a href="index.php"><img class="mobile-logo" src="assets/img/gym-logo.png" alt="Gym"></a>
             <ul class="nav navbar-nav navbar-right menu">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="classes.html">Classes</a>
+                    <a class="nav-link" href="categorie.php">Classes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="trainers.html">Trainers</a>
@@ -130,29 +130,29 @@
                 <li class="dropdown">
                     <a>Gallery</a>
                     <ul class="sub_menu">
-                        <li><a href="gallery.html">Masonry Gallery</a></li>
-                        <li><a href="gallery-2.html">Grid Gallery</a></li>
+                        <li><a href="gallery.php">Masonry Gallery</a></li>
+                        <li><a href="gallery-2.php">Grid Gallery</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a>Pages</a>
                     <ul class="sub_menu">
-                        <li><a href="calculate-bmi.html">BMI Calculator Page</a></li>
+                        <li><a href="calculate-bmi.php">BMI Calculator Page</a></li>
                         <li><a href="pricing-table.html">Pricing Table Page</a></li>
-                        <li><a href="blog.html">Blog Page</a></li>
-                        <li><a href="single-blog.html">Single Blog Page</a></li>
+                        <li><a href="blog.php">Blog Page</a></li>
+                        <li><a href="single-blog.php">Single Blog Page</a></li>
                         <li><a href="404.html">404 Page</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a>Blog</a>
                     <ul class="sub_menu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="single-blog.html">Single Blog</a></li>
+                        <li><a href="blog.php">Blog</a></li>
+                        <li><a href="single-blog.php">Single Blog</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link section-button btn btn-effect text-uppercase font-14 para-color"
@@ -164,102 +164,21 @@
     </section>
     <!-- Menu Area End -->
 
-    <!-- Header Start -->
-    <header class="page-banner-area contact-page-banner">
-        <div class="section-overlay d-flex">
-            <div class="container">
-                <div class="header-caption text-left">
-                    <h1 class="header-caption-heading text-capitalize wow fadeInUp" data-wow-duration="1.2s"
-                        data-wow-delay=".5s">Contact</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
-                            <li class="breadcrumb-item text-capitalize"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active text-capitalize" aria-current="page">Contact</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header End -->
-
-    <!-- Map Area Start -->
-    <section class="map-area">
-        <!--    Map Part Start-->
-        <div class="google-map"><iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.6962663571253!2d89.56355961535161!3d22.813715829825558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff901efac79b59%3A0x5be01a1bc0dc7eba!2sAnd%20IT!5e0!3m2!1sen!2sbd!4v1571960441758!5m2!1sen!2sbd"
-                height="500" style="border:0;" allowfullscreen=""></iframe></div>
+    <!-- 404 Area Start -->
+    <section class="error-page-area">
         <div class="container">
-            <div class="contact-part">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="contact-wraper">
-                            <div class="contact-heading">
-                                <h2>Do You Have Any Questions?</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vehicula volutpat porta.
-                                    Cras in vulputate est consectetur adipiscing elit. Ut vehicula volutpat porta.</p>
-                            </div>
-                            <div class="contact-form-area">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Your Name:"
-                                                    id="name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Your Email:"
-                                                    id="user-email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group nessage-text">
-                                                <textarea name="message" rows="3" class="form-control"
-                                                    placeholder="Enter Your Message:" id="message" required></textarea>
-                                            </div>
-                                            <div class="contact-sub-btn">
-                                                <button type="button"
-                                                    class="btn btn-effect section-button text-uppercase">Submit</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="address-cover-main">
-                            <div class="address-box">
-                                <h6>Address</h6>
-                                <p>2025 M Street, Northwest,
-                                    Washington, DC</p>
-                            </div>
-                            <div class="address-box">
-                                <h6>Phone</h6>
-                                <p><a href="tel:1242486444">+124 (2486) 444</a></p>
-                                <p><a href="tel:1334444878">+133 (4444) 878</a></p>
-                            </div>
-                            <div class="address-box">
-                                <h6>Mail</h6>
-                                <p><a href="mailto:mail@example.com">mail@example.com</a></p>
-                            </div>
-                            <div class="address-box">
-                                <h6>Follow Us</h6>
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img src="assets/img/404-bg.png" alt="Error">
+                    <h3 class="section-subheading">Aliquam erat volutpat. Curabitur tempor nibh quis arcu convallis, sed
+                        viverra quam sollicitudin. Proin sed augue sed neque ultricies condimentum. Proin sed augue sed
+                        neque ultricies condimentum. </h3>
+                    <a href="index.php" class="btn btn-effect section-button text-uppercase">go to home</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Map Area End -->
+    <!-- 404 Area End -->
 
     <!-- Footer Start -->
     <footer class="footer">
@@ -272,7 +191,7 @@
                     <!-- Column Start-->
                     <div class="col-12 col-sm-8 col-md-8 col-lg-4">
                         <div class="footer-about">
-                            <a href="index.html"><img src="assets/img/footer-logo.png" alt="logo"></a>
+                            <a href="index.php"><img src="assets/img/footer-logo.png" alt="logo"></a>
                             <p>Pellentesque convallis, diam et feugiat volutpat, tellus ligula consequat augue, quis
                                 malesuada nisi ante nec metus.
                                 Sed id pretium nunc. Mauris vitae porttitor tortor. Fusce aliquet ac metus eget egestas.
@@ -291,12 +210,12 @@
                         <div class="footer-widget quick-links">
                             <h4 class="text-uppercase">Quick Links</h4>
                             <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="classes.html">Classes</a></li>
-                                <li><a href="classes.html">Time Schedule</a></li>
+                                <li><a href="about.php">About</a></li>
+                                <li><a href="categorie.php">Classes</a></li>
+                                <li><a href="categorie.php">Time Schedule</a></li>
                                 <li><a href="pricing-table.html">Pricing Table</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="blog.php">Blog</a></li>
+                                <li><a href="contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -307,17 +226,17 @@
                         <div class="footer-widget footer-recent-posts">
                             <h4 class="text-uppercase">Recent Post</h4>
                             <ul>
-                                <li><a href="single-blog.html">
+                                <li><a href="single-blog.php">
                                         <figure><img src="assets/img/footer-img/recent-post1.jpg" alt="recent"></figure>
                                         <p>Pellentesque convallis, diam et feugiat volutpat, tellus ligula<span>Sep 09,
                                                 2019</span></p>
                                     </a></li>
-                                <li><a href="single-blog.html">
+                                <li><a href="single-blog.php">
                                         <figure><img src="assets/img/footer-img/recent-post2.jpg" alt="recent"></figure>
                                         <p>Praesent vehicula odio ut erat posuere, nec malesuada dolor<span>Sep 06,
                                                 2019</span></p>
                                     </a></li>
-                                <li><a href="single-blog.html">
+                                <li><a href="single-blog.php">
                                         <figure><img src="assets/img/footer-img/recent-post3.jpg" alt="recent"></figure>
                                         <p>Nulla rhoncus condimentum ante, molestie mattis lorem<span>Sep 02,
                                                 2019</span></p>
@@ -332,22 +251,22 @@
                         <div class="footer-widget footer-gallery">
                             <h4 class="text-uppercase">Our Gallery</h4>
                             <ul>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery1.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery2.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery3.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery4.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery5.jpg" alt="gallery"></figure>
                                     </a></li>
-                                <li><a href="gallery.html">
+                                <li><a href="gallery.php">
                                         <figure><img src="assets/img/footer-img/gallery6.jpg" alt="gallery"></figure>
                                     </a></li>
                             </ul>
@@ -436,5 +355,5 @@
 </body>
 
 
-<!-- Mirrored from andit.co/projects/html/heroism/demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 13:25:52 GMT -->
+<!-- Mirrored from andit.co/projects/html/heroism/demo/404.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Nov 2022 13:25:52 GMT -->
 </html>

@@ -1,4 +1,4 @@
-<?php include_once '././view/layout/header.php'; ?>
+<?php include_once './view/layout/header.php'; ?>
 
 <div class="page-wrapper">
     <div class="container-fluid">
@@ -93,4 +93,4 @@
     $('#zero_config').DataTable();
 </script>
 
-<?php include_once '././view/layout/footer.php'; ?>
+<?php include_once './view/layout/footer.php'; ?>

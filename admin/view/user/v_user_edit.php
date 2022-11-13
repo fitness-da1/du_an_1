@@ -1,14 +1,15 @@
-<?php include_once '././view/layout/header.php'; ?>
+<?php include_once './view/layout/header.php'; ?>
     <div class="page-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
-                        <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+                        <form class="form-horizontal" action="?ctr=user_update" method="post" enctype="multipart/form-data">
                             <div class="card-body">
                                 <h4 class="card-title">Personal Info</h4>
-                                <input type="text" name="id" value="<?=$user->id?>" hidden>
+
                                 <div class="form-group row">
+                                    <input type="text" class="form-control" id="id" name="id" value="<?=$user->id?>" hidden>
                                     <label for="fist_name" class="col-sm-3 text-right control-label col-form-label">Fist
                                         name</label>
                                     <div class="col-sm-9">
@@ -45,7 +46,7 @@
                                         number</label>
                                     <div class="col-sm-9">
                                         <input type="text" class="form-control" id="phone_number" name="phone_number"
-                                               placeholder="Phone number Here" value="value="<?=$user->phone_number?>">
+                                               placeholder="Phone number Here" value="<?=$user->phone_number?>">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -53,9 +54,9 @@
                                     <div class="col-md-9">
                                         <select class="select2 form-control custom-select"
                                                 style="width: 100%; height:36px;" name="plant_id">
-                                            <option>Select</option>
+                                            <option value="">Select</option>
                                             <?php foreach ($plant as $item =>$value): ?>
-                                                <option value="<?=$value->id?>" <?= $value->id==$user->plant_id?'selected':null ?> ><?=$value->plant_name?></option>
+                                                <option value="<?=$value->id?>" <?= $value->id==$user->plant_id?'selected':null ?> > <?=$value->plant_name?> </option>
                                             <?php endforeach;?>
                                         </select>
                                     </div>
@@ -67,8 +68,8 @@
                                         <select class="select2 form-control custom-select"
                                                 style="width: 100%; height:36px;" name="status">
                                             <option>Select</option>
-                                            <option value="0">Active</option>
-                                            <option value="1">Pending</option>
+                                            <option value="0" <?=$user->status==0?'selected':null ?> >Active</option>
+                                            <option value="1" <?=$user->status==1?'selected':null ?> >Pending</option>
 
                                         </select>
                                     </div>
@@ -77,7 +78,7 @@
                             <div class="border-top">
                                 <div class="card-body">
                                     <button type="submit" class="btn btn-primary" name="btn_update_user">Update</button>
-                                    <!-- <button type="button" class="btn btn-primary" onclick="location.href='admin_member_list.php'">Danh sách</button> -->
+                                     <button type="button" class="btn btn-primary" onclick="location.href='?ctr=user_list'">Danh sách</button>
                                 </div>
                             </div>
                         </form>
@@ -143,4 +144,4 @@
         });
 
     </script>
-<?php include_once '././view/layout/footer.php'; ?>
+<?php include_once './view/layout/footer.php'; ?>

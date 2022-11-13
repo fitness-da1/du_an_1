@@ -1,255 +1,241 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!--<!DOCTYPE html>-->
+<!--<html lang="vi">-->
 
 <!-- Mirrored from citigym.com.vn/chinh-sach-gia by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 12:41:06 GMT -->
 <!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-
-    <link rel="shortcut icon" href="storage/uploads/logo.png">
-    <meta http-equiv="content-language" content="en">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap&amp;subset=latin-ext,vietnamese"
-          rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/remixicon.css">
-    <link rel="stylesheet" href="assets/css/remixicon.less">
-    <link rel="stylesheet" href="assets/css/remixicon.symbol.svg">
-    <style type="text/css">
-        .help-block {
-            color: #dc3545;
-        }
-
-        .seo-desc {
-            font-size: 16px;
-            font-weight: normal;
-        }
-
-        @media (min-width: 768px) and (max-width: 992px) {
-            .header .logo-img {
-                top: 0;
-            }
-        }
-    </style>
-    <title>Giá tập gym và giá tập yoga minh bạch | Truy cập website để xem giá</title>
-    <meta name="description"
-          content="Xem giá tập gym và giá tập yoga tại CITIGYM. Chính sách giá các gói tập 1 tháng, 3 tháng, 12 tháng...Giá thuê Pt gym bao nhiêu? Đăng kí hội viên để xem giá tập gym.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-132995851-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <meta property="og:description"
-          content="Xem giá tập gym và giá tập yoga tại CITIGYM. Chính sách giá các gói tập 1 tháng, 3 tháng, 12 tháng...Giá thuê Pt gym bao nhiêu? Đăng kí hội viên để xem giá tập gym.">
-    <meta property="og:keywords" content="Home">
-    <meta property="og:image" content="https://citigym.com.vn/storage/uploads/baoanh11839.jpg">
-    <meta name="twitter:title" content="Giá tập gym và giá tập yoga minh bạch | Truy cập website để xem giá">
-    <meta name="twitter:description"
-          content="Xem giá tập gym và giá tập yoga tại CITIGYM. Chính sách giá các gói tập 1 tháng, 3 tháng, 12 tháng...Giá thuê Pt gym bao nhiêu? Đăng kí hội viên để xem giá tập gym.">
+<!--<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">-->
+<!---->
+<!--    <link rel="shortcut icon" href="storage/uploads/logo.png">-->
+<!--    <meta http-equiv="content-language" content="en">-->
+<!--    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap&amp;subset=latin-ext,vietnamese"-->
+<!--          rel="stylesheet">-->
+<!--    <link rel="stylesheet" href="assets/css/remixicon.css">-->
+<!--    <link rel="stylesheet" href="assets/css/remixicon.less">-->
+<!--    <link rel="stylesheet" href="assets/css/remixicon.symbol.svg">-->
+<!--    <style type="text/css">-->
+<!--        .help-block {-->
+<!--            color: #dc3545;-->
+<!--        }-->
+<!---->
+<!--        .seo-desc {-->
+<!--            font-size: 16px;-->
+<!--            font-weight: normal;-->
+<!--        }-->
+<!---->
+<!--        @media (min-width: 768px) and (max-width: 992px) {-->
+<!--            .header .logo-img {-->
+<!--                top: 0;-->
+<!--            }-->
+<!--        }-->
+<!--    </style>-->
+<!--    <title>Giá tập gym và giá tập yoga minh bạch | Truy cập website để xem giá</title>-->
+<!--    <meta name="description"-->
+<!--          content="Xem giá tập gym và giá tập yoga tại CITIGYM. Chính sách giá các gói tập 1 tháng, 3 tháng, 12 tháng...Giá thuê Pt gym bao nhiêu? Đăng kí hội viên để xem giá tập gym.">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <script>-->
+<!--        (function (i, s, o, g, r, a, m) {-->
+<!--            i['GoogleAnalyticsObject'] = r;-->
+<!--            i[r] = i[r] || function () {-->
+<!--                (i[r].q = i[r].q || []).push(arguments)-->
+<!--            }, i[r].l = 1 * new Date();-->
+<!--            a = s.createElement(o),-->
+<!--                m = s.getElementsByTagName(o)[0];-->
+<!--            a.async = 1;-->
+<!--            a.src = g;-->
+<!--            m.parentNode.insertBefore(a, m)-->
+<!--        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');-->
+<!---->
+<!--        ga('create', 'UA-132995851-1', 'auto');-->
+<!--        ga('send', 'pageview');-->
+<!--    </script>-->
+<!--    <meta property="og:description"-->
+<!--          content="Xem giá tập gym và giá tập yoga tại CITIGYM. Chính sách giá các gói tập 1 tháng, 3 tháng, 12 tháng...Giá thuê Pt gym bao nhiêu? Đăng kí hội viên để xem giá tập gym.">-->
+<!--    <meta property="og:keywords" content="Home">-->
+<!--    <meta property="og:image" content="https://citigym.com.vn/storage/uploads/baoanh11839.jpg">-->
+<!--    <meta name="twitter:title" content="Giá tập gym và giá tập yoga minh bạch | Truy cập website để xem giá">-->
+<!--    <meta name="twitter:description"-->
+<!--          content="Xem giá tập gym và giá tập yoga tại CITIGYM. Chính sách giá các gói tập 1 tháng, 3 tháng, 12 tháng...Giá thuê Pt gym bao nhiêu? Đăng kí hội viên để xem giá tập gym.">-->
 
     <!--    <link media="all" type="text/css" rel="stylesheet" href="vendor/core/plugins/language/css/language-public.css">-->
     <!--    bootstrap-->
-    <link media="all" type="text/css" rel="stylesheet"
-          href="assets/vendor/bootstrap/css/bootstrap.min.css">
-
-    <link media="all" type="text/css" rel="stylesheet"
-          href="themes/citigym/plugins/slick-carousel/slick/slick-theme.css">
-    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/plugins/slick-carousel/slick/slick.css">
-
-    <link media="all" type="text/css" rel="stylesheet"
-          href="themes/citigym/plugins/zurb-twentytwenty/css/twentytwenty.css">
-    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/plugins/metismenu/dist/metisMenu.min.css">
-    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/plugins/photoswipe/dist/photoswipe.css">
-    <link media="all" type="text/css" rel="stylesheet"
-          href="themes/citigym/plugins/photoswipe/dist/default-skin/default-skin.css">
-
-    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/css/style.min.css">
-    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/css/custom.css">
-
-
-    <script src="themes/citigym/plugins/jquery/dist/jquery.min.js"></script>
-    <script src="themes/citigym/plugins/jquery.serializejson.min.js"></script>
-
-
-    <script>
-        (function ($) {
-            $.fn.getFormData = function () {
-                var data = {};
-                var dataArray = $(this).serializeArray();
-                for (var i = 0; i < dataArray.length; i++) {
-                    data[dataArray[i].name] = dataArray[i].value;
-                }
-                return data;
-            }
-        })(jQuery);
-        var API = {
-            CONTACT: "https://citigym.com.vn/clb/send-contact",
-            APPLY_JOB: "https://citigym.com.vn/tuyen-dung/apply",
-            SCHEDULE_FILTER: "https://citigym.com.vn/json/schedule-filter",
-            SERVICE: "https://citigym.com.vn/dich-vu/filter",
-            BMI: "https://citigym.com.vn/api/bmi/create",
-        };
-
-        var APP = {
-            VIEW_MORE_TEXT: "Xem Thêm"
-        };
-    </script>
+<!--    <link media="all" type="text/css" rel="stylesheet"-->
+<!--          href="assets/vendor/bootstrap/css/bootstrap.min.css">-->
+<!---->
+<!--    <link media="all" type="text/css" rel="stylesheet"-->
+<!--          href="themes/citigym/plugins/slick-carousel/slick/slick-theme.css">-->
+<!--    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/plugins/slick-carousel/slick/slick.css">-->
+<!---->
+<!--    <link media="all" type="text/css" rel="stylesheet"-->
+<!--          href="themes/citigym/plugins/zurb-twentytwenty/css/twentytwenty.css">-->
+<!--    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/plugins/metismenu/dist/metisMenu.min.css">-->
+<!--    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/plugins/photoswipe/dist/photoswipe.css">-->
+<!--    <link media="all" type="text/css" rel="stylesheet"-->
+<!--          href="themes/citigym/plugins/photoswipe/dist/default-skin/default-skin.css">-->
+<!---->
+<!--    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/css/style.min.css">-->
+<!--    <link media="all" type="text/css" rel="stylesheet" href="themes/citigym/css/custom.css">-->
+<!---->
+<!---->
+<!--    <script src="themes/citigym/plugins/jquery/dist/jquery.min.js"></script>-->
+<!--    <script src="themes/citigym/plugins/jquery.serializejson.min.js"></script>-->
+<!---->
+<!---->
+<!--    <script>-->
+<!--        (function ($) {-->
+<!--            $.fn.getFormData = function () {-->
+<!--                var data = {};-->
+<!--                var dataArray = $(this).serializeArray();-->
+<!--                for (var i = 0; i < dataArray.length; i++) {-->
+<!--                    data[dataArray[i].name] = dataArray[i].value;-->
+<!--                }-->
+<!--                return data;-->
+<!--            }-->
+<!--        })(jQuery);-->
+<!--        var API = {-->
+<!--            CONTACT: "https://citigym.com.vn/clb/send-contact",-->
+<!--            APPLY_JOB: "https://citigym.com.vn/tuyen-dung/apply",-->
+<!--            SCHEDULE_FILTER: "https://citigym.com.vn/json/schedule-filter",-->
+<!--            SERVICE: "https://citigym.com.vn/dich-vu/filter",-->
+<!--            BMI: "https://citigym.com.vn/api/bmi/create",-->
+<!--        };-->
+<!---->
+<!--        var APP = {-->
+<!--            VIEW_MORE_TEXT: "Xem Thêm"-->
+<!--        };-->
+<!--    </script>-->
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-56P6JXJ');</script>
+<!--    <script>(function (w, d, s, l, i) {-->
+<!--        w[l] = w[l] || [];-->
+<!--        w[l].push({-->
+<!--            'gtm.start':-->
+<!--                new Date().getTime(), event: 'gtm.js'-->
+<!--        });-->
+<!--        var f = d.getElementsByTagName(s)[0],-->
+<!--            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';-->
+<!--        j.async = true;-->
+<!--        j.src =-->
+<!--            '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;-->
+<!--        f.parentNode.insertBefore(j, f);-->
+<!--    })(window, document, 'script', 'dataLayer', 'GTM-56P6JXJ');</script>-->
     <!-- End Google Tag Manager -->
 
-<style>
-    .header .navigation-menu ul li a {
-        padding: 24px 13px;
-    }
+<!--<style>-->
+<!--    .header .navigation-menu ul li a {-->
+<!--        padding: 24px 13px;-->
+<!--    }-->
+<!--    -->
+<!--    .language-wrapper .language_bar_chooser li {-->
+<!--        display: block;-->
+<!--        float: none;-->
+<!--        background-color: transparent !important;-->
+<!--        padding-left: 10px;-->
+<!--    }-->
+<!---->
+<!--    .language-wrapper .language_bar_chooser li.active {-->
+<!--        background-color: #f5f6f8 !important;-->
+<!--    }-->
+<!---->
+<!--    .btn-secondary:hover {-->
+<!--        color: #454545;-->
+<!--        background-color: #fff;-->
+<!--        border: none;-->
+<!--    }-->
+<!---->
+<!--    .language-wrapper button .caret {-->
+<!--        display: none !important;-->
+<!--    }-->
+<!---->
+<!--    .language-wrapper .dropdown-menu li.active a span {-->
+<!--        color: #454545;-->
+<!--    }-->
+<!---->
+<!--    .language-wrapper .dropdown-menu li img {-->
+<!--        margin: 0 !important;-->
+<!--    }-->
+<!---->
+<!---->
+<!--    .language_bar_chooser.dropdown-menu li a {-->
+<!--        display: flex !important;-->
+<!--        align-items: center;-->
+<!--    }-->
+<!---->
+<!--    .language_bar_chooser.dropdown-menu li a:hover {-->
+<!--        text-decoration: none;-->
+<!--    }-->
+<!---->
+<!--    .language-wrapper .dropdown-menu li span {-->
+<!--        margin-left: 10px;-->
+<!--    }-->
+<!---->
+<!--    .show > .btn-secondary.dropdown-toggle, .btn-secondary:focus {-->
+<!--        color: #454545 !important;-->
+<!--        background-color: #fff !important;-->
+<!--        border: none !important;-->
+<!--    }-->
+<!---->
+<!--    .btn-secondary:focus, .show > .btn-secondary.dropdown-toggle:focus {-->
+<!--        box-shadow: none !important;-->
+<!--    }-->
+<!---->
+<!--    .dropdown-menu.show {-->
+<!--        top: 8px !important;-->
+<!--    }-->
+<!---->
+<!--    button.btn.btn-secondary.dropdown-toggle.active {-->
+<!--        font-size: 14px;-->
+<!--    }-->
+<!---->
+<!--    /*@media (min-width: 992px) {*/-->
+<!--    /*    .mobile {*/-->
+<!--    /*        display: none;*/-->
+<!--    /*    }*/-->
+<!--    /*}*/-->
+<!---->
+<!--    /*@media (max-width: 992px) {*/-->
+<!--    /*    .desktop {*/-->
+<!--    /*        display: none;*/-->
+<!--    /*    }*/-->
+<!---->
+<!--    /*    .language-wrapper {*/-->
+<!--    /*        position: relative !important;*/-->
+<!--    /*        top: 10px;*/-->
+<!--    /*        right: 0;*/-->
+<!--    /*        left: -14px;*/-->
+<!--    /*    }*/-->
+<!---->
+<!--    /*    .dropdown {*/-->
+<!--    /*        width: 100%;*/-->
+<!--    /*    }*/-->
+<!---->
+<!--    /*    .dropdown-menu.show {*/-->
+<!--    /*        top: 8px !important;*/-->
+<!--    /*        width: 100%;*/-->
+<!--    /*    }*/-->
+<!--    /*}*/-->
+<!---->
+<!--    /*@media (min-width: 992px) {*/-->
+<!--    /*    .header .navigation-menu ul:not(.submenu) {*/-->
+<!--    /*        justify-content: flex-start;*/-->
+<!--    /*    }*/-->
+<!--    /*}*/-->
+<!---->
+<!--    @media (min-width: 1200px) {-->
+<!--        .container {-->
+<!--            max-width: 1170px;-->
+<!--        }-->
+<!--    }-->
+<!--</style>-->
+<!--</head>-->
+<!--<body class="navigation-sticky">-->
+<!--<main>-->
+<!--    <div class="main-wrapper">-->
 
-    .language-wrapper {
-        display: flex;
-        align-items: center;
-        top: 45%;
-        right: -6%;
-        position: absolute;
-        transform: translateY(-50%);
-        color: #454545;
-    }
-
-    .dropdown-toggle::after {
-        content: none;
-    }
-
-    .language-wrapper .language_bar_chooser li {
-        display: block;
-        float: none;
-        background-color: transparent !important;
-        padding-left: 10px;
-    }
-
-    .language-wrapper .language_bar_chooser li.active {
-        background-color: #f5f6f8 !important;
-    }
-
-    .btn-secondary:hover {
-        color: #454545;
-        background-color: #fff;
-        border: none;
-    }
-
-    .language-wrapper button .caret {
-        display: none !important;
-    }
-
-    .language-wrapper .dropdown-menu li.active a span {
-        color: #454545;
-    }
-
-    .language-wrapper .dropdown-menu li img {
-        margin: 0 !important;
-    }
-
-
-    .language_bar_chooser.dropdown-menu li a {
-        display: flex !important;
-        align-items: center;
-    }
-
-    .language_bar_chooser.dropdown-menu li a:hover {
-        text-decoration: none;
-    }
-
-    .language-wrapper .dropdown-menu li span {
-        margin-left: 10px;
-    }
-
-    .show > .btn-secondary.dropdown-toggle, .btn-secondary:focus {
-        color: #454545 !important;
-        background-color: #fff !important;
-        border: none !important;
-    }
-
-    .btn-secondary:focus, .show > .btn-secondary.dropdown-toggle:focus {
-        box-shadow: none !important;
-    }
-
-    .dropdown-menu.show {
-        top: 8px !important;
-    }
-
-    button.btn.btn-secondary.dropdown-toggle.active {
-        font-size: 14px;
-    }
-
-    /*@media (min-width: 992px) {*/
-    /*    .mobile {*/
-    /*        display: none;*/
-    /*    }*/
-    /*}*/
-
-    /*@media (max-width: 992px) {*/
-    /*    .desktop {*/
-    /*        display: none;*/
-    /*    }*/
-
-    /*    .language-wrapper {*/
-    /*        position: relative !important;*/
-    /*        top: 10px;*/
-    /*        right: 0;*/
-    /*        left: -14px;*/
-    /*    }*/
-
-    /*    .dropdown {*/
-    /*        width: 100%;*/
-    /*    }*/
-
-    /*    .dropdown-menu.show {*/
-    /*        top: 8px !important;*/
-    /*        width: 100%;*/
-    /*    }*/
-    /*}*/
-
-    /*@media (min-width: 992px) {*/
-    /*    .header .navigation-menu ul:not(.submenu) {*/
-    /*        justify-content: flex-start;*/
-    /*    }*/
-    /*}*/
-
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 1170px;
-        }
-    }
-</style>
-</head>
-<body class="navigation-sticky">
-<main>
-    <div class="main-wrapper">
-
-
+<?php include_once './layout/header.php'?>
 <!--        danh sách các gói-->
         <section class="section section-pricing-detail mb-0">
             <div class="container">
@@ -1058,7 +1044,7 @@
             </div>
         </section>
 
-        //form đăng kí
+<!--        //form đăng kí-->
         <div class="modal modal-sign-up fade">
             <form method="POST" action="https://citigym.com.vn/chinh-sach-gia" accept-charset="UTF-8" id="contactForm">
                 <input name="_token" type="hidden" value="F2I3OgSYfw1ZfSkHelvrQJZLxJgIC2hOel82lrF4">
@@ -1132,7 +1118,7 @@
                 </div>
             </form>
         </div>
-        //end form
+<!--        //end form-->
     </div>
 </main>
 
@@ -1266,128 +1252,6 @@
 </script>
 
 <style>
-
-    .white {
-        color: #ffffff !important;
-    }
-
-    .text-space {
-        white-space: nowrap;
-    }
-
-    /* Add Switch */
-
-    .bg-select {
-        background: #fff;
-        padding: 14px;
-    }
-
-    select.form-control {
-        padding-right: 0;
-    }
-
-    .m-pricing-detail {
-        margin: 64px 0;
-    }
-
-    .type-switcher {
-        text-align: center;
-    }
-
-    .type-switcher .fieldset {
-        display: inline-block;
-        position: relative;
-        padding: 0 2px;
-        border: 2px solid #a50000;
-        margin-bottom: 34px;
-    }
-
-    .type-switcher input[type="radio"] {
-        position: absolute;
-        opacity: 0;
-    }
-
-    .type-switcher input[type=checkbox] + label {
-        color: #ffffff;
-    }
-
-    .type-switcher label {
-        position: relative;
-        padding: 5px;
-        z-index: 1;
-        display: inline-block;
-        float: left;
-        width: 165px;
-        height: 46px;
-        cursor: pointer;
-        font-family: "Roboto Condensed";
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: bold;
-        font-stretch: condensed;
-        font-style: normal;
-        line-height: 1.6;
-        letter-spacing: normal;
-        margin: 2px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        white-space: nowrap;
-        color: #a50000;
-        /* color: #fff; */
-    }
-
-    .type-switcher .switch {
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        height: 46px;
-        width: 165px;
-        background-color: #a50000;
-        -webkit-transition: -webkit-transform 0.5s;
-        -moz-transition: -moz-transform 0.5s;
-        transition: transform 0.5s;
-    }
-
-    /* .type-switcher input[type="radio"]:checked + label + .switch,
-    .type-switcher input[type="radio"]:checked + label:nth-of-type(n) + .switch {
-        -webkit-transform: translateX(165px);
-        -moz-transform: translateX(165px);
-        -ms-transform: translateX(165px);
-        -o-transform: translateX(165px);
-        transform: translateX(165px);
-    } */
-
-    input[type="radio"]:checked + label {
-        color: #ffffff;
-    }
-
-
-    .main-breadcrumb {
-        position: relative;
-        opacity: 0;
-    }
-
-    .main-breadcrumb:before {
-        display: block;
-        content: '';
-        width: 100%;
-        padding-top: 31.25%;
-
-    }
-
-    .breadcrumb-bg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-
     .pricing-table.table thead th:not(:first-child) {
         vertical-align: baseline;
     }
@@ -1504,13 +1368,6 @@
             font-size: 11px;
         }
 
-        .font-add-14 {
-            font-size: 14px !important;
-        }
-
-        .font-add-10 {
-            font-size: 10px !important;
-        }
     }
 
     @media (max-width: 480px) {
@@ -1564,58 +1421,60 @@
 </style>
 
 
-<script src="vendor/core/plugins/language/js/language-public.js"></script>
-<script src="themes/citigym/plugins/popper.js/dist/umd/popper.min.js"></script>
-<script src="themes/citigym/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="themes/citigym/plugins/slick-carousel/slick/slick.min.js"></script>
-<script src="themes/citigym/plugins/wowjs/dist/wow.min.js"></script>
-<script src="themes/citigym/plugins/metismenu/dist/metisMenu.min.js"></script>
-<script src="themes/citigym/plugins/zurb-twentytwenty/js/jquery.event.move.js"></script>
-<script src="themes/citigym/plugins/photoswipe/dist/photoswipe.min.js"></script>
-<script src="themes/citigym/plugins/zurb-twentytwenty/js/jquery.twentytwenty.js"></script>
-<script src="themes/citigym/js/style.min.js"></script>
-<script src="themes/citigym/plugins/photoswipe/dist/photoswipe-ui-default.min.js"></script>
-
-
-<script>
-
-    $('#popupModal').on('show.bs.modal', function () {
-        var myModal = $(this);
-        let timeout = +myModal.data('timeout') * 1000;
-        clearTimeout(myModal.data('hideInterval'));
-        myModal.data('hideInterval', setTimeout(function () {
-            myModal.modal('hide');
-        }, timeout));
-    });
-    $(window).on('load', function () {
-        /* Act on the event */
-        setTimeout(function () {
-            if ($('#popupModal').data('timeout') != 0) {
-                $('#popupModal').modal('show');
-            }
-        }, +$('#popupModal').data('time_appear') * 1000);
-        $('.twentytwenty-container').twentytwenty({
-            // default_offset_pct: 0.7, // How much of the before image is visible when the page loads
-            // before_label: 'January 2017', // Set a custom before label
-            // after_label: 'March 2017', // Set a custom after label
-            no_overlay: true, //Do not show the overlay with before and after
-            // move_slider_on_hover: true, // Move slider on mouse hover?
-            // move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement.
-            // click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
-        });
-    });
-
-</script>
-
-<script src="themes/citigym/bundle/contact/assets/js/index.js"></script>
+<!--<script src="vendor/core/plugins/language/js/language-public.js"></script>-->
+<!--<script src="themes/citigym/plugins/popper.js/dist/umd/popper.min.js"></script>-->
+<!--<script src="themes/citigym/plugins/bootstrap/dist/js/bootstrap.min.js"></script>-->
+<!--<script src="themes/citigym/plugins/slick-carousel/slick/slick.min.js"></script>-->
+<!--<script src="themes/citigym/plugins/wowjs/dist/wow.min.js"></script>-->
+<!--<script src="themes/citigym/plugins/metismenu/dist/metisMenu.min.js"></script>-->
+<!--<script src="themes/citigym/plugins/zurb-twentytwenty/js/jquery.event.move.js"></script>-->
+<!--<script src="themes/citigym/plugins/photoswipe/dist/photoswipe.min.js"></script>-->
+<!--<script src="themes/citigym/plugins/zurb-twentytwenty/js/jquery.twentytwenty.js"></script>-->
+<!--<script src="themes/citigym/js/style.min.js"></script>-->
+<!--<script src="themes/citigym/plugins/photoswipe/dist/photoswipe-ui-default.min.js"></script>-->
+<!---->
+<!---->
+<!--<script>-->
+<!---->
+<!--    $('#popupModal').on('show.bs.modal', function () {-->
+<!--        var myModal = $(this);-->
+<!--        let timeout = +myModal.data('timeout') * 1000;-->
+<!--        clearTimeout(myModal.data('hideInterval'));-->
+<!--        myModal.data('hideInterval', setTimeout(function () {-->
+<!--            myModal.modal('hide');-->
+<!--        }, timeout));-->
+<!--    });-->
+<!--    $(window).on('load', function () {-->
+<!--        /* Act on the event */-->
+<!--        setTimeout(function () {-->
+<!--            if ($('#popupModal').data('timeout') != 0) {-->
+<!--                $('#popupModal').modal('show');-->
+<!--            }-->
+<!--        }, +$('#popupModal').data('time_appear') * 1000);-->
+<!--        $('.twentytwenty-container').twentytwenty({-->
+<!--            // default_offset_pct: 0.7, // How much of the before image is visible when the page loads-->
+<!--            // before_label: 'January 2017', // Set a custom before label-->
+<!--            // after_label: 'March 2017', // Set a custom after label-->
+<!--            no_overlay: true, //Do not show the overlay with before and after-->
+<!--            // move_slider_on_hover: true, // Move slider on mouse hover?-->
+<!--            // move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement.-->
+<!--            // click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.-->
+<!--        });-->
+<!--    });-->
+<!---->
+<!--</script>-->
+<!---->
+<!--<script src="themes/citigym/bundle/contact/assets/js/index.js"></script>-->
 <!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56P6JXJ"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
+<!--<noscript>-->
+<!--    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56P6JXJ"-->
+<!--            height="0" width="0" style="display:none;visibility:hidden"></iframe>-->
+<!--</noscript>-->
 <!-- End Google Tag Manager (noscript) -->
-</body>
+<!--</body>-->
+<!---->
+<!---->
+<!--irrored from citigym.com.vn/chinh-sach-gia by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 12:41:08 GMT -->
+<!--</html>-->
 
-
-<!-- Mirrored from citigym.com.vn/chinh-sach-gia by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 12:41:08 GMT -->
-</html>
+<?php include_once './layout/footer.php'?>

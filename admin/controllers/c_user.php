@@ -17,11 +17,11 @@ class c_user
             $email = $_POST['email'];
             $address = $_POST['address'];
             $phone_number = $_POST['phone_number'];
-            $image=$_FILES['image']['name'];
+            $image = "";
             $plant = $_POST['plant_id'];
             $status = $_POST['status'];
             $m_user = new m_user();
-            $m_user->insert_user($id, $fist_name, $last_name, $email, $address, $phone_number,$image, $plant, $status);
+            $m_user->insert_user($id, $fist_name, $last_name, $email, $address, $phone_number, $image, $plant, $status);
         }
         include_once("view/user/v_user_add.php");
     }
@@ -54,10 +54,10 @@ class c_user
 
     public function show_user_edit()
     {
-        $m_categorie = new m_categorie();
-        $categorie = $m_categorie->read_categorie();
-        if (isset($_GET['id'])) {
-            $id = $_GET['id'];
+        $m_plant = new m_plant();
+        $plant = $m_plant->read_plant();
+        if (isset($_GET['user_id'])) {
+            $id = $_GET['user_id'];
             $m_user = new m_user();
             $user = $m_user->read_user_by_id($id);
             include_once("view/user/v_user_edit.php");
@@ -66,35 +66,30 @@ class c_user
 
     public function user_update()
     {
-        if (isset($_GET["id"])) {
-            $id = $_GET["id"];
-            $m_user = new m_user();
-            $user = $m_user->read_user_by_id($id);
-            //update
-            if (isset($_POST['btn_update_trainer'])) {
-                $id = $_POST['id'];
-                $fist_name = $_POST['fist_name'];
-                $last_name = $_POST['last_name'];
-                $email = $_POST['email'];
-                $address = $_POST['address'];
-                $phone_number = $_POST['phone_number'];
-//                $image = !empty($_FILES['image']['name']) == 0 ? $_FILES['image']['name'] : $user->image;
-                $image=null;
-                $plant = $_POST['plant'];
-                $status = $_POST['status'];
-                $m_user = new m_user();
-                $m_user->edit_user($fist_name, $last_name, $email, $address, $phone_number, $image, $plant, $status, $id);
-                header('location:?ctr=user_list&upd=success');
-            }
+        $m_user = new m_user();
+        //update
+        if (isset($_POST['btn_update_user'])) {
+            $id = $_POST['id'];
+            $fist_name = $_POST['fist_name'];
+            $last_name = $_POST['last_name'];
+            $email = $_POST['email'];
+            $address = $_POST['address'];
+            $phone_number = $_POST['phone_number'];
+            $image = "";
+            $plant = $_POST['plant_id'];
+            $status = $_POST['status'];;
+            $m_user->edit_user($fist_name, $last_name, $email, $address, $phone_number, $image, $plant, $status, $id);
+            header('location:?ctr=user_list&upd=success');
         }
     }
 
-    public function user_active(){
-        if (isset($_GET['user_id'])){
-            $id=$_GET['user_id'];
-            $status=0;
-            $m_user= new m_user();
-            $m_user->active_user($status,$id);
+    public function user_active()
+    {
+        if (isset($_GET['user_id'])) {
+            $id = $_GET['user_id'];
+            $status = 0;
+            $m_user = new m_user();
+            $m_user->active_user($status, $id);
             header('location:?ctr=user_list&atc=success');
         }
     }
