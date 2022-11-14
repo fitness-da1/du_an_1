@@ -4,18 +4,14 @@ class c_plant
 {
     public function plant_add()
     {
-        $m_categorie = new m_categorie();
-        $categorie = $m_categorie->read_categorie();
-        if (isset($_FILES['image'])) {
-            $trainer_image = $_FILES['image']['name'];
-        }
-        if (isset($_POST['btn_add_trainer'])) {
+       
+        if (isset($_POST['btn_add_plant'])) {
             $id = NULL;
-            $trainer_name = $_POST['trainer_name'];
-            $trainer_categorie = $_POST['trainer_categorie'];
-            $trainer_image = $_FILES['image']['name'];
-            $m_trainers = new m_trainers();
-            $m_trainers->insert_trainer($id, $trainer_name, $trainer_image, $trainer_categorie);
+            $plant_name = $_POST['plant_name'];
+            $pant_exp = $_POST['pant_exp'];
+            $plant_cost = $_POST['plant_cost'];
+            $m_plant = new m_plant();
+            $m_plant->insert_plant($id, $plant_name, $pant_exp, $plant_cost);
         }
         include_once("view/plant/v_plant_add.php");
     }
@@ -29,6 +25,7 @@ class c_plant
 
     public function show_plant_edit()
     {
+        
         if (isset($_GET['id'])) {
             $id = $_GET['id'];
             $m_plant = new m_plant();
@@ -37,16 +34,16 @@ class c_plant
         }
     }
 
-    public function trainers_update()
+    public function plant_update()
     {
-        if (isset($_POST['btn_update_trainer'])) {
+        if (isset($_POST['btn_update_plant'])) {
             $id = $_POST['id'];
-            $trainer_name = $_POST['trainer_name'];
-            $trainer_categorie = $_POST['trainer_categorie'];
-            $trainer_image = $_FILES['image']['name'];
-            $m_trainers = new m_trainers();
-            $m_trainers->edit_trainer($trainer_name, $trainer_image, $trainer_categorie, $id);
-            header('location:?ctr=trainers_list');
+            $plant_name= $_POST['plant_name'];
+            $plant_exp = $_POST['plant_exp'];
+            $plant_cost = $_POST['plant_cost'];
+            $m_plant = new m_plant();
+            $m_plant->edit_plant($plant_name, $plant_exp, $plant_cost, $id);
+            header('location:?ctr=plant_list');
         }
     }
 

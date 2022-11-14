@@ -13,43 +13,29 @@
                                 <th>Full name</th>
                                 <th>Email</th>
                                 <th>Message</th>
-                                <th>Action</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Nguyễn Văn a</td>
-                                <td>Gym</td>
-                                <td>sssssdfsdg</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete() ">Xóa</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nguyễn Văn a</td>
-                                <td>Gym</td>
-                                <td>sssssdfsdg</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete() ">Xóa</button>
-                                </td>
-                            </tr>
+                         <tbody>
+                            <?php
+
+                            foreach ($contact as $key => $value) { ?>
 
                             <tr>
-                                <td>Nguyễn Văn a</td>
-                                <td>Gym</td>
-                                <td>sssssdfsdg</td>
+                                <td><?= $value->full_name ?></td>
+                                <td><?= $value->email ?></td>
+                                <td><?= $value->message ?></td>
+                                <td><?= $value->status==0?'Hoạt động':'Không hoạt động' ?></td>
                                 <td>
-                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete() ">Xóa</button>
+                                    <button type="button" class="btn btn-primary" onclick="location.href='?ctr=contact_edit&id=<?= $value->id ?>'">Sửa
+                                    </button>
+                                    <button type="button" class="btn btn-primary"
+                                            onclick="return confirm_delete('<?= $value->id ?>','<?= $value->fullname ?>') ">Xóa
+                                    </button>
                                 </td>
+
                             </tr>
-                            <tr>
-                                <td>Nguyễn Văn a</td>
-                                <td>Gym</td>
-                                <td>sssssdfsdg</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete() ">Xóa</button>
-                                </td>
-                            </tr>
+                            <?php } ?>
 
                         </tbody>
                         <tfoot>
@@ -57,7 +43,7 @@
                                 <th>Full name</th>
                                 <th>Email</th>
                                 <th>Message</th>
-                                <th>Action</th>
+                                <th>Status</th>
                             </tr>
                         </tfoot>
                     </table>
