@@ -13,12 +13,7 @@
                                     <input type="text" class="form-control" id="uname" name="post_name" placeholder=" Post name here">
                                 </div>
                             </div>
-                            <div class="form-group row" hidden>
-                                <label for="lname" class="col-sm-3 text-right control-label col-form-label">Post Author</label>
-                                <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="fname" name="post_author" value="">
-                                </div>
-                            </div>
+                           
                             <div class="form-group row">
                                 <label class="col-sm-3 text-right control-label col-form-label">Post avatar</label>
                                 <div class="col-md-9">
@@ -50,8 +45,8 @@
                         </div>
                         <div class="border-top">
                             <div class="card-body">
-                                <button type="submit" class="btn btn-primary" name="btn_add_categorier">Thêm</button>
-                                <button type="button" class="btn btn-primary" onclick="location.href='?ctr=categorier_list'">Danh sách</button>
+                                <button type="submit" class="btn btn-primary" name="btn_add_blog">Thêm</button>
+                                <button type="button" class="btn btn-primary" onclick="location.href='?ctr=blog_list'">Danh sách</button>
                             </div>
                         </div>
                     </form>

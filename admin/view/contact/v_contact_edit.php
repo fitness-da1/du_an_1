@@ -73,7 +73,7 @@
 
         function confirm_edit(id,full_name){
             if(confirm('Bạn chắc chắn muốn sửa '+full_name)){
-                window.open('?ctr=admin_member_delete&id='+id,'_self');
+                window.open('?ctr=admin_plant_delete&id='+id,'full_name');
             }
         }
     </script>

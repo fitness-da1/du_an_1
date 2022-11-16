@@ -5,14 +5,14 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Danh sách Plant</h5>
+                    <h5 class="card-title">Danh sách Plan</h5>
                     <div class="table-responsive">
                         <table id="zero_config" class="table table-striped table-bordered">
                             <thead>
                             <tr>
-                                <th>Plant name</th>
-                                <th>Plant exp</th>
-                                <th>Plant cost</th>
+                                <th>Plan name</th>
+                                <th>Plan exp</th>
+                                <th>Plan cost</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -31,9 +31,9 @@
                             </tbody>
                             <tfoot>
                             <tr>
-                                <th>Plant name</th>
-                                <th>Plant exp</th>
-                                <th>Plant cost</th>
+                                <th>Plan name</th>
+                                <th>Plan exp</th>
+                                <th>Plan cost</th>
                                 <th>Action</th>
                             </tr>
                             </tfoot>

@@ -276,7 +276,12 @@
                             </ul>
                         </li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="?ctr=plant_list" aria-expanded="false"><i class="mdi mdi-relative-scale"></i><span class="hide-menu">Quản lí Plant</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Quản lý Plan</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="?ctr=plant_add" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Thêm plan </span></a></li>
+                                <li class="sidebar-item"><a href="?ctr=plant_list" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Danh sách plan </span></a></li>
+                            </ul>
+                        </li>
 
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Khách hàng</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">

@@ -13,70 +13,35 @@
                                 <th>Post Id</th>
                                 <th>Post name</th>
                                 <th>Post content</th>
-                                <th>Post avater</th>
+                                <th>Post avatar</th>
                                 <th>Post viewer</th>
                                 <th>Post time</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
+                        <?php foreach ($blog as $item => $value): ?>
                             <tr>
-                                <td>1</td>
-                                <td>post1</td>
-                                <td>sssssdfsdg</td>
-                                <td><img src="aaa.png" width="20" height="20"></td>
-                                <td>10</td>
-                                <td>2022/11/02</td>
+                                <td><?= $value->id?></td>
+                                <td><?= $value->post_name?></td>
+                                <td><?= $value->post_content?></td>
+                                <td><img src="" alt="<?= $value->post_avatar?>"></td>
+                                <td><?= $value->post_viewer?></td>
+                                <td><?= $value->post_time?></td>
                                 <td>
-                                    <button type="button" class="btn btn-primary" onclick=" location.href='' ">Sửa</button>
-                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete() ">Xóa</button>
+                                    <button type="button" class="btn btn-primary" onclick=" location.href='?ctr=blog_edit&id=<?=$value->id?>' ">Sửa</button>
+                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete('<?=$value->id?>','<?=$value->post_name?>') ">Xóa</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>post1</td>
-                                <td>sssssdfsdg</td>
-                                <td><img src="aaa.png" width="20" height="20"></td>
-                                <td>10</td>
-                                <td>2022/11/02</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary" onclick=" location.href='' ">Sửa</button>
-                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete() ">Xóa</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>1</td>
-                                <td>post1</td>
-                                <td>sssssdfsdg</td>
-                                <td><img src="aaa.png" width="20" height="20"></td>
-                                <td>10</td>
-                                <td>2022/11/02</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary" onclick=" location.href='' ">Sửa</button>
-                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete() ">Xóa</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>post1</td>
-                                <td>sssssdfsdg</td>
-                                <td><img src="aaa.png" width="20" height="20"></td>
-                                <td>10</td>
-                                <td>2022/11/02</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary" onclick=" location.href='' ">Sửa</button>
-                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete() ">Xóa</button>
-                                </td>
-                            </tr>
-
+                        <?php endforeach;?>
+                            
                         </tbody>
                         <tfoot>
                             <tr>
                                 <th>Post Id</th>
                                 <th>Post name</th>
                                 <th>Post content</th>
-                                <th>Post avater</th>
+                                <th>Post avatar</th>
                                 <th>Post viewer</th>
                                 <th>Post time</th>
                                 <th>Action</th>
@@ -100,10 +65,15 @@
 <script src="./view/assets/extra-libs/multicheck/jquery.multicheck.js"></script>
 <script src="./view/assets/extra-libs/DataTables/datatables.min.js"></script>
 <script>
-    /****************************************
-     *       Basic Table                   *
-     ****************************************/
-    $('#zero_config').DataTable();
-</script>
+        /****************************************
+         *       Basic Table                   *
+         ****************************************/
+        $('#zero_config').DataTable();
+        function confirm_delete(id,name){
+            if(confirm('Bạn chắc chắn muốn xóa '+name)){
+                window.open('?ctr=blog_delete&id='+id,'_self');
+            }
+        }
+    </script>
 
 <?php include_once '././view/layout/footer.php'; ?>

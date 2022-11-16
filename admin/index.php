@@ -8,7 +8,7 @@ include_once 'controllers/c_user.php';
 include_once 'controllers/c_plant.php';
 //include_once 'controllers/c_comments';
 include_once 'controllers/c_contact.php';
-//include_once 'controllers/c_blog';
+include_once 'controllers/c_blog.php';
 include_once 'controllers/c_404_error.php';
 //models
 include_once("models/m_categorie.php");
@@ -18,7 +18,7 @@ include_once("models/m_trainers.php");
 include_once("models/m_admin_member.php");
 //include_once("models/m_comments.php");
 include_once("models/m_contact.php");
-//include_once("models/m_blog.php");
+include_once("models/m_blog.php");
 $ctr = isset($_GET['ctr']) ? $_GET['ctr'] : '/';
 session_start();
 switch ($ctr) {
@@ -114,6 +114,14 @@ switch ($ctr) {
             $error = new c_404_error();
         }
         break;
+    case 'blog_update':
+            if (isset($_SESSION['user_admin'])) {
+                $blog = new c_blog();
+                $blog->blog_update();
+            } else {
+                $error = new c_404_error();
+            }
+            break;
     case 'blog_list':
         if (isset($_SESSION['user_admin'])) {
             $blog = new c_blog();
@@ -122,14 +130,7 @@ switch ($ctr) {
             $error = new c_404_error();
         }
         break;
-    case 'blog_update':
-        if (isset($_SESSION['user_admin'])) {
-            $blog = new c_blog();
-            $blog->blog_update();
-        } else {
-            $error = new c_404_error();
-        }
-        break;
+  
     //categorie
     case 'categories_add':
         if (isset($_SESSION['user_admin'])) {
@@ -297,6 +298,14 @@ switch ($ctr) {
         break;
 
         //plant
+        case 'plant_add':
+            if (isset($_SESSION['user_admin'])) {
+                $plant = new c_plant();
+                $plant->plant_add();
+            } else {
+                $error = new c_404_error();
+            }
+            break;
 
     case 'plant_list':
         if (isset($_SESSION['user_admin'])) {
@@ -323,7 +332,14 @@ switch ($ctr) {
             $error = new c_404_error();
         }
         break;
-        
+        case 'plant_delete':
+            if (isset($_SESSION['user_admin'])) {
+                $plant = new c_plant();
+                $plant->plant_delete();
+            } else {
+                $error = new c_404_error();
+            }
+            break;
     //user
     case 'user_add':
         if (isset($_SESSION['user_admin'])) {
