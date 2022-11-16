@@ -24,68 +24,44 @@
         <div class="row m-pricing-detail">
 
             <div class="col-lg-7 content-text m-b-md-3">
-
-                        <span class="detail-enterprise-js d-none ">
-                            <ul class="tag-inline tag-col-3 nav nav-tabs m-b-24px m-t-md-3 d-block text-center"></ul>
-                            <div class="tab-content"></div>
-                        </span>
+                <span class="detail-enterprise-js d-none ">
+                    <ul class="tag-inline tag-col-3 nav nav-tabs m-b-24px m-t-md-3 d-block text-center"></ul>
+                    <div class="tab-content"></div>
+                </span>
 
                 <span class="detail-personal-js">
-                    <!--tên plant-->
                             <ul class="tag-inline tag-col-3 nav nav-tabs m-b-24px m-t-md-3 d-block text-center">
-                                    <li class="nav-item d-inline-block" id="plant_type">
-                                    </li>
+                                <?php foreach ($plant_type as $plt): ?>
+                                    <li class="nav-item d-inline-block" >
+                                    <a data-short-title="<?= $plt->name_type ?>"
+                                       data-package-list="<?= $plt->type_id ?>"
+                                       class="nav-link <?= $plt->type_id==1?'active':null ?>" data-toggle="tab"
+                                       href="#package-personal-list-<?= $plt->type_id ?>"><?= $plt->name_type ?>
+                                    </a>
+                                </li>
+                                <?php endforeach; ?>
                             </ul>
-                    <!--end tên plant-->
 
-                    <!--Thời gian gói-->
-                            <div class="tab-content">
-<!--                                //gói-->
-                                <div class="tab-pane fade show active" id="package-personal-list">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="package-personal-list">
+                            <div class="row align-items-center">
 
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6 item-selection-wrapper">
-<!--                                            hạn gói-->
-                                            <div class="item-selection nav nav-tabs border-bottom-0" id="plant_exp">
+                                <div class="col-md-6 item-selection-wrapper">
+                                    <div class="item-selection nav nav-tabs border-bottom-0"  id="month">
 
-<!--                                                <a class="item-month" href="#package-classic-0" data-toggle="tab">-->
-                                                <!--                                                    <div class="title">1</div>tháng-->
-                                                <!--                                                </a>-->
-
-                                            </div>
-                                            <!--                                         end hạn gói-->
-                                        </div>
-                                        <!--chi phi-->
-                                        <div class="col-md-6 item-content-wrapper">
-<!--                                            price-->
-                                            <div class="item-content tab-content p-y-12px">
-                                                <ul class="tab-pane fade show" id="plant_price">
-
-
-
-<!--                                                    <li>-->
-<!--                                                       <button type="submit" class="btn btn-brand btn-sm"-->
-<!--                                                               data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>-->
-<!--                                                    </li>-->
-                                                </ul>
-
-
-                                                <!--                                                    <li>-->
-                                                <!--                                                        <div class="label-text">Thời gian tập luyện:</div>-->
-                                                <!--                                                        <div class="label-title text-space">36 tháng</div>-->
-                                                <!--                                                    </li>-->
-                                                <!---->
-                                                <!--                                                   <li>-->
-                                                <!--                                                        <button type="submit" class="btn btn-brand btn-sm"-->
-                                                <!--                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>-->
-                                                <!--                                                    </li>-->
-
-                                            </div>
-                                            <!--                                            end price-->
-                                        </div>
                                     </div>
                                 </div>
+
+
+                                 <div class="col-md-6 item-content-wrapper">
+                                     <div class="item-content tab-content p-y-12px" id="price">
+
+                                    </div>
+                                 </div>
+
                             </div>
+                        </div>
+                    </div>
                 </span>
             </div>
 
@@ -100,123 +76,79 @@
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
 
 
-
-
-
 <script>
 
     //lấy thể loại plant
     $(document).ready(function () {
-        $.ajax({
-            url: "?ctr=get_type_plant",
-            dataType: 'json',
-            success: function (data) {
-                console.log(data);
-                $('#plant_type').html("");
-                for (i = 0; i < data.length; i++) {
-                    var plant_type = data[i];
+        // if ($('.nav-link').hasClass('active')) {
 
-                    var str = `
-                    <a class="nav-link"
-                        href="#package-personal-list-${plant_type['type_id']}"
-                        data-toggle="tab"
-                        data-package-list="${plant_type['type_id']}"
-                        data-short-title="${plant_type['name_type']}"
-                        id="name_type">
-                            ${plant_type['name_type']}
-                    </a>
-                                `;
-                    $('#plant_type').append(str);
 
-                    if (plant_type['type_id'] == 1) {
-                        $("#plant_type a").addClass("active");
+        $('.nav-link').on('click', function () {
 
+            $('.item-month').addClass('active');
+            $('.tab-pane').addClass('active');
+            var plant_type = $(this).attr('data-package-list');
+            $.ajax({
+                url: '?ctr=get_plant&type_id=' + plant_type,
+                dataType: 'json',
+                success: function (data) {
+                    $('#month').html("");
+                    for (i = 0; i < data.length; i++) {
+                        var stt=i+1;
+                        var plant = data[i];
+
+                        var str = `
+                                        <a class="item-month"
+                                            stt="${stt}"
+                                           href="#package-${plant['name_type']}-${plant['id']}"
+                                           data-toggle="tab">
+                                            <div class="title">${plant['plant_exp']}</div> tháng
+                                        </a>`;
+                        $('#month').append(str);
+                    }
+                    $('#price').html("");
+                    for (i = 0; i < data.length; i++) {
+                        var plant = data[i];
+                        var price = `
+                                     <ul class="tab-pane fade show" id="package-${plant['name_type']}-${plant['id']}">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">${plant['plant_exp']} tháng</div>
+                                            </li>
+
+                                            <li>
+                                                 <div class="label-text">Tổng chi phí:</div>
+                                                 <div class="label-title text-space">
+                                                            ${plant['plant_cost'].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") } VNĐ
+                                                 </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                 <div class="label-title text-space">
+                                                            ${(plant['plant_cost']/plant['plant_exp']).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") } VNĐ
+                                                 </div>
+                                            </li>
+                                                    <li>
+                                                        <div class="label-text">Chi phí / ngày:</div>
+                                                        <div class="label-title text-space">
+                                                            ${(plant['plant_cost']/(plant['plant_exp']*30)).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") } VNĐ</div>
+                                                    </li>
+
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm"
+                                                        data-toggle="modal">Đăng ký ngay</button>
+                                            </li>
+                                     </ul>
+                    `;
+                        $('#price').append(price);
+                    }
+                    if($('.item-month').attr('stt')==1){
+                        $('ul .tab-pane').addClass('active');
                     }
                 }
-
-                $('.nav-link').click(function () {
-                    var plat_type=$(this).attr('data-short-title');
-                    $.get('?ctr=get_month_plant',{name_type:plat_type},function (data) {
-                        $('#plant_exp').html(data);
-                    })
-
-                });
-
-                // $('.item-month').click(function () {
-                //     var plant_id=$(this).attr('data-month');
-                //     $.get('?ctr=get_plant_price',{plant_id:plant_id},function (data) {
-                //         $('#plant_price').html(data);
-                //     })
-                // });
-
-            }
+            });
         });
-  });
-
-
-
-    // $('.item-month')
-
-   //lấy hạn plant-->
-// <!--    function get_month(plant_type) {-->
-//        // var name_type = $('#name_type').val();-->
-// <!--        $.ajax({-->
-// <!--            url: "?ctr=get_month_plant&name_type=" + plant_type,-->
-// <!--            dataType: 'json',-->
-// <!--            success: function (data) {-->
-// <!--                console.log(data);-->
-// <!--                $('#plant_exp').html("");-->
-// <!--                for (i = 0; i < data.length; i++) {-->
-// <!--                    var plant_exp = data[i];-->
-// <!--                    var str = `-->
-// <!--                    <a class="item-month"-->
-// <!--                        href="#package-classic-${plant_exp['plant_exp']}"-->
-// <!--                        data-toggle="tab"-->
-// <!--                        data-month="${plant_exp['plant_id']}">-->
-//                   //      <div class="title">${plant_exp['plant_exp']}</div>tháng
-//                   // </a>
-// <!--                                `;-->
-// <!--                    $('#plant_exp').append(str);-->
-// <!--                }-->
-// <!--                $('a[data-month').on('click', function (e) {-->
-// <!--                    e.preventDefault();-->
-// <!--                    let plant_id = $(this).attr('data-month');-->
-// <!--                    get_price(plant_id);-->
-// <!--                    $("#plant_price").show();-->
-// <!--                });-->
-// <!--            }-->
-// <!--        });-->
-// <!--    }-->
-// <!---->
-// <!--    lấy giá-->
-// <!--    function get_price(plant_id) {-->
-// <!--        $.ajax({-->
-// <!--            url: "?ctr=get_plant_price&plant_id=" + plant_id,-->
-// <!--            dataType: 'json',-->
-// <!--            success: function (data) {-->
-// <!--                console.log(data);-->
-// <!--                 $('#plant_price').html("");-->
-// <!--                for (i = 0; i < data.length; i++) {-->
-// <!--                    var plant_price = data[i];-->
-// <!--                    var str = `-->
-// <!---->
-// <!--                               <li>-->
-// //                                <div class="label-text">Thời gian tập luyện:</div>--
-// // <!--                                 <div class="label-title text-space">${plant_price['plant_exp']}</div>-->
-// // <!--                               </li>-->
-// <!---->
-// <!---->
-// <!--                                `;-->
-// <!--                    $('#plant_price').append(str);-->
-// <!--                }-->
-//                // $('a[data-month').on('click',function (e) {-->
-//               //     $('#plant_price').load('str');-->
-//                // });-->
-// <!--            }-->
-// <!--        });-->
-// <!--    }-->
-// <!---->
-// <!--    -->
+    })
 </script>
 
 
@@ -525,135 +457,135 @@
 </div>
 </main>
 
-<!--<script>-->
-<!--    $(document).ready(function () {-->
-<!--        setTimeout(function () {-->
-<!--            $('.popup').addClass('show');-->
-<!--        }, 2 * 1000);-->
-<!---->
-<!--        setTimeout(function () {-->
-<!--            $('.popup .close').trigger('click');-->
-<!--        }, 30 * 1000);-->
-<!--    });-->
-<!--</script>-->
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            $('.popup').addClass('show');
+        }, 2 * 1000);
 
-<!--<script>-->
-<!--    // Change to Short Title for Package Title-->
-<!--    if (window.innerWidth < 992) {-->
-<!--        document.querySelectorAll('.section-pricing-detail .tag-inline li a, table.pricing-table thead th .title').forEach(function (el, index) {-->
-<!--            el.textContent = el.getAttribute('data-short-title');-->
-<!--        });-->
-<!--    }-->
-<!---->
-<!--    function changeMobileBanner() {-->
-<!--        $('.main-breadcrumb > .breadcrumb-bg').each(function (index, el) {-->
-<!--            window.innerWidth <= 480 ? $(el).attr('style', $(el).attr('data-mobile-src')) : $(el).attr('style', $(el).attr('data-desktop-src'));-->
-<!--            $('.main-breadcrumb').css('opacity', '1');-->
-<!--        });-->
-<!--    }-->
-<!---->
-<!--    $(document).ready(function () {-->
-<!--        changeMobileBanner();-->
-<!--        $('#breadcrumb-banner').show();-->
-<!---->
-<!--        // Check input from-->
-<!--        $('input[name="type"]').click(function () {-->
-<!--            $(this).next().addClass('white');-->
-<!---->
-<!--            if ($(this).attr('checked')) {-->
-<!--                $(this).prop('checked', false); // tạo thuộc tính-->
-<!--                $(this).removeAttr('checked'); //xóa thuộc tính-->
-<!--            } else {-->
-<!--                $(this).prop('checked', true);-->
-<!--                $(this).attr('checked', true); //lấy giá trị or thêm thuộc tính-->
-<!--            }-->
-<!---->
-<!--            $(this).siblings('input').prop('checked', false);-->
-<!--            $(this).siblings('input').removeAttr('checked');-->
-<!---->
-<!--            if ($('#enterprise').is(':checked')) {-->
-<!--                $('.detail-personal-js').addClass('d-none');-->
-<!--                $('.detail-enterprise-js').removeClass('d-none');-->
-<!--                $('label.white').removeClass('white');-->
-<!--                $('.text-right').addClass('white');-->
-<!--            } else {-->
-<!--                $('label.white').removeClass('white');-->
-<!--                $('.text-left').addClass('white');-->
-<!--                $('.detail-personal-js').removeClass('d-none');-->
-<!--                $('.detail-enterprise-js').addClass('d-none');-->
-<!--            }-->
-<!--        });-->
-<!---->
-<!--        // Change select plant month-->
-<!--        var temp = 0;-->
-<!--        var amount_current = $('.amount-register').val();-->
-<!--        var month_current;-->
-<!--        $('select').on('change', function () {-->
-<!--            var typeTab = "";-->
-<!--            amount_current = $(this).val();-->
-<!--            month_current = parseInt($('.main-month.active .extra-month.active').attr('data-month'));-->
-<!---->
-<!--            if ($('.main-month.active .extra-month.active').hasClass('package-classic')) {-->
-<!--                typeTab = ".package-classic";-->
-<!--            } else {-->
-<!--                typeTab = ".package-citipassport";-->
-<!--            }-->
-<!--            // kiem kqcuoi-->
-<!--            var childEl = $(`[number_regiester="${amount_current}"] [data-detail="${month_current}"]`);-->
-<!---->
-<!--            // active cai tab can chon-->
-<!--            var parentEl = childEl.parents('.main-month');-->
-<!--            $('.main-month').removeClass('active');-->
-<!--            parentEl.addClass('active');-->
-<!--            //UL kq  da dc active vao luc click month-->
-<!---->
-<!--            // chinh lai dropdowns-->
-<!---->
-<!--            //chinh cua3 tab classic or la2 cai khac-->
-<!--            $(typeTab + ` .amount-register option[value="${amount_current}"]`).prop('selected', true);-->
-<!---->
-<!--            if ($('.main-month').hasClass('active')) {-->
-<!--                var checkId = $('.main-month.active').attr('id');-->
-<!---->
-<!--                $('.nav-link.active').attr('href', '#' + checkId);-->
-<!--            }-->
-<!--        });-->
-<!---->
-<!---->
-<!--        // Click-->
-<!---->
-<!--        $('.extra-month').on('click', function () {-->
-<!--            var month_current = parseInt($(this).attr('data-month')); // thêm thuộc tính-->
-<!--            var typeTab = "";-->
-<!---->
-<!--            if ($(this).hasClass('package-classic')) {-->
-<!--                typeTab = "package-classic";-->
-<!--                $('.package-classic.active').removeClass('active');-->
-<!--                $(`.package-classic[data-month="${month_current}"]`).addClass('active');-->
-<!--            } else {-->
-<!--                typeTab = "package-citipassport";-->
-<!--                $('.package-citipassport.active').removeClass('active');-->
-<!--                $(`.package-citipassport[data-month="${month_current}"]`).addClass('active');-->
-<!--            }-->
-<!---->
-<!--            var parentElOld = $(this).parents('.main-month');-->
-<!--            var number_regiester = parentElOld.attr('number_regiester');-->
-<!---->
-<!--            //result end-->
-<!--            var childEl = $(`[number_regiester="${amount_current}"] [data-detail="${month_current}"]`);-->
-<!--            var parentEl = childEl.parents('.main-month');-->
-<!--            var parentElResult = $(`[data-detail="${month_current}"]`).parents('.tab-detail.' + typeTab);-->
-<!---->
-<!--            parentElResult.addClass('active show');-->
-<!--        })-->
-<!--    });-->
-<!---->
-<!--    $(window).resize(function (event) {-->
-<!--        changeMobileBanner();-->
-<!--        $('#breadcrumb-banner').show();-->
-<!--    });-->
-<!---->
-<!--</script>-->
+        setTimeout(function () {
+            $('.popup .close').trigger('click');
+        }, 30 * 1000);
+    });
+</script>
+
+<script>
+    // Change to Short Title for Package Title
+    if (window.innerWidth < 992) {
+        document.querySelectorAll('.section-pricing-detail .tag-inline li a, table.pricing-table thead th .title').forEach(function (el, index) {
+            el.textContent = el.getAttribute('data-short-title');
+        });
+    }
+
+    function changeMobileBanner() {
+        $('.main-breadcrumb > .breadcrumb-bg').each(function (index, el) {
+            window.innerWidth <= 480 ? $(el).attr('style', $(el).attr('data-mobile-src')) : $(el).attr('style', $(el).attr('data-desktop-src'));
+            $('.main-breadcrumb').css('opacity', '1');
+        });
+    }
+
+    $(document).ready(function () {
+        changeMobileBanner();
+        $('#breadcrumb-banner').show();
+
+        // Check input from
+        $('input[name="type"]').click(function () {
+            $(this).next().addClass('white');
+
+            if ($(this).attr('checked')) {
+                $(this).prop('checked', false); // tạo thuộc tính
+                $(this).removeAttr('checked'); //xóa thuộc tính
+            } else {
+                $(this).prop('checked', true);
+                $(this).attr('checked', true); //lấy giá trị or thêm thuộc tính
+            }
+
+            $(this).siblings('input').prop('checked', false);
+            $(this).siblings('input').removeAttr('checked');
+
+            if ($('#enterprise').is(':checked')) {
+                $('.detail-personal-js').addClass('d-none');
+                $('.detail-enterprise-js').removeClass('d-none');
+                $('label.white').removeClass('white');
+                $('.text-right').addClass('white');
+            } else {
+                $('label.white').removeClass('white');
+                $('.text-left').addClass('white');
+                $('.detail-personal-js').removeClass('d-none');
+                $('.detail-enterprise-js').addClass('d-none');
+            }
+        });
+
+        // Change select plant month
+        var temp = 0;
+        var amount_current = $('.amount-register').val();
+        var month_current;
+        $('select').on('change', function () {
+            var typeTab = "";
+            amount_current = $(this).val();
+            month_current = parseInt($('.main-month.active .extra-month.active').attr('data-month'));
+
+            if ($('.main-month.active .extra-month.active').hasClass('package-CLASSIC')) {
+                    typeTab = ".package-CLASSIC";
+            } else {
+                typeTab = ".package-CITIPASSPORT";
+            }
+            // kiem kqcuoi
+            var childEl = $(`[number_regiester="${amount_current}"] [data-detail="${month_current}"]`);
+
+            // active cai tab can chon
+            var parentEl = childEl.parents('.main-month');
+            $('.main-month').removeClass('active');
+            parentEl.addClass('active');
+            //UL kq  da dc active vao luc click month
+
+            // chinh lai dropdowns
+
+            //chinh cua3 tab classic or la2 cai khac
+            $(typeTab + ` .amount-register option[value="${amount_current}"]`).prop('selected', true);
+
+            if ($('.main-month').hasClass('active')) {
+                var checkId = $('.main-month.active').attr('id');
+
+                $('.nav-link.active').attr('href', '#' + checkId);
+            }
+        });
+
+
+        // Click
+
+        $('.extra-month').on('click', function () {
+            var month_current = parseInt($(this).attr('data-month')); // thêm thuộc tính
+            var typeTab = "";
+
+            if ($(this).hasClass('package-CLASSIC')) {
+                typeTab = "package-CLASSIC";
+                $('.package-classic.active').removeClass('active');
+                $(`.package-classic[data-month="${month_current}"]`).addClass('active');
+            } else {
+                typeTab = "package-CITIPASSPORT";
+                $('.package-citipassport.active').removeClass('active');
+                $(`.package-citipassport[data-month="${month_current}"]`).addClass('active');
+            }
+
+            var parentElOld = $(this).parents('.main-month');
+            var number_regiester = parentElOld.attr('number_regiester');
+
+            //result end
+            var childEl = $(`[number_regiester="${amount_current}"] [data-detail="${month_current}"]`);
+            var parentEl = childEl.parents('.main-month');
+            var parentElResult = $(`[data-detail="${month_current}"]`).parents('.tab-detail.' + typeTab);
+
+            parentElResult.addClass('active show');
+        })
+    });
+
+    $(window).resize(function (event) {
+        changeMobileBanner();
+        $('#breadcrumb-banner').show();
+    });
+
+</script>
 
 <style>
     .pricing-table.table thead th:not(:first-child) {

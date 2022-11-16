@@ -33,6 +33,7 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
+
                                             <h4 class="card-title">Post content</h4>
                                             <!-- Create the editor container -->
                                             <div id="editor" style="height: 300px;">
@@ -42,6 +43,7 @@
                                                     <br>
                                                 </p>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>

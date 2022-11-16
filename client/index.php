@@ -16,9 +16,9 @@ switch ($ctr) {
         $plant = new c_plant();
         $plant->get_month_plant();
         break;
-    case 'get_type_plant':
+    case 'get_plant':
         $plant = new c_plant();
-        $plant->get_type_plant();
+        $plant->get_plant();
         break;
     case 'get_plant_price':
         $plant = new c_plant();
