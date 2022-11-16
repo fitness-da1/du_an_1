@@ -9,15 +9,16 @@
                                 <h4 class="card-title">Trainers Info</h4>
                                 <input type="text" class="form-control" id="id" name="id" value="<?=$blog->id?>" hidden>
                                 <div class="form-group row">
-                                    <label for="fname" class="col-sm-3 text-right control-label col-form-label">Post name</label>
+                                    <label for="post_name" class="col-sm-3 text-right control-label col-form-label">Post name</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="uname" name="post_name" placeholder=" postname Here" value="<?=$blog->post_name?>">
+                                        <input type="text" class="form-control" id="post_name" name="post_name" placeholder=" postname Here" value="<?=$blog->post_name?>">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="fname" class="col-sm-3 text-right control-label col-form-label">Post content</label>
+                                    <label for="post_content" class="col-sm-3 text-right control-label col-form-label">Post content</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="uname" name="post_content" placeholder=" post content Here" value="<?=$blog->post_content?>">
+                                        <textarea name="post_content" cols="40" rows="16" id="post_content" class="form-control"><?=$blog->post_content?></textarea>
+<!--                                        <input type="text" class="form-control" id="post_content" name="post_content" placeholder=" post content Here" value="">-->
                                     </div>
                                 </div>
                                 <div class="form-group row">
