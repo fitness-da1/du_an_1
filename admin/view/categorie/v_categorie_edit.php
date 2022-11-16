@@ -23,7 +23,7 @@
                                 <div class="form-group row">
                                     <label for="categorie_mean" class="col-sm-3 text-right control-label col-form-label">Categorie image</label>
                                     <div class="col-sm-9">
-                                        <img src="./view/assets/images/upload/<?=$categorie->categories_image?>" height="50" width="50" alt="categorie image">
+                                        <img src="../public/image/<?=$categorie->categories_image?>" height="50" width="50" alt="categorie image">
                                     </div>
                                 </div>
 

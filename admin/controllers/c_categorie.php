@@ -19,7 +19,7 @@ class c_categorie
                 $kq = $m_categorie->insert_categorie($id, $categorie_name, $categorie_mean, $categorie_image);
                 if ($kq) {
                     if ($_FILES["image"]["error"] == 0) {
-                        move_uploaded_file($_FILES["image"]["tmp_name"], "./view/assets/images/upload/$categorie_image");
+                        move_uploaded_file($_FILES["image"]["tmp_name"], "../public/image/$categorie_image");
                     }
                     header('location:?ctr=categorie_list&add=success');
                 } else {
@@ -56,15 +56,11 @@ class c_categorie
             $categorie_name = $_POST['categorie_name'];
             $categorie_meaningful = $_POST['categorie_mean'];
             $categorie_image = !empty($_FILES['image']['name']) ? $_FILES['image']['name'] : $categorie->categories_image;
-//            $kq1 = $m_categorie->return_categorie_name($categorie_name);
-//            if ($kq1->kq == 1) {
-//                $error_1[] = "Categorie name đã tồn tại";
-//            }
             if (empty($error_1)) {
                 $kq = $m_categorie->edit_categorie($categorie_name, $categorie_meaningful, $categorie_image, $id);
                 if ($kq) {
                     if ($_FILES["image"]["error"] == 0) {
-                        move_uploaded_file($_FILES["image"]["tmp_name"], "./view/assets/images/upload/$categorie_image");
+                        move_uploaded_file($_FILES["image"]["tmp_name"], "../public/image/$categorie_image");
                     }
                     header('location:?ctr=categorie_list&upd=success');
                 } else {

@@ -8,7 +8,7 @@ include_once 'controllers/c_user.php';
 include_once 'controllers/c_plant.php';
 //include_once 'controllers/c_comments';
 include_once 'controllers/c_contact.php';
-//include_once 'controllers/c_blog';
+include_once 'controllers/c_blog.php';
 include_once 'controllers/c_404_error.php';
 //models
 include_once("models/m_categorie.php");
