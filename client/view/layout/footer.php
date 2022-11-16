@@ -9,7 +9,7 @@
                 <!-- Column Start-->
                 <div class="col-12 col-sm-8 col-md-8 col-lg-4">
                     <div class="footer-about">
-                        <a href="index.html"><img src="assets/img/footer-logo.png" alt="logo"></a>
+                        <a href="index.html"><img src="view/assets/img/footer-logo.png" alt="logo"></a>
                         <p>Pellentesque convallis, diam et feugiat volutpat, tellus ligula consequat augue, quis
                             malesuada nisi ante nec metus.
                             Sed id pretium nunc. Mauris vitae porttitor tortor. Fusce aliquet ac metus eget egestas.
@@ -45,17 +45,17 @@
                         <h4 class="text-uppercase">Recent Post</h4>
                         <ul>
                             <li><a href="single-blog.php">
-                                    <figure><img src="assets/img/footer-img/recent-post1.jpg" alt="recent"></figure>
+                                    <figure><img src="view/assets/img/footer-img/recent-post1.jpg" alt="recent"></figure>
                                     <p>Pellentesque convallis, diam et feugiat volutpat, tellus ligula<span>Sep 09,
                                                 2019</span></p>
                                 </a></li>
                             <li><a href="single-blog.php">
-                                    <figure><img src="assets/img/footer-img/recent-post2.jpg" alt="recent"></figure>
+                                    <figure><img src="view/assets/img/footer-img/recent-post2.jpg" alt="recent"></figure>
                                     <p>Praesent vehicula odio ut erat posuere, nec malesuada dolor<span>Sep 06,
                                                 2019</span></p>
                                 </a></li>
                             <li><a href="single-blog.php">
-                                    <figure><img src="assets/img/footer-img/recent-post3.jpg" alt="recent"></figure>
+                                    <figure><img src="view/assets/img/footer-img/recent-post3.jpg" alt="recent"></figure>
                                     <p>Nulla rhoncus condimentum ante, molestie mattis lorem<span>Sep 02,
                                                 2019</span></p>
                                 </a></li>
@@ -70,22 +70,22 @@
                         <h4 class="text-uppercase">Our Gallery</h4>
                         <ul>
                             <li><a href="gallery.php">
-                                    <figure><img src="assets/img/footer-img/gallery1.jpg" alt="gallery"></figure>
+                                    <figure><img src="view/assets/img/footer-img/gallery1.jpg" alt="gallery"></figure>
                                 </a></li>
                             <li><a href="gallery.php">
-                                    <figure><img src="assets/img/footer-img/gallery2.jpg" alt="gallery"></figure>
+                                    <figure><img src="view/assets/img/footer-img/gallery2.jpg" alt="gallery"></figure>
                                 </a></li>
                             <li><a href="gallery.php">
-                                    <figure><img src="assets/img/footer-img/gallery3.jpg" alt="gallery"></figure>
+                                    <figure><img src="view/assets/img/footer-img/gallery3.jpg" alt="gallery"></figure>
                                 </a></li>
                             <li><a href="gallery.php">
-                                    <figure><img src="assets/img/footer-img/gallery4.jpg" alt="gallery"></figure>
+                                    <figure><img src="view/assets/img/footer-img/gallery4.jpg" alt="gallery"></figure>
                                 </a></li>
                             <li><a href="gallery.php">
-                                    <figure><img src="assets/img/footer-img/gallery5.jpg" alt="gallery"></figure>
+                                    <figure><img src="view/assets/img/footer-img/gallery5.jpg" alt="gallery"></figure>
                                 </a></li>
                             <li><a href="gallery.php">
-                                    <figure><img src="assets/img/footer-img/gallery6.jpg" alt="gallery"></figure>
+                                    <figure><img src="view/assets/img/footer-img/gallery6.jpg" alt="gallery"></figure>
                                 </a></li>
                         </ul>
                     </div>
@@ -134,55 +134,56 @@
 ===========================================-->
 
 <!-- Bootstrap core JavaScript -->
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets/vendor/jquery/popper.min.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="view/assets/vendor/jquery/jquery.min.js"></script>
+<script src="view/assets/vendor/jquery/popper.min.js"></script>
+<script src="view/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- ==== Plugin JavaScript ==== -->
 
 <!-- jQuery owl carousel -->
-<script src="assets/js/owl.carousel.min.js"></script>
+<script src="view/assets/js/owl.carousel.min.js"></script>
 
-<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="view/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!--  Counter Up JavaScript-->
-<script src="assets/js/waypoints.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="view/assets/js/waypoints.min.js"></script>
+<script src="view/assets/js/jquery.counterup.min.js"></script>
 
 <!--Parallax Script-->
-<script src="assets/js/TweenMax.min.js"></script>
+<script src="view/assets/js/TweenMax.min.js"></script>
 
 <!--Animated Script-->
-<script src="assets/js/typed.min.js"></script>
+<script src="view/assets/js/typed.min.js"></script>
 
 <!--VenoBox Script-->
-<script src="assets/js/venobox.min.js"></script>
+<script src="view/assets/js/venobox.min.js"></script>
 
 <!--WOW JS Script-->
-<script src="assets/js/wow.min.js"></script>
+<script src="view/assets/js/wow.min.js"></script>
 
 <!--AOS JS Script-->
-<script src="assets/js/aos.js"></script>
+<script src="view/assets/js/aos.js"></script>
 
 <!--Paroller JS Script-->
-<script src="assets/js/jquery.paroller.min.js"></script>
+<script src="view/assets/js/jquery.paroller.min.js"></script>
 
 <!--Mean Menu/Mobile Menu Script-->
-<script src="assets/js/jquery.meanmenu.min.js"></script>
+<script src="view/assets/js/jquery.meanmenu.min.js"></script>
 
 <!-- Custom scripts for this template -->
-<script src="assets/js/custom.js"></script>
+<script src="view/assets/js/custom.js"></script>
 
-<script>
-    var typed = new Typed('#typed', {
-        stringsElement: '#typed-strings',
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true,
-        smartBackspace: true,
-    });
 
-</script>
+<!--<script>-->
+<!--    var typed = new Typed('#typed', {-->
+<!--        stringsElement: '#typed-strings',-->
+<!--        typeSpeed: 100,-->
+<!--        backSpeed: 100,-->
+<!--        loop: true,-->
+<!--        smartBackspace: true,-->
+<!--    });-->
+<!---->
+<!--</script>-->
 
 </body>
 

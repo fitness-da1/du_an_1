@@ -6,6 +6,7 @@ class c_trainer
 {
     public function trainers_add()
     {
+        $m_trainers = new m_trainers();
         $m_categorie = new m_categorie();
         $categorie = $m_categorie->read_categorie();
         if (isset($_FILES['image'])) {
@@ -15,9 +16,19 @@ class c_trainer
             $id = NULL;
             $trainer_name = $_POST['trainer_name'];
             $trainer_categorie = $_POST['trainer_categorie'];
-            $trainer_image = $_FILES['image']['name'];
-            $m_trainers = new m_trainers();
-            $m_trainers->insert_trainer($id, $trainer_name, $trainer_image, $trainer_categorie);
+            $trainer_image = $_FILES['image']['error']==0?$_FILES['image']['name']:null;
+            if (empty($error_1)) {
+                $kq = $m_trainers->insert_trainer($id, $trainer_name, $trainer_image, $trainer_categorie);
+                if ($kq) {
+                    if ($_FILES["image"]["error"] == 0) {
+                        move_uploaded_file($_FILES["image"]["tmp_name"], "../public/image/$trainer_image");
+                    }
+                    header('location:?ctr=trainer_list&add=success');
+                } else {
+                    echo "<script>alert('Thêm không thành công')</script>";
+                }
+            }
+
         }
         include_once("view/trainer/v_trainers_add.php");
     }
@@ -43,13 +54,25 @@ class c_trainer
 
     public function trainers_update()
     {
+        $m_trainers = new m_trainers();
         if (isset($_POST['btn_update_trainer'])) {
             $id = $_POST['id'];
+            $trainer = $m_trainers->read_trainer_by_id($id);
             $trainer_name = $_POST['trainer_name'];
             $trainer_categorie = $_POST['trainer_categorie'];
-            $trainer_image = $_FILES['image']['name'];
-            $m_trainers = new m_trainers();
-            $m_trainers->edit_trainer($trainer_name, $trainer_image, $trainer_categorie, $id);
+            $trainer_image = !empty($_FILES['image']['name']) ? $_FILES['image']['name'] : $trainer->trainer_image;
+            if (empty($error_1)) {
+                $kq = $m_trainers->edit_trainer($trainer_name, $trainer_image, $trainer_categorie, $id);
+                if ($kq) {
+                    if ($_FILES["image"]["error"] == 0) {
+                        move_uploaded_file($_FILES["image"]["tmp_name"], "../public/image/$trainer_image");
+                    }
+                    header('location:?ctr=trainer_list&upd=success');
+                } else {
+                    echo "<script>alert('Thêm không thành công')</script>";
+                }
+            }
+
             header('location:?ctr=trainers_list');
         }
     }

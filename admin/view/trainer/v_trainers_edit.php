@@ -15,6 +15,8 @@
                                     </div>
                                 </div>
 
+
+
                                 <div class="form-group row">
                                     <label class="col-sm-3 text-right control-label col-form-label">Trainers categorie</label>
                                     <div class="col-md-9">
@@ -27,6 +29,14 @@
                                         </select>
                                     </div>
                                 </div>
+
+                                <div class="form-group row">
+                                    <label for="categorie_mean" class="col-sm-3 text-right control-label col-form-label">Trainer image</label>
+                                    <div class="col-sm-9">
+                                        <img src="../public/image/<?=$trainer->trainer_image?>" height="50" width="50" alt="Trainer image">
+                                    </div>
+                                </div>
+
                                 <div class="form-group row">
                                     <label class="col-sm-3 text-right control-label col-form-label">Upload Image</label>
                                     <div class="col-md-9">
