@@ -4,6 +4,9 @@ class c_plant
 {
     public function show_plant()
     {
+        if (isset($_POST['type_id'])){
+            $type_id=$_POST['type_id'];
+        }
         $m_plant = new m_plant();
         $plant_type = $m_plant->plant_type();
         include_once 'view/pricing.php';

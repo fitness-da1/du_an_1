@@ -174,46 +174,46 @@ switch ($ctr) {
         }
         break;
     //comments
-    case 'comments_add':
-        if (isset($_SESSION['user_admin'])) {
-            $comments = new c_comments();
-            $comments->comments_add();
-        } else {
-            $error = new c_404_error();
-        }
-        break;
-    case 'comments_delete':
-        if (isset($_SESSION['user_admin'])) {
-            $comments = new c_comments();
-            $comments->comments_delete();
-        } else {
-            $error = new c_404_error();
-        }
-        break;
-    case 'comments_edit':
-        if (isset($_SESSION['user_admin'])) {
-            $comments = new c_comments();
-            $comments->show_comments_edit();
-        } else {
-            $error = new c_404_error();
-        }
-        break;
-    case 'comments_list':
-        if (isset($_SESSION['user_admin'])) {
-            $comments = new c_comments();
-            $comments->comments_list();
-        } else {
-            $error = new c_404_error();
-        }
-        break;
-    case 'comments_update':
-        if (isset($_SESSION['user_admin'])) {
-            $comments = new c_comments();
-            $comments->comments_update();
-        } else {
-            $error = new c_404_error();
-        }
-        break;
+    // case 'comments_add':
+    //     if (isset($_SESSION['user_admin'])) {
+    //         $comments = new c_comments();
+    //         $comments->comments_add();
+    //     } else {
+    //         $error = new c_404_error();
+    //     }
+    //     break;
+    // case 'comments_delete':
+    //     if (isset($_SESSION['user_admin'])) {
+    //         $comments = new c_comments();
+    //         $comments->comments_delete();
+    //     } else {
+    //         $error = new c_404_error();
+    //     }
+    //     break;
+    // case 'comments_edit':
+    //     if (isset($_SESSION['user_admin'])) {
+    //         $comments = new c_comments();
+    //         $comments->show_comments_edit();
+    //     } else {
+    //         $error = new c_404_error();
+    //     }
+    //     break;
+    // case 'comments_list':
+    //     if (isset($_SESSION['user_admin'])) {
+    //         $comments = new c_comments();
+    //         $comments->comments_list();
+    //     } else {
+    //         $error = new c_404_error();
+    //     }
+    //     break;
+    // case 'comments_update':
+    //     if (isset($_SESSION['user_admin'])) {
+    //         $comments = new c_comments();
+    //         $comments->comments_update();
+    //     } else {
+    //         $error = new c_404_error();
+    //     }
+    //     break;
     //contact
     case 'contact_add':
         if (isset($_SESSION['user_admin'])) {
@@ -381,14 +381,14 @@ switch ($ctr) {
             $error = new c_404_error();
         }
         break;
-    case 'user_detail_list':
-        if (isset($_SESSION['user_admin'])) {
-            $user = new c_user();
-            $user->user_detail_list();
-        } else {
-            $error = new c_404_error();
-        }
-        break;
+    // case 'user_detail_list':
+    //     if (isset($_SESSION['user_admin'])) {
+    //         $user = new c_user();
+    //         $user->user_detail_list();
+    //     } else {
+    //         $error = new c_404_error();
+    //     }
+    //     break;
     case 'user_active':
         if (isset($_SESSION['user_admin'])) {
             $user = new c_user();

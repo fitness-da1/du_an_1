@@ -17,7 +17,6 @@
     </div>
 </header>
 
-
 <!--        danh sách các gói-->
 <section class="section section-pricing-detail mb-0">
     <div class="container">
@@ -32,10 +31,10 @@
                 <span class="detail-personal-js">
                             <ul class="tag-inline tag-col-3 nav nav-tabs m-b-24px m-t-md-3 d-block text-center">
                                 <?php foreach ($plant_type as $plt): ?>
-                                    <li class="nav-item d-inline-block" >
+                                    <li class="nav-item d-inline-block">
                                     <a data-short-title="<?= $plt->name_type ?>"
                                        data-package-list="<?= $plt->type_id ?>"
-                                       class="nav-link <?= $plt->type_id==1?'active':null ?>" data-toggle="tab"
+                                       class="nav-link <?= $plt->type_id == 1 ? 'active' : null ?>" data-toggle="tab"
                                        href="#package-personal-list-<?= $plt->type_id ?>"><?= $plt->name_type ?>
                                     </a>
                                 </li>
@@ -43,11 +42,12 @@
                             </ul>
 
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" id="package-personal-list">
+
+                        <div class="tab-pane fade show " id="package-personal-list">
                             <div class="row align-items-center">
 
                                 <div class="col-md-6 item-selection-wrapper">
-                                    <div class="item-selection nav nav-tabs border-bottom-0"  id="month">
+                                    <div class="item-selection nav nav-tabs border-bottom-0" id="month">
 
                                     </div>
                                 </div>
@@ -61,6 +61,7 @@
 
                             </div>
                         </div>
+
                     </div>
                 </span>
             </div>
@@ -72,45 +73,76 @@
             </div>
         </div>
 </section>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
-
 
 <script>
 
-    //lấy thể loại plant
     $(document).ready(function () {
-        // if ($('.nav-link').hasClass('active')) {
-
-
-        $('.nav-link').on('click', function () {
-
-            $('.item-month').addClass('active');
+        if ($(".nav-link").hasClass('active')) {
             $('.tab-pane').addClass('active');
-            var plant_type = $(this).attr('data-package-list');
-            $.ajax({
-                url: '?ctr=get_plant&type_id=' + plant_type,
-                dataType: 'json',
-                success: function (data) {
-                    $('#month').html("");
-                    for (i = 0; i < data.length; i++) {
-                        var stt=i+1;
-                        var plant = data[i];
+            let plant_type = $('.nav-link.active').attr('data-package-list');
+            loadData(plant_type);
 
+        }
+        $('.nav-link').on('click', function () {
+            $('.tab-pane').addClass('active');
+            let plant_type = $(this).attr('data-package-list');
+            loadData(plant_type);
+
+        });
+
+
+    });
+    $(function() {
+        $('#btn_submit').submit(function () {
+            // e.preventDefault();
+            console.log(65851);
+            // let data = {type_id: $('.nav-link.active').attr('data-package-list')};
+            // let url ='?ctr=pricing';
+            // let success = function (result){
+            //     $('#result').html(result);
+            // };
+            // let dataType='text';
+            // $.post(url, data, success, dataType);
+        });
+    });
+
+    function loadData(plant_type) {
+        $.ajax({
+            url: '?ctr=get_plant&type_id=' + plant_type,
+            dataType: 'json',
+            success: function (data) {
+
+                $('#month').html("");
+                for (i = 0; i < data.length; i++) {
+                    var stt = i + 1;
+                    var plant = data[i];
+                    if (stt == 1) {
                         var str = `
-                                        <a class="item-month"
-                                            stt="${stt}"
-                                           href="#package-${plant['name_type']}-${plant['id']}"
-                                           data-toggle="tab">
-                                            <div class="title">${plant['plant_exp']}</div> tháng
-                                        </a>`;
-                        $('#month').append(str);
+                                  <a class="item-month show active"
+                                     stt="${stt}"
+                                     href="#package-${plant['name_type']}-${plant['id']}"
+                                     data-toggle="tab">
+                                      <div class="title">${plant['plant_exp']}</div> tháng
+                                  </a>`;
+                    } else {
+                        var str = `
+                                   <a class="item-month"
+                                      stt="${stt}"
+                                      href="#package-${plant['name_type']}-${plant['id']}"
+                                      data-toggle="tab">
+                                      <div class="title">${plant['plant_exp']}</div> tháng
+                                   </a>`;
                     }
-                    $('#price').html("");
-                    for (i = 0; i < data.length; i++) {
-                        var plant = data[i];
+
+                    $('#month').append(str);
+                }
+                $('#price').html("");
+                for (i = 0; i < data.length; i++) {
+                    var plant = data[i];
+                    var stt = i + 1;
+                    if (stt == 1) {
                         var price = `
-                                     <ul class="tab-pane fade show" id="package-${plant['name_type']}-${plant['id']}">
+                                     <ul class="tab-pane fade active show" id="package-${plant['name_type']}-${plant['id']}" stt="${stt}">
                                             <li>
                                                 <div class="label-text">Thời gian tập luyện:</div>
                                                 <div class="label-title text-space">${plant['plant_exp']} tháng</div>
@@ -119,36 +151,83 @@
                                             <li>
                                                  <div class="label-text">Tổng chi phí:</div>
                                                  <div class="label-title text-space">
-                                                            ${plant['plant_cost'].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") } VNĐ
+                                                            ${plant['plant_cost'].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ
                                                  </div>
                                             </li>
                                             <li>
                                                 <div class="label-text">Chi phí / tháng</div>
                                                  <div class="label-title text-space">
-                                                            ${(plant['plant_cost']/plant['plant_exp']).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") } VNĐ
+                                                            ${(plant['plant_cost'] / plant['plant_exp']).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ
                                                  </div>
                                             </li>
                                                     <li>
                                                         <div class="label-text">Chi phí / ngày:</div>
                                                         <div class="label-title text-space">
-                                                            ${(plant['plant_cost']/(plant['plant_exp']*30)).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") } VNĐ</div>
+                                                            ${(plant['plant_cost'] / (plant['plant_exp'] * 30)).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ</div>
                                                     </li>
 
                                             <li>
-                                                <button type="submit" class="btn btn-brand btn-sm"
-                                                        data-toggle="modal">Đăng ký ngay</button>
+                                                <button type="submit" class="btn btn-brand btn-sm" id="btn_submit"
+                                                        data-toggle="modal" data-target=".modal-sign-up" >Đăng ký ngay</button>
                                             </li>
                                      </ul>
                     `;
-                        $('#price').append(price);
+                    } else {
+                        var price = `
+                                     <ul class="tab-pane fade show" id="package-${plant['name_type']}-${plant['id']}" stt="${stt}">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">${plant['plant_exp']} tháng</div>
+                                            </li>
+
+                                            <li>
+                                                 <div class="label-text">Tổng chi phí:</div>
+                                                 <div class="label-title text-space">
+                                                            ${plant['plant_cost'].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ
+                                                 </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                 <div class="label-title text-space">
+                                                            ${(plant['plant_cost'] / plant['plant_exp']).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ
+                                                 </div>
+                                            </li>
+                                                    <li>
+                                                        <div class="label-text">Chi phí / ngày:</div>
+                                                        <div class="label-title text-space">
+                                                            ${(plant['plant_cost'] / (plant['plant_exp'] * 30)).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ</div>
+                                                    </li>
+
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" id="btn_submit"
+                                                        data-toggle="modal" data-target=".modal-sign-up" >Đăng ký ngay</button>
+                                            </li>
+                                     </ul>
+                    `;
                     }
-                    if($('.item-month').attr('stt')==1){
-                        $('ul .tab-pane').addClass('active');
-                    }
+                    $('#price').append(price);
                 }
-            });
+            }
         });
-    })
+    }
+
+
+
+// $(function () {
+//     $('#btn_submit"').on('click',function (e) {
+//         e.preventDefault();
+//
+//         $.ajax({
+//             type:'POST',
+//             url:'?ctr=pricing',
+//             data:{
+//                 type_id: $('.nav-link').hasClass('active').attr('data-package-list'),
+//             }
+//         })
+//     })
+// })
+
+
 </script>
 
 
@@ -452,7 +531,69 @@
 <!--                        ===================================-->
 <!--                            start form đăng kí tư vấn-->
 <!--                        ===================================-->
+<div class="modal modal-sign-up fade">
+    <form method="POST" action="?ctr=sign_up" accept-charset="UTF-8" id="contactForm">
+<!--        <input name="_token" type="hidden" value="vfHqCVUyd7zXTPHaUdvoYcPmsnoDXrZxagdbizbL">-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title title-s1">Đăng ký gói dịch vụ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="remixicon-close-line"></i>
+                    </button>
+                </div>
+                <div class="modal-body p-x-3 p-y-3">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="fname" class="form-control" placeholder="Họ" />
+                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                        data-field="name"></ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="lname" class="form-control" placeholder="Tên" />
+                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                        data-field="name"></ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" />
+                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                        data-field="name"></ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="address" class="form-control" placeholder="Địa chỉ" />
+                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                        data-field="name"></ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="number" name="phone" class="form-control"
+                                           placeholder="Số điện thoại" />
+                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                        data-field="phone"></ul>
+                                </div>
+                            </div>
 
+                        </div>
+                        <button type="submit" data-control="submit" class="btn btn-brand" name="btn_signup_user">Đăng ký ngay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--                        ===================================-->
+<!--                            end form đăng kí tư vấn-->
+<!--                        ===================================-->
 
 </div>
 </main>
@@ -526,7 +667,7 @@
             month_current = parseInt($('.main-month.active .extra-month.active').attr('data-month'));
 
             if ($('.main-month.active .extra-month.active').hasClass('package-CLASSIC')) {
-                    typeTab = ".package-CLASSIC";
+                typeTab = ".package-CLASSIC";
             } else {
                 typeTab = ".package-CITIPASSPORT";
             }
@@ -560,12 +701,12 @@
 
             if ($(this).hasClass('package-CLASSIC')) {
                 typeTab = "package-CLASSIC";
-                $('.package-classic.active').removeClass('active');
-                $(`.package-classic[data-month="${month_current}"]`).addClass('active');
+                $('.package-CLASSIC.active').removeClass('active');
+                $(`.package-CLASSIC[data-month="${month_current}"]`).addClass('active');
             } else {
                 typeTab = "package-CITIPASSPORT";
-                $('.package-citipassport.active').removeClass('active');
-                $(`.package-citipassport[data-month="${month_current}"]`).addClass('active');
+                $('.package-CITIPASSPORT.active').removeClass('active');
+                $(`.package-CITIPASSPORT[data-month="${month_current}"]`).addClass('active');
             }
 
             var parentElOld = $(this).parents('.main-month');
