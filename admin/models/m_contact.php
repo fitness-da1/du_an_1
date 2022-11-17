@@ -23,7 +23,7 @@ class m_contact extends database {
         return $this->execute(array($full_name, $email, $message, $status, $id));
     }
     public  function delete_contact($id){
-        $sql="DELETE from contact where id=?";
+        $sql="DELETE from contact where id = ?";
         $this->setQuery($sql);
         return $this->execute(array($id));
     }

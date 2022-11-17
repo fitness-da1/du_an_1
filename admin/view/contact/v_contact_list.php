@@ -14,6 +14,7 @@
                                 <th>Email</th>
                                 <th>Message</th>
                                 <th>Status</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                          <tbody>
@@ -30,7 +31,7 @@
                                     <button type="button" class="btn btn-primary" onclick="location.href='?ctr=contact_edit&id=<?= $value->id ?>'">Sửa
                                     </button>
                                     <button type="button" class="btn btn-primary"
-                                            onclick="return confirm_delete('<?= $value->id ?>','<?= $value->fullname ?>') ">Xóa
+                                            onclick="return confirm_delete('<?= $value->id ?>','<?= $value->full_name ?>') ">Xóa
                                     </button>
                                 </td>
 
@@ -44,6 +45,7 @@
                                 <th>Email</th>
                                 <th>Message</th>
                                 <th>Status</th>
+                                <th>Action</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -64,10 +66,15 @@
 <script src="./view/assets/extra-libs/multicheck/jquery.multicheck.js"></script>
 <script src="./view/assets/extra-libs/DataTables/datatables.min.js"></script>
 <script>
-    /****************************************
-     *       Basic Table                   *
-     ****************************************/
-    $('#zero_config').DataTable();
-</script>
+        /****************************************
+         *       Basic Table                   *
+         ****************************************/
+        $('#zero_config').DataTable();
+        function confirm_delete(id,full_name){
+            if(confirm('Bạn chắc chắn muốn xóa '+full_name)){
+                window.open('?ctr=contact_delete&id='+id,'_self');
+            }
+        }
+    </script>
 
 <?php include_once '././view/layout/footer.php'; ?>

@@ -11,10 +11,8 @@ class c_contact
             $email = $_POST['email'];
             $message = $_POST['message'];
             $status = $_POST['status'];
-
             $m_contact = new m_contact();
-            $result = $m_contact->insert_contact($id, $full_name, $email, $message, $status);
-//            header('location:admin_member_add.php?result=' . $username);
+            $result = $m_contact->insert_contact($id, $full_name, $email,$status,$message);
         }
         include_once("view/contact/v_contact_add.php");
     }
@@ -51,15 +49,15 @@ class c_contact
 
     }
 
-    // public function admin_member_delete()
-    // {
-    //     if (isset($_GET['id'])) {
-    //         $id = $_GET['id'];
-    //         $m_admin_member = new m_admin_member();
-    //         $m_admin_member->delete_admin_member($id);
-    //         header('location:?ctr=admin_member_list&dl=success');
-    //     }
-    // }
+    public function contact_delete()
+    {
+        if (isset($_GET['id'])) {
+            $id = $_GET['id'];
+            $m_contact = new m_contact();
+            $m_contact->delete_contact($id);
+            header('location:?ctr=contact_list&dl=success');
+        }
+    }
 
 
   

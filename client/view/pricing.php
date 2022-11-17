@@ -61,8 +61,8 @@
 <!--    <meta name="twitter:description"-->
 <!--          content="Xem giá tập gym và giá tập yoga tại CITIGYM. Chính sách giá các gói tập 1 tháng, 3 tháng, 12 tháng...Giá thuê Pt gym bao nhiêu? Đăng kí hội viên để xem giá tập gym.">-->
 
-    <!--    <link media="all" type="text/css" rel="stylesheet" href="vendor/core/plugins/language/css/language-public.css">-->
-    <!--    bootstrap-->
+<!--    <link media="all" type="text/css" rel="stylesheet" href="vendor/core/plugins/language/css/language-public.css">-->
+<!--    bootstrap-->
 <!--    <link media="all" type="text/css" rel="stylesheet"-->
 <!--          href="assets/vendor/bootstrap/css/bootstrap.min.css">-->
 <!---->
@@ -108,7 +108,7 @@
 <!--            VIEW_MORE_TEXT: "Xem Thêm"-->
 <!--        };-->
 <!--    </script>-->
-    <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <!--    <script>(function (w, d, s, l, i) {-->
 <!--        w[l] = w[l] || [];-->
 <!--        w[l].push({-->
@@ -122,7 +122,7 @@
 <!--            '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;-->
 <!--        f.parentNode.insertBefore(j, f);-->
 <!--    })(window, document, 'script', 'dataLayer', 'GTM-56P6JXJ');</script>-->
-    <!-- End Google Tag Manager -->
+<!-- End Google Tag Manager -->
 
 <!--<style>-->
 <!--    .header .navigation-menu ul li a {-->
@@ -235,900 +235,790 @@
 <!--<main>-->
 <!--    <div class="main-wrapper">-->
 
-<?php include_once './layout/header.php'?>
+<?php include_once './layout/header.php' ?>
 <!--        danh sách các gói-->
-        <section class="section section-pricing-detail mb-0">
-            <div class="container">
-                <div class="row m-pricing-detail">
-                    <div class="col-lg-7 content-text m-b-md-3">
+<section class="section section-pricing-detail mb-0">
+    <div class="container">
+        <div class="row m-pricing-detail">
+            <div class="col-lg-7 content-text m-b-md-3">
 
-                        <span class="detail-enterprise-js d-none ">
-                            <ul class="tag-inline tag-col-3 nav nav-tabs m-b-24px m-t-md-3 d-block text-center"></ul>
-                            <div class="tab-content"></div>
-                        </span>
+                <span class="detail-enterprise-js d-none ">
+                    <ul class="tag-inline tag-col-3 nav nav-tabs m-b-24px m-t-md-3 d-block text-center"></ul>
+                    <div class="tab-content"></div>
+                </span>
 
-                        <span class="detail-personal-js">
-                            <ul class="tag-inline tag-col-3 nav nav-tabs m-b-24px m-t-md-3 d-block text-center">
-                                <li class="nav-item d-inline-block">
-                                    <a data-short-title="Classic"
-                                       data-package-list="1"
-                                       class="nav-link active" data-toggle="tab"
-                                       href="#package-personal-list-1">Classic</a>
-                                </li>
+                <span class="detail-personal-js">
+                    <ul class="tag-inline tag-col-3 nav nav-tabs m-b-24px m-t-md-3 d-block text-center">
+                        <li class="nav-item d-inline-block">
+                            <a data-short-title="Classic" data-package-list="1" class="nav-link active" data-toggle="tab" href="#package-personal-list-1">Classic</a>
+                        </li>
 
-                                <li class="nav-item d-inline-block">
-                                    <a data-short-title="Classic-Plus"
-                                       data-package-list="16"
-                                       class="nav-link " data-toggle="tab"
-                                       href="#package-personal-list-16">Classic-Plus</a>
-                                </li>
+                        <li class="nav-item d-inline-block">
+                            <a data-short-title="Classic-Plus" data-package-list="16" class="nav-link " data-toggle="tab" href="#package-personal-list-16">Classic-Plus</a>
+                        </li>
 
-                                 <li class="nav-item d-inline-block">
-                                    <a data-short-title="Citipassport"
-                                       data-package-list="2"
-                                       class="nav-link " data-toggle="tab"
-                                       href="#package-personal-list-2">Citipassport</a>
-                                </li>
+                        <li class="nav-item d-inline-block">
+                            <a data-short-title="Citipassport" data-package-list="2" class="nav-link " data-toggle="tab" href="#package-personal-list-2">Citipassport</a>
+                        </li>
 
-                                 <li class="nav-item d-inline-block">
-                                    <a data-short-title="Royal"
-                                       data-package-list="31"
-                                       class="nav-link " data-toggle="tab"
-                                       href="#package-personal-list-31">Royal</a>
-                                </li>
+                        <li class="nav-item d-inline-block">
+                            <a data-short-title="Royal" data-package-list="31" class="nav-link " data-toggle="tab" href="#package-personal-list-31">Royal</a>
+                        </li>
 
-                                <li class="nav-item d-inline-block">
-                                    <a data-short-title="Signature"
-                                       data-package-list="29"
-                                       class="nav-link " data-toggle="tab"
-                                       href="#package-personal-list-29">Signature</a>
-                                </li>
-                            </ul>
-<!--Thời gian gói-->
-                            <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="package-personal-list-1">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6 item-selection-wrapper">
-                                            <div class="item-selection nav nav-tabs border-bottom-0">
+                        <li class="nav-item d-inline-block">
+                            <a data-short-title="Signature" data-package-list="29" class="nav-link " data-toggle="tab" href="#package-personal-list-29">Signature</a>
+                        </li>
+                    </ul>
+                    <!--Thời gian gói-->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="package-personal-list-1">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 item-selection-wrapper">
+                                    <div class="item-selection nav nav-tabs border-bottom-0">
 
-                                                <a class="item-month active" href="#package-classic-3"
-                                                    data-toggle="tab"><div class="title">36</div> tháng</a>
+                                        <a class="item-month active" href="#package-classic-3" data-toggle="tab">
+                                            <div class="title">36</div> tháng
+                                        </a>
 
-                                                <a class="item-month " href="#package-classic-4" data-toggle="tab"><div
-                                                        class="title">14</div> tháng                                                </a>
-                                                                                                <a class="item-month "
-                                                                                                   href="#package-classic-2"
-                                                                                                   data-toggle="tab">
-                                                    <div class="title">6</div> tháng                                                </a>
-                                                                                                <a class="item-month "
-                                                                                                   href="#package-classic-1"
-                                                                                                   data-toggle="tab">
-                                                    <div class="title">3</div> tháng                                                </a>
-                                                                                                <a class="item-month "
-                                                                                                   href="#package-classic-0"
-                                                                                                   data-toggle="tab">
-                                                    <div class="title">1</div> tháng                                                </a>
-                                                                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 item-content-wrapper">
-                                            <div class="item-content tab-content p-y-12px">
-
-                                               <ul class="tab-pane fade active show" id="package-classic-3">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">36 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            26,840,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            745,556 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            24,852 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-
-                                                <ul class="tab-pane fade " id="package-classic-4">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">14 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            12,160,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            868,571 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            28,952 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                                                                                <ul class="tab-pane fade "
-                                                                                                                                                    id="package-classic-2">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">6 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            7,830,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            1,305,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            43,500 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                                                                                <ul class="tab-pane fade "
-                                                                                                                                                    id="package-classic-1">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">3 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            4,910,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            1,636,667 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            54,556 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                                                                                <ul class="tab-pane fade "
-                                                                                                                                                    id="package-classic-0">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">1 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            2,315,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            2,315,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            77,167 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                            </div>
-                                        </div>
+                                        <a class="item-month " href="#package-classic-4" data-toggle="tab">
+                                            <div class="title">14</div> tháng
+                                        </a>
+                                        <a class="item-month " href="#package-classic-2" data-toggle="tab">
+                                            <div class="title">6</div> tháng
+                                        </a>
+                                        <a class="item-month " href="#package-classic-1" data-toggle="tab">
+                                            <div class="title">3</div> tháng
+                                        </a>
+                                        <a class="item-month " href="#package-classic-0" data-toggle="tab">
+                                            <div class="title">1</div> tháng
+                                        </a>
                                     </div>
                                 </div>
-                                                                <div class="tab-pane fade show "
-                                                                     id="package-personal-list-16">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6 item-selection-wrapper">
-                                            <div class="item-selection nav nav-tabs border-bottom-0">
-                                                                                                                                                <a class="item-month active"
-                                                                                                                                                   href="#package-classic-plus-0"
-                                                                                                                                                   data-toggle="tab">
-                                                    <div class="title">42</div> tháng                                                </a>
-                                                                                                <a class="item-month "
-                                                                                                   href="#package-classic-plus-1"
-                                                                                                   data-toggle="tab">
-                                                    <div class="title">18</div> tháng                                                </a>
-                                                                                            </div>
-                                        </div>
 
-                                        <div class="col-md-6 item-content-wrapper">
-                                            <div class="item-content tab-content p-y-12px">
-                                                                                                                                                                                                <ul class="tab-pane fade active show"
-                                                                                                                                                                                                    id="package-classic-plus-0">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">42 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            31,310,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            745,476 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            24,849 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                                                                                <ul class="tab-pane fade "
-                                                                                                                                                    id="package-classic-plus-1">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">18 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            15,580,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            865,556 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            28,852 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                                                <div class="tab-pane fade show "
-                                                                     id="package-personal-list-2">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6 item-selection-wrapper">
-                                            <div class="item-selection nav nav-tabs border-bottom-0">
-                                                                                                                                                <a class="item-month active"
-                                                                                                                                                   href="#package-citipassport-1"
-                                                                                                                                                   data-toggle="tab">
-                                                    <div class="title">48</div> tháng                                                </a>
-                                                                                                <a class="item-month "
-                                                                                                   href="#package-citipassport-0"
-                                                                                                   data-toggle="tab">
-                                                    <div class="title">24</div> tháng                                                </a>
-                                                                                            </div>
-                                        </div>
-                                        <div class="col-md-6 item-content-wrapper">
-                                            <div class="item-content tab-content p-y-12px">
-                                                                                                                                                                                                <ul class="tab-pane fade active show"
-                                                                                                                                                                                                    id="package-citipassport-1">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">48 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            37,800,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            787,500 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            26,250 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                                                                                <ul class="tab-pane fade "
-                                                                                                                                                    id="package-citipassport-0">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">24 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            21,240,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            885,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            29,500 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                                                <div class="tab-pane fade show "
-                                                                     id="package-personal-list-31">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6 item-selection-wrapper">
-                                            <div class="item-selection nav nav-tabs border-bottom-0">
-                                                                                                                                                <a class="item-month active"
-                                                                                                                                                   href="#package-royal-0"
-                                                                                                                                                   data-toggle="tab">
-                                                    <div class="title">30</div> tháng                                                </a>
-                                                                                            </div>
-                                        </div>
-                                        <div class="col-md-6 item-content-wrapper">
-                                            <div class="item-content tab-content p-y-12px">
-                                                                                                                                                                                                <ul class="tab-pane fade active show"
-                                                                                                                                                                                                    id="package-royal-0">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">30 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            31,565,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            1,052,167 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            35,072 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                                                <div class="tab-pane fade show "
-                                                                     id="package-personal-list-29">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-6 item-selection-wrapper">
-                                            <div class="item-selection nav nav-tabs border-bottom-0">
-                                                                                                                                                <a class="item-month active"
-                                                                                                                                                   href="#package-signature-1"
-                                                                                                                                                   data-toggle="tab">
-                                                    <div class="title">60</div> tháng                                                </a>
-                                                                                                <a class="item-month "
-                                                                                                   href="#package-signature-0"
-                                                                                                   data-toggle="tab">
-                                                    <div class="title">24</div> tháng                                                </a>
-                                                                                            </div>
-                                        </div>
-                                        <div class="col-md-6 item-content-wrapper">
-                                            <div class="item-content tab-content p-y-12px">
-                                                                                                                                                                                                <ul class="tab-pane fade active show"
-                                                                                                                                                                                                    id="package-signature-1">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">60 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            149,395,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            2,489,917 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            82,997 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                                                                                <ul class="tab-pane fade "
-                                                                                                                                                    id="package-signature-0">
-                                                    <li>
-                                                        <div class="label-text">Thời gian tập luyện:</div>
-                                                        <div class="label-title text-space">24 tháng</div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Tổng chi phí:</div>
-                                                        <div class="label-title text-space">
-                                                            89,240,000 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / tháng</div>
-                                                        <div class="label-title text-space">
-                                                            3,718,333 VNĐ
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            123,944 VNĐ</div>
-                                                    </li>
-                                                                                                        <li>
-                                                        <button type="submit" class="btn btn-brand btn-sm"
-                                                                data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
-                                                    </li>
-                                                </ul>
-                                                                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                                            </div>
-                        </span>
-                    </div>
+                                <div class="col-md-6 item-content-wrapper">
+                                    <div class="item-content tab-content p-y-12px">
 
-                    <div class="col-lg-5 content-bg stripe-section">
-                        <div class="stripe-vector-1"><img alt="Chi tiết giá tập gym yoga tại TPHCM"
-                                                          src="themes/citigym/images/svg/stripe-section-left-grey.svg">
+                                        <ul class="tab-pane fade active show" id="package-classic-3">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">36 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    26,840,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    745,556 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    24,852 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+
+                                        <ul class="tab-pane fade " id="package-classic-4">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">14 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    12,160,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    868,571 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    28,952 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                        <ul class="tab-pane fade " id="package-classic-2">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">6 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    7,830,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    1,305,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    43,500 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                        <ul class="tab-pane fade " id="package-classic-1">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">3 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    4,910,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    1,636,667 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    54,556 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                        <ul class="tab-pane fade " id="package-classic-0">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">1 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    2,315,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    2,315,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    77,167 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="stripe-vector-2"><img alt="Chi tiết giá tập gym yoga tại TPHCM"
-                                                          src="themes/citigym/images/svg/stripe-section-right-grey.svg">
+                        <div class="tab-pane fade show " id="package-personal-list-16">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 item-selection-wrapper">
+                                    <div class="item-selection nav nav-tabs border-bottom-0">
+                                        <a class="item-month active" href="#package-classic-plus-0" data-toggle="tab">
+                                            <div class="title">42</div> tháng
+                                        </a>
+                                        <a class="item-month " href="#package-classic-plus-1" data-toggle="tab">
+                                            <div class="title">18</div> tháng
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 item-content-wrapper">
+                                    <div class="item-content tab-content p-y-12px">
+                                        <ul class="tab-pane fade active show" id="package-classic-plus-0">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">42 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    31,310,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    745,476 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    24,849 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                        <ul class="tab-pane fade " id="package-classic-plus-1">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">18 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    15,580,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    865,556 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    28,852 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="content-img text-center">
-                            <img alt="Chi tiết giá tập gym yoga tại TPHCM"
-                                 src="themes/citigym/images/citigym-expert/expert-2.png" class="content">
+                        <div class="tab-pane fade show " id="package-personal-list-2">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 item-selection-wrapper">
+                                    <div class="item-selection nav nav-tabs border-bottom-0">
+                                        <a class="item-month active" href="#package-citipassport-1" data-toggle="tab">
+                                            <div class="title">48</div> tháng
+                                        </a>
+                                        <a class="item-month " href="#package-citipassport-0" data-toggle="tab">
+                                            <div class="title">24</div> tháng
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 item-content-wrapper">
+                                    <div class="item-content tab-content p-y-12px">
+                                        <ul class="tab-pane fade active show" id="package-citipassport-1">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">48 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    37,800,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    787,500 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    26,250 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                        <ul class="tab-pane fade " id="package-citipassport-0">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">24 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    21,240,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    885,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    29,500 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="package-personal-list-31">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 item-selection-wrapper">
+                                    <div class="item-selection nav nav-tabs border-bottom-0">
+                                        <a class="item-month active" href="#package-royal-0" data-toggle="tab">
+                                            <div class="title">30</div> tháng
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 item-content-wrapper">
+                                    <div class="item-content tab-content p-y-12px">
+                                        <ul class="tab-pane fade active show" id="package-royal-0">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">30 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    31,565,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    1,052,167 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    35,072 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="package-personal-list-29">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 item-selection-wrapper">
+                                    <div class="item-selection nav nav-tabs border-bottom-0">
+                                        <a class="item-month active" href="#package-signature-1" data-toggle="tab">
+                                            <div class="title">60</div> tháng
+                                        </a>
+                                        <a class="item-month " href="#package-signature-0" data-toggle="tab">
+                                            <div class="title">24</div> tháng
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 item-content-wrapper">
+                                    <div class="item-content tab-content p-y-12px">
+                                        <ul class="tab-pane fade active show" id="package-signature-1">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">60 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    149,395,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    2,489,917 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    82,997 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                        <ul class="tab-pane fade " id="package-signature-0">
+                                            <li>
+                                                <div class="label-text">Thời gian tập luyện:</div>
+                                                <div class="label-title text-space">24 tháng</div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Tổng chi phí:</div>
+                                                <div class="label-title text-space">
+                                                    89,240,000 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / tháng</div>
+                                                <div class="label-title text-space">
+                                                    3,718,333 VNĐ
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="label-text">Chi phí / ngày:</div>
+                                                <div class="label-title text-space">
+                                                    123,944 VNĐ</div>
+                                            </li>
+                                            <li>
+                                                <button type="submit" class="btn btn-brand btn-sm" data-toggle="modal" data-target=".modal-sign-up">Đăng ký ngay</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </span>
+            </div>
+
+            <div class="col-lg-5 content-bg stripe-section">
+                <div class="stripe-vector-1"><img alt="Chi tiết giá tập gym yoga tại TPHCM" src="themes/citigym/images/svg/stripe-section-left-grey.svg">
+                </div>
+                <div class="stripe-vector-2"><img alt="Chi tiết giá tập gym yoga tại TPHCM" src="themes/citigym/images/svg/stripe-section-right-grey.svg">
+                </div>
+                <div class="content-img text-center">
+                    <img alt="Chi tiết giá tập gym yoga tại TPHCM" src="themes/citigym/images/citigym-expert/expert-2.png" class="content">
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <section class="section section-pricing-table stripe-section mb-0"
-                 style="background-image: url(themes/citigym/images/clubs/2-2.jpg);">
-            <div class="stripe-vector-1"><img alt="Chi tiết giá tập gym yoga tại TPHCM"
-                                              src="themes/citigym/images/svg/stripe-section-left.svg">
-            </div>
-            <div class="stripe-vector-2"><img alt="Chi tiết giá tập gym yoga tại TPHCM"
-                                              src="themes/citigym/images/svg/stripe-section-right.svg">
-            </div>
-            <div class="container">
+<section class="section section-pricing-table stripe-section mb-0" style="background-image: url(themes/citigym/images/clubs/2-2.jpg);">
+    <div class="stripe-vector-1"><img alt="Chi tiết giá tập gym yoga tại TPHCM" src="themes/citigym/images/svg/stripe-section-left.svg">
+    </div>
+    <div class="stripe-vector-2"><img alt="Chi tiết giá tập gym yoga tại TPHCM" src="themes/citigym/images/svg/stripe-section-right.svg">
+    </div>
+    <div class="container">
 
-                <table class="table pricing-table table-responsive detail-enterprise-js d-none">
-                    <thead>
-                    <tr>
-                        <th class="border-top-0"></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
+        <table class="table pricing-table table-responsive detail-enterprise-js d-none">
+            <thead>
+                <tr>
+                    <th class="border-top-0"></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
 
-//chi tiết dịch vụ cung cấp
+        //chi tiết dịch vụ cung cấp
 
-                <table class="table pricing-table table-responsive detail-personal-js">
-                    <thead>
-                    <tr>
-                        <th class="border-top-0"></th>
-                        <th>
-                            <span class="title" data-short-title="Classic">Classic</span>
-                            <br>
-                        </th>
-                        <th>
-                            <span class="title" data-short-title="Classic-Plus">Classic-Plus</span>
-                            <br>
-                        </th>
-                        <th>
-                            <span class="title" data-short-title="Citipassport">Citipassport</span>
-                            <br>
-                        </th>
-                        <th>
-                            <span class="title" data-short-title="Royal">Royal</span>
-                            <br>
-                        </th>
-                        <th>
-                            <span class="title" data-short-title="Signature">Signature</span>
-                            <br>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Tập luyện tại 01 CLB đã chọn.</td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tham gia Yoga và Group X tại 01 CLB đã chọn.</td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Tự do tập luyện tại tất cả câu lạc bộ trong hệ thống CITIGYM.</td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Không giới hạn thời gian luyện tập</td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Tham gia tất cả các lớp Yoga và Group X tại tất cả các CLB trong hệ thống CITIGYM</td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>1 buổi định hướng luyện tập riêng biệt và tư vấn dinh dưỡng</td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Được sử dụng dịch vụ thư giãn sau luyện tập (sauna và steambath)</td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Nước uống miễn phí</td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Dịch vụ khăn tập thể thao cao cấp.</td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Hệ thống khóa từ thông minh, bảo mật tối ưu Esmart Locker</td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Được dẫn theo 1 người thân đi tập cùng (người đi cùng được phục vụ như quyền lợi thẻ
-                            classic)
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Được dẫn theo 1 người thân đi tập cùng (người đi cùng được phục vụ như quyền lợi thẻ
-                            Citipassport)
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Bộ đồ dùng tắm gội - vệ sinh cao cấp.</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Được tặng 01 ly nước trái cây hoặc ly sinh tố đạm dinh dưỡng;</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>01 lần chuyển nhượng cho người thân trong gia đình (Cha, Mẹ, Vợ, Chồng, Con, Anh Chị Em
-                            ruột, Con nuôi…) không thu phí
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Được ưu tiên đặt chỗ các lớp Yoga và GroupX trước 48 tiếng (hôm nay và ngày mai)</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Được tặng 30 buổi PT (đối với gói Signature 24 tháng và 60 tháng) hoặc 50 buổi PT (đối với
-                            gói Signature 10 năm)
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Giữ xe miễn phí tại tất cả các CLB (không quá 4 tiếng)</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Được ưu đãi 20% chiết khấu cho dịch vụ tại CITISPA &amp; các dịch vụ thuộc chuỗi Nova F&amp;B</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Lối vào check-in ưu tiên cho hội viên Signature</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Phục vụ thảm tập Yoga có logo Signature khi tham gia lớp</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Sử dụng khu vực VIP Lounge dành riêng cho hội viên Signature (Không áp dụng cho Khách đi
-                            kèm)
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="highlight"><i
-                                class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <table class="table pricing-table table-responsive detail-personal-js">
+            <thead>
+                <tr>
+                    <th class="border-top-0"></th>
+                    <th>
+                        <span class="title" data-short-title="Classic">Classic</span>
+                        <br>
+                    </th>
+                    <th>
+                        <span class="title" data-short-title="Classic-Plus">Classic-Plus</span>
+                        <br>
+                    </th>
+                    <th>
+                        <span class="title" data-short-title="Citipassport">Citipassport</span>
+                        <br>
+                    </th>
+                    <th>
+                        <span class="title" data-short-title="Royal">Royal</span>
+                        <br>
+                    </th>
+                    <th>
+                        <span class="title" data-short-title="Signature">Signature</span>
+                        <br>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tập luyện tại 01 CLB đã chọn.</td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tham gia Yoga và Group X tại 01 CLB đã chọn.</td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tự do tập luyện tại tất cả câu lạc bộ trong hệ thống CITIGYM.</td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Không giới hạn thời gian luyện tập</td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Tham gia tất cả các lớp Yoga và Group X tại tất cả các CLB trong hệ thống CITIGYM</td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>1 buổi định hướng luyện tập riêng biệt và tư vấn dinh dưỡng</td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Được sử dụng dịch vụ thư giãn sau luyện tập (sauna và steambath)</td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Nước uống miễn phí</td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Dịch vụ khăn tập thể thao cao cấp.</td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Hệ thống khóa từ thông minh, bảo mật tối ưu Esmart Locker</td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Được dẫn theo 1 người thân đi tập cùng (người đi cùng được phục vụ như quyền lợi thẻ
+                        classic)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Được dẫn theo 1 người thân đi tập cùng (người đi cùng được phục vụ như quyền lợi thẻ
+                        Citipassport)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Bộ đồ dùng tắm gội - vệ sinh cao cấp.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Được tặng 01 ly nước trái cây hoặc ly sinh tố đạm dinh dưỡng;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>01 lần chuyển nhượng cho người thân trong gia đình (Cha, Mẹ, Vợ, Chồng, Con, Anh Chị Em
+                        ruột, Con nuôi…) không thu phí
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Được ưu tiên đặt chỗ các lớp Yoga và GroupX trước 48 tiếng (hôm nay và ngày mai)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Được tặng 30 buổi PT (đối với gói Signature 24 tháng và 60 tháng) hoặc 50 buổi PT (đối với
+                        gói Signature 10 năm)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Giữ xe miễn phí tại tất cả các CLB (không quá 4 tiếng)</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Được ưu đãi 20% chiết khấu cho dịch vụ tại CITISPA &amp; các dịch vụ thuộc chuỗi Nova F&amp;B</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Lối vào check-in ưu tiên cho hội viên Signature</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Phục vụ thảm tập Yoga có logo Signature khi tham gia lớp</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+                <tr>
+                    <td>Sử dụng khu vực VIP Lounge dành riêng cho hội viên Signature (Không áp dụng cho Khách đi
+                        kèm)
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="highlight"><i class="remixicon-checkbox-circle-fill font-size-20 text-success"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
 
 <!--        //form đăng kí-->
-        <div class="modal modal-sign-up fade">
-            <form method="POST" action="https://citigym.com.vn/chinh-sach-gia" accept-charset="UTF-8" id="contactForm">
-                <input name="_token" type="hidden" value="F2I3OgSYfw1ZfSkHelvrQJZLxJgIC2hOel82lrF4">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title title-s1">Đăng ký tham quan câu lạc bộ</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="remixicon-close-line"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body p-x-3 p-y-3">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Họ tên"/>
-                                            <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
-                                                data-field="name"></ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="number" name="phone" class="form-control"
-                                                   placeholder="Số điện thoại"/>
-                                            <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
-                                                data-field="phone"></ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <select class="form-control" name="subject">
-                                                <option value="">Câu lạc bộ bạn muốn tham gia</option>
-                                                <option value="CITIGYM THÀNH THÁI QUẬN 10">CITIGYM THÀNH THÁI QUẬN 10
-                                                </option>
-                                                <option value="CITIGYM SUNRISE SOUTH, QUẬN 7">CITIGYM SUNRISE SOUTH,
-                                                    QUẬN 7
-                                                </option>
-                                                <option value="CITIGYM VẠN HẠNH MALL, QUẬN 10">CITIGYM VẠN HẠNH MALL,
-                                                    QUẬN
-                                                    10
-                                                </option>
-                                                <option value="CITIGYM GOLDEN MANSION, QUẬN PHÚ NHUẬN">CITIGYM GOLDEN
-                                                    MANSION, QUẬN PHÚ NHUẬN
-                                                </option>
-                                                <option value="CITIGYM SUN AVENUE, QUẬN 2">CITIGYM SUN AVENUE, QUẬN 2
-                                                </option>
-                                            </select>
-                                            <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
-                                                data-field="subject"></ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <select class="form-control" name="content">
-                                                <option value="">Giờ nào chúng tôi có thể gọi bạn?</option>
-                                                <option value="9am-12pm">9am-12pm</option>
-                                                <option value="12pm-2pm">12pm-2pm</option>
-                                                <option value="2pm-5pm">2pm-5pm</option>
-                                                <option value="5pm-10pm">5pm-10pm</option>
-                                            </select>
-                                            <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
-                                                data-field="content"></ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" data-control="submit" class="btn btn-brand">Đăng ký ngay</button>
-                            </form>
-                        </div>
-                    </div>
+<div class="modal modal-sign-up fade">
+    <form method="POST" action="https://citigym.com.vn/chinh-sach-gia" accept-charset="UTF-8" id="contactForm">
+        <input name="_token" type="hidden" value="F2I3OgSYfw1ZfSkHelvrQJZLxJgIC2hOel82lrF4">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title title-s1">Đăng ký tham quan câu lạc bộ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="remixicon-close-line"></i>
+                    </button>
                 </div>
-            </form>
+                <div class="modal-body p-x-3 p-y-3">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Họ tên" />
+                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation" data-field="name"></ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="number" name="phone" class="form-control" placeholder="Số điện thoại" />
+                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation" data-field="phone"></ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <select class="form-control" name="subject">
+                                        <option value="">Câu lạc bộ bạn muốn tham gia</option>
+                                        <option value="CITIGYM THÀNH THÁI QUẬN 10">CITIGYM THÀNH THÁI QUẬN 10
+                                        </option>
+                                        <option value="CITIGYM SUNRISE SOUTH, QUẬN 7">CITIGYM SUNRISE SOUTH,
+                                            QUẬN 7
+                                        </option>
+                                        <option value="CITIGYM VẠN HẠNH MALL, QUẬN 10">CITIGYM VẠN HẠNH MALL,
+                                            QUẬN
+                                            10
+                                        </option>
+                                        <option value="CITIGYM GOLDEN MANSION, QUẬN PHÚ NHUẬN">CITIGYM GOLDEN
+                                            MANSION, QUẬN PHÚ NHUẬN
+                                        </option>
+                                        <option value="CITIGYM SUN AVENUE, QUẬN 2">CITIGYM SUN AVENUE, QUẬN 2
+                                        </option>
+                                    </select>
+                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation" data-field="subject"></ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <select class="form-control" name="content">
+                                        <option value="">Giờ nào chúng tôi có thể gọi bạn?</option>
+                                        <option value="9am-12pm">9am-12pm</option>
+                                        <option value="12pm-2pm">12pm-2pm</option>
+                                        <option value="2pm-5pm">2pm-5pm</option>
+                                        <option value="5pm-10pm">5pm-10pm</option>
+                                    </select>
+                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation" data-field="content"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" data-control="submit" class="btn btn-brand">Đăng ký ngay</button>
+                    </form>
+                </div>
+            </div>
         </div>
+    </form>
+</div>
 <!--        //end form-->
-    </div>
+</div>
 </main>
 
 <script>
-    $(document).ready(function () {
-        setTimeout(function () {
+    $(document).ready(function() {
+        setTimeout(function() {
             $('.popup').addClass('show');
         }, 2 * 1000);
 
-        setTimeout(function () {
+        setTimeout(function() {
             $('.popup .close').trigger('click');
         }, 30 * 1000);
     });
@@ -1137,24 +1027,24 @@
 <script>
     // Change to Short Title for Package Title
     if (window.innerWidth < 992) {
-        document.querySelectorAll('.section-pricing-detail .tag-inline li a, table.pricing-table thead th .title').forEach(function (el, index) {
+        document.querySelectorAll('.section-pricing-detail .tag-inline li a, table.pricing-table thead th .title').forEach(function(el, index) {
             el.textContent = el.getAttribute('data-short-title');
         });
     }
 
     function changeMobileBanner() {
-        $('.main-breadcrumb > .breadcrumb-bg').each(function (index, el) {
+        $('.main-breadcrumb > .breadcrumb-bg').each(function(index, el) {
             window.innerWidth <= 480 ? $(el).attr('style', $(el).attr('data-mobile-src')) : $(el).attr('style', $(el).attr('data-desktop-src'));
             $('.main-breadcrumb').css('opacity', '1');
         });
     }
 
-    $(document).ready(function () {
+    $(document).ready(function() {
         changeMobileBanner();
         $('#breadcrumb-banner').show();
 
         // Check
-        $('input[name="type"]').click(function () {
+        $('input[name="type"]').click(function() {
             $(this).next().addClass('white');
 
             if ($(this).attr('checked')) {
@@ -1185,7 +1075,7 @@
         var temp = 0;
         var amount_current = $('.amount-register').val();
         var month_current;
-        $('select').on('change', function () {
+        $('select').on('change', function() {
             var typeTab = "";
             amount_current = $(this).val();
             month_current = parseInt($('.main-month.active .extra-month.active').attr('data-month'));
@@ -1218,7 +1108,7 @@
 
         // Click
 
-        $('.extra-month').on('click', function () {
+        $('.extra-month').on('click', function() {
             var month_current = parseInt($(this).attr('data-month'));
             var typeTab = "";
 
@@ -1244,11 +1134,10 @@
         })
     });
 
-    $(window).resize(function (event) {
+    $(window).resize(function(event) {
         changeMobileBanner();
         $('#breadcrumb-banner').show();
     });
-
 </script>
 
 <style>
@@ -1260,7 +1149,7 @@
         border-right: none !important;
     }
 
-    .tag-inline > li {
+    .tag-inline>li {
         padding: 0 10px;
     }
 
@@ -1281,7 +1170,8 @@
         top: -15%;
     }
 
-    .section-pricing-detail .content-bg .stripe-vector-1 img, .section-pricing-detail .content-bg .stripe-vector-2 img {
+    .section-pricing-detail .content-bg .stripe-vector-1 img,
+    .section-pricing-detail .content-bg .stripe-vector-2 img {
         width: 120%;
     }
 
@@ -1302,6 +1192,7 @@
     }
 
     @media (max-width: 992px) {
+
         .pricing-table.table tbody td:not(:first-child),
         .pricing-table.table tbody th:not(:first-child) {
             width: 15%;
@@ -1333,12 +1224,12 @@
             line-height: normal;
         }
 
-        .tag-inline.tag-col-3 > .nav-item {
+        .tag-inline.tag-col-3>.nav-item {
             margin-right: 12px;
             margin-bottom: 12px;
         }
 
-        .tag-inline > .nav-item .nav-link {
+        .tag-inline>.nav-item .nav-link {
             padding: 8px 0;
         }
     }
@@ -1381,8 +1272,9 @@
     }
 
     @media (max-width: 400px) {
-        .type-switcher input[type="radio"]:checked + label + .switch,
-        .type-switcher input[type="radio"]:checked + label:nth-of-type(n) + .switch {
+
+        .type-switcher input[type="radio"]:checked+label+.switch,
+        .type-switcher input[type="radio"]:checked+label:nth-of-type(n)+.switch {
             -webkit-transform: translateX(100px);
             -moz-transform: translateX(100px);
             -ms-transform: translateX(100px);
@@ -1399,7 +1291,7 @@
             width: 100px;
         }
 
-        .tag-inline > .nav-item .nav-link {
+        .tag-inline>.nav-item .nav-link {
             font-size: 12px;
         }
 
@@ -1408,7 +1300,7 @@
             font-size: 24px;
         }
 
-        .tag-inline.tag-col-3 > .nav-item {
+        .tag-inline.tag-col-3>.nav-item {
             width: calc(40% - 12px);
         }
     }
@@ -1477,4 +1369,4 @@
 <!--irrored from citigym.com.vn/chinh-sach-gia by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Nov 2022 12:41:08 GMT -->
 <!--</html>-->
 
-<?php include_once './layout/footer.php'?>
+<?php include_once './layout/footer.php' ?>

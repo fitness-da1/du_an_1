@@ -18,9 +18,9 @@
                                 <label class="col-sm-3 text-right control-label col-form-label">Post avatar</label>
                                 <div class="col-md-9">
                                     <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="validatedCustomFile" name="post_avatar" required>
-                                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-                                        <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        <input type="file" id="validatedCustomFile" name="post_avatar" required>
+                                        <!-- <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                        <div class="invalid-feedback">Example invalid custom file feedback</div> -->
                                     </div>
                                 </div>
                             </div>
@@ -28,15 +28,11 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="card-title">Post content</h4>
+                                            <h4 class="card-title">Post content:</h4>
                                             <!-- Create the editor container -->
-                                            <div id="editor" style="height: 300px;">
-                                                <p>Hello World!</p>
-                                                <p>Some initial <strong>bold</strong> text</p>
-                                                <p>
-                                                    <br>
-                                                </p>
-                                            </div>
+                                            <!-- <input type="text" class="" name="post_content" required> -->
+                                            <textarea name="post_content" id="post_content" cols="70" rows="10"></textarea>
+                                      
                                         </div>
                                     </div>
                                 </div>
