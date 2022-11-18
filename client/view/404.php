@@ -86,7 +86,7 @@
                                 <li><a href="calculate-bmi.php">BMI Calculator Page</a></li>
                                 <li><a href="pricing-table.html">Pricing Table Page</a></li>
                                 <li><a href="blog.php">Blog Page</a></li>
-                                <li><a href="single-blog.php">Single Blog Page</a></li>
+                                <li><a href="detail_blog.php">Single Blog Page</a></li>
                                 <li><a href="404.html">404 Page</a></li>
                             </ul>
                         </li>
@@ -95,7 +95,7 @@
                                     class="fas fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="blog.php">Blog</a></li>
-                                <li><a href="single-blog.php">Single Blog</a></li>
+                                <li><a href="detail_blog.php">Single Blog</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -140,7 +140,7 @@
                         <li><a href="calculate-bmi.php">BMI Calculator Page</a></li>
                         <li><a href="pricing-table.html">Pricing Table Page</a></li>
                         <li><a href="blog.php">Blog Page</a></li>
-                        <li><a href="single-blog.php">Single Blog Page</a></li>
+                        <li><a href="detail_blog.php">Single Blog Page</a></li>
                         <li><a href="404.html">404 Page</a></li>
                     </ul>
                 </li>
@@ -148,7 +148,7 @@
                     <a>Blog</a>
                     <ul class="sub_menu">
                         <li><a href="blog.php">Blog</a></li>
-                        <li><a href="single-blog.php">Single Blog</a></li>
+                        <li><a href="detail_blog.php">Single Blog</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -226,17 +226,17 @@
                         <div class="footer-widget footer-recent-posts">
                             <h4 class="text-uppercase">Recent Post</h4>
                             <ul>
-                                <li><a href="single-blog.php">
+                                <li><a href="detail_blog.php">
                                         <figure><img src="assets/img/footer-img/recent-post1.jpg" alt="recent"></figure>
                                         <p>Pellentesque convallis, diam et feugiat volutpat, tellus ligula<span>Sep 09,
                                                 2019</span></p>
                                     </a></li>
-                                <li><a href="single-blog.php">
+                                <li><a href="detail_blog.php">
                                         <figure><img src="assets/img/footer-img/recent-post2.jpg" alt="recent"></figure>
                                         <p>Praesent vehicula odio ut erat posuere, nec malesuada dolor<span>Sep 06,
                                                 2019</span></p>
                                     </a></li>
-                                <li><a href="single-blog.php">
+                                <li><a href="detail_blog.php">
                                         <figure><img src="assets/img/footer-img/recent-post3.jpg" alt="recent"></figure>
                                         <p>Nulla rhoncus condimentum ante, molestie mattis lorem<span>Sep 02,
                                                 2019</span></p>

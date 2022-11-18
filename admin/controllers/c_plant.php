@@ -4,14 +4,16 @@ class c_plant
 {
     public function plant_add()
     {
-       
+       $m_plant_type = new m_plant();
+       $plant_type=$m_plant_type->read_plant_type();
         if (isset($_POST['btn_add_plant'])) {
             $id = NULL;
             $plant_name = $_POST['plant_name'];
             $plant_exp = $_POST['plant_exp'];
             $plant_cost = $_POST['plant_cost'];
+            $plant_type = $_POST['plant_type'];
             $m_plant = new m_plant();
-            $m_plant->insert_plant($id, $plant_name, $plant_exp, $plant_cost);
+            $m_plant->insert_plant($id, $plant_name, $plant_exp, $plant_cost,$plant_type);
         }
         include_once("view/plant/v_plant_add.php");
     }

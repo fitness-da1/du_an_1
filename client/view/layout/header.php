@@ -18,18 +18,18 @@
     <link href="view/assets/css/style.css" rel="stylesheet">
 
     <!-- FAVICONS -->
-    <link rel="icon" href="view/assets/img/favicon-16x16.png" type="image/png" sizes="16x16">
-    <link rel="shortcut icon" href="view/assets/img/favicon-16x16.png" type="image/x-icon">
-    <link rel="shortcut icon" href="view/assets/img/favicon-16x16.png">
+    <link rel="icon" href="./view/assets/img/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="shortcut icon" href="./view/assets/img/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./view/assets/img/favicon-16x16.png">
 
-    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="view/assets/img/apple-icon-72x72.png" sizes="72x72"/>
-    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="view/assets/img/apple-icon-114x114.png"
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="./view/assets/img/apple-icon-72x72.png" sizes="72x72"/>
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="./view/assets/img/apple-icon-114x114.png"
           sizes="114x114"/>
-    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="view/assets/img/apple-icon-144x144.png"
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="./view/assets/img/apple-icon-144x144.png"
           sizes="144x144"/>
-    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="view/assets/img/favicon-16x16.png"/>
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="./view/assets/img/favicon-16x16.png"/>
 
-    <link rel="stylesheet" href="view/assets/css/remixicon.css">
+    <link rel="stylesheet" href="./view/assets/css/remixicon.css">
 <!--    <link rel="stylesheet" href="view/assets/css/remixicon.less">-->
 <!--    <link rel="stylesheet" href="view/assets/css/remixicon.symbol.svg">-->
     
@@ -72,7 +72,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-none d-sm-none d-md-block d-lg-block d-xl-block"
          id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="index.php"><img src="view/assets/img/gym-logo.png" alt="gym logo"></a>
+            <a class="navbar-brand" href="?ctr=home"><img src="view/assets/img/gym-logo.png" alt="gym logo"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -80,24 +80,24 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link" href="?ctr=home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
+                        <a class="nav-link" href="?ctr=about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="categorie.php">Categories</a>
+                        <a class="nav-link" href="?ctr=categorie">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="trainers.php">Trainers</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="pricing.php">Pricing</a>
+                        <a class="nav-link" href="?ctr=trainer">Trainers</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.php">Gallery</a>
+                        <a class="nav-link" href="?ctr=pricing">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="?ctr=gallery">Gallery</a>
                     </li>
 
                     <!--                    <li class="nav-item dropdown">-->
@@ -113,14 +113,14 @@
                     <!--                    </li>-->
 
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.php">Blog</a>
+                        <a class="nav-link" href="?ctr=blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact</a>
+                        <a class="nav-link" href="?ctr=contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-uppercase section-button btn btn-effect"
-                           href="pricing.php">Become a Member</a>
+                           href="?ctr=pricing">Become a Member</a>
                     </li>
                 </ul>
             </div>
@@ -130,24 +130,27 @@
 
     <!-- Mobile Menu Start -->
     <nav class="mobile_menu hidden d-none">
-        <a href="index.html"><img class="mobile-logo" src="view/assets/img/gym-logo.png" alt="Gym"></a>
+        <a href="?ctr=home"><img class="mobile-logo" src="view/assets/img/gym-logo.png" alt="Gym"></a>
         <ul class="nav navbar-nav navbar-right menu">
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">Home</a>
+                <a class="nav-link" href="?ctr=home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.php">About</a>
+                <a class="nav-link" href="?ctr=about">About</a>
             </li>
             <!--            <li class="nav-item">-->
             <!--                <a class="nav-link" href="classes.html">Classes</a>-->
             <!--            </li>-->
             <li class="nav-item">
-                <a class="nav-link" href="trainers.php">Trainers</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="gallery.php">Gallery</a>
+                <a class="nav-link" href="?ctr=trainer">Trainers</a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="?ctr=pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?ctr=gallery">Gallery</a>
+            </li>
             <!--            <li class="nav-item">-->
             <!--                <a>Pages</a>-->
             <!--                <ul class="sub_menu">-->
@@ -160,14 +163,14 @@
             <!--            </li>-->
 
             <li class="nav-item">
-                <a class="nav-link" href="blog.php">Blog</a>
+                <a class="nav-link" href="?ctr=blog">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.php">Contact</a>
+                <a class="nav-link" href="?ctr=contact">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link section-button btn btn-effect text-uppercase font-14 para-color"
-                   href="pricing-table.html">Become a Member</a>
+                   href="?ctr=pricing">Become a Member</a>
             </li>
         </ul>
     </nav>

@@ -1,4 +1,4 @@
-<?php include_once './layout/header.php'?>
+<?php include_once 'view/layout/header.php'?>
 
 <!-- Header Start -->
     <header class="page-banner-area gallery-page-banner">
@@ -9,7 +9,7 @@
                         data-wow-delay=".5s">Gallery</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
-                            <li class="breadcrumb-item text-capitalize"><a href="index.php">Home</a></li>
+                            <li class="breadcrumb-item text-capitalize"><a href="?ctr=home">Home</a></li>
                             <li class="breadcrumb-item active text-capitalize" aria-current="page">Masonry Gallery</li>
                         </ol>
                     </nav>
@@ -63,11 +63,11 @@
                     data-groups="[&quot;fitness&quot;,&quot;strength&quot;]" data-wow-duration="0.5s"
                     data-wow-delay=".25s">
                     <div class="position-relative hover-wrapper">
-                        <img src="assets/img/gallery-img/1.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+                        <img src="view/assets/img/gallery-img/1.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
                         <div class="hover-overlay">
                             <div class="hover-content">
                                 <a class="btn btn-sm venobox" data-gall="myGallery"
-                                    href="assets/img/gallery-img/gallery-large-img/1.jpg">
+                                    href="view/assets/img/gallery-img/gallery-large-img/1.jpg">
                                     <i class="flaticon-add"></i>
                                 </a>
                             </div>
@@ -78,11 +78,11 @@
                 <div class="col-lg-4 col-6 mb-30 shuffle-item wow fadeIn" data-groups="[&quot;gym&quot;]"
                     data-wow-duration="0.5s" data-wow-delay=".25s">
                     <div class="position-relative hover-wrapper">
-                        <img src="assets/img/gallery-img/2.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+                        <img src="view/assets/img/gallery-img/2.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
                         <div class="hover-overlay">
                             <div class="hover-content">
                                 <a class="btn btn-sm venobox" data-gall="myGallery"
-                                    href="assets/img/gallery-img/gallery-large-img/2.jpg">
+                                    href="view/assets/img/gallery-img/gallery-large-img/2.jpg">
                                     <i class="flaticon-add"></i>
                                 </a>
                             </div>
@@ -92,11 +92,11 @@
                 <div class="col-lg-4 col-6 mb-30 shuffle-item wow fadeIn" data-groups="[&quot;running&quot;]"
                     data-wow-duration="0.5s" data-wow-delay=".25s">
                     <div class="position-relative hover-wrapper">
-                        <img src="assets/img/gallery-img/3.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+                        <img src="view/assets/img/gallery-img/3.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
                         <div class="hover-overlay">
                             <div class="hover-content">
                                 <a class="btn btn-sm venobox" data-gall="myGallery"
-                                    href="assets/img/gallery-img/gallery-large-img/3.jpg">
+                                    href="view/assets/img/gallery-img/gallery-large-img/3.jpg">
                                     <i class="flaticon-add"></i>
                                 </a>
                             </div>
@@ -106,11 +106,11 @@
                 <div class="col-lg-4 col-6 mb-30 shuffle-item wow fadeIn"
                     data-groups="[&quot;weight&quot;,&quot;gym&quot;]" data-wow-duration="0.5s" data-wow-delay=".25s">
                     <div class="position-relative hover-wrapper">
-                        <img src="assets/img/gallery-img/4.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+                        <img src="view/assets/img/gallery-img/4.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
                         <div class="hover-overlay">
                             <div class="hover-content">
                                 <a class="btn btn-sm venobox" data-gall="myGallery"
-                                    href="assets/img/gallery-img/gallery-large-img/4.jpg">
+                                    href="view/assets/img/gallery-img/gallery-large-img/4.jpg">
                                     <i class="flaticon-add"></i>
                                 </a>
                             </div>
@@ -120,11 +120,11 @@
                 <div class="col-lg-4 col-6 mb-30 shuffle-item wow fadeIn" data-groups="[&quot;fitness&quot;]"
                     data-wow-duration="0.5s" data-wow-delay=".25s">
                     <div class="position-relative hover-wrapper">
-                        <img src="assets/img/gallery-img/5.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+                        <img src="view/assets/img/gallery-img/5.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
                         <div class="hover-overlay">
                             <div class="hover-content">
                                 <a class="btn btn-sm venobox" data-gall="myGallery"
-                                    href="assets/img/gallery-img/gallery-large-img/5.jpg">
+                                    href="view/assets/img/gallery-img/gallery-large-img/5.jpg">
                                     <i class="flaticon-add"></i>
                                 </a>
                             </div>
@@ -134,11 +134,11 @@
                 <div class="col-lg-4 col-6 mb-30 shuffle-item wow fadeIn" data-groups="[&quot;strength&quot;]"
                     data-wow-duration="0.5s" data-wow-delay=".25s">
                     <div class="position-relative hover-wrapper">
-                        <img src="assets/img/gallery-img/7.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+                        <img src="view/assets/img/gallery-img/7.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
                         <div class="hover-overlay">
                             <div class="hover-content">
                                 <a class="btn btn-sm venobox" data-gall="myGallery"
-                                    href="assets/img/gallery-img/gallery-large-img/7.jpg">
+                                    href="view/assets/img/gallery-img/gallery-large-img/7.jpg">
                                     <i class="flaticon-add"></i>
                                 </a>
                             </div>
@@ -149,11 +149,11 @@
                     data-groups="[&quot;gym&quot;,&quot;fitness&quot;,&quot;running&quot;]" data-wow-duration="0.5s"
                     data-wow-delay=".25s">
                     <div class="position-relative hover-wrapper">
-                        <img src="assets/img/gallery-img/8.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+                        <img src="view/assets/img/gallery-img/8.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
                         <div class="hover-overlay">
                             <div class="hover-content">
                                 <a class="btn btn-sm venobox" data-gall="myGallery"
-                                    href="assets/img/gallery-img/gallery-large-img/8.jpg">
+                                    href="view/assets/img/gallery-img/gallery-large-img/8.jpg">
                                     <i class="flaticon-add"></i>
                                 </a>
                             </div>
@@ -163,10 +163,10 @@
                 <div class="col-lg-4 col-6 mb-30 shuffle-item wow fadeIn" data-groups="[&quot;strength&quot;]"
                     data-wow-duration="0.5s" data-wow-delay=".25s">
                     <div class="position-relative hover-wrapper">
-                        <img src="assets/img/gallery-img/9.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+                        <img src="view/assets/img/gallery-img/9.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
                         <div class="hover-overlay">
                             <div class="hover-content">
-                                <a class="btn btn-sm venobox" data-gall="myGallery" href="assets/img/gallery-img/7.jpg">
+                                <a class="btn btn-sm venobox" data-gall="myGallery" href="view/assets/img/gallery-img/7.jpg">
                                     <i class="flaticon-add"></i>
                                 </a>
                             </div>
@@ -177,11 +177,11 @@
                     data-groups="[&quot;gym&quot;,&quot;fitness&quot;,&quot;running&quot;]" data-wow-duration="0.5s"
                     data-wow-delay=".25s">
                     <div class="position-relative hover-wrapper">
-                        <img src="assets/img/gallery-img/6.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+                        <img src="view/assets/img/gallery-img/6.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
                         <div class="hover-overlay">
                             <div class="hover-content">
                                 <a class="btn btn-sm venobox" data-gall="myGallery"
-                                    href="assets/img/gallery-img/gallery-large-img/6.jpg">
+                                    href="view/assets/img/gallery-img/gallery-large-img/6.jpg">
                                     <i class="flaticon-add"></i>
                                 </a>
                             </div>
@@ -217,4 +217,4 @@
     </script>
     <!-- Shuffle js filter and masonry Start -->
 
-<?php include_once './layout/footer.php'?>
+<?php include_once 'view/layout/footer.php'?>

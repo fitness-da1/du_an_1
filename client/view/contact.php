@@ -1,4 +1,4 @@
-<?php include_once './layout/header.php'?>
+<?php include_once 'view/layout/header.php'?>
     <!-- Menu Area End -->
 
     <!-- Header Start -->
@@ -99,4 +99,4 @@
     <!-- Map Area End -->
 
     <!-- Footer Start -->
-<?php include_once './layout/footer.php'?>
+<?php include_once 'view/layout/footer.php'?>

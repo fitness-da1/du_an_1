@@ -33,9 +33,9 @@
                                 <?php foreach ($plant_type as $plt): ?>
                                     <li class="nav-item d-inline-block">
                                     <a data-short-title="<?= $plt->name_type ?>"
-                                       data-package-list="<?= $plt->type_id ?>"
-                                       class="nav-link <?= $plt->type_id == 1 ? 'active' : null ?>" data-toggle="tab"
-                                       href="#package-personal-list-<?= $plt->type_id ?>"><?= $plt->name_type ?>
+                                       data-package-list="<?= $plt->id ?>"
+                                       class="nav-link <?= $plt->id == 1 ? 'active' : null ?>" data-toggle="tab"
+                                       href="#package-personal-list-<?= $plt->id ?>"><?= $plt->name_type ?>
                                     </a>
                                 </li>
                                 <?php endforeach; ?>
@@ -92,26 +92,25 @@
 
 
     });
-    $(function() {
-        $('#btn_submit').submit(function () {
-            // e.preventDefault();
-            console.log(65851);
-            // let data = {type_id: $('.nav-link.active').attr('data-package-list')};
-            // let url ='?ctr=pricing';
-            // let success = function (result){
-            //     $('#result').html(result);
-            // };
-            // let dataType='text';
-            // $.post(url, data, success, dataType);
-        });
-    });
+    // $(function() {
+    //     $('#btn_submit').submit(function () {
+    //         // e.preventDefault();
+    //         console.log(65851);
+    //         // let data = {type_id: $('.nav-link.active').attr('data-package-list')};
+    //         // let url ='?ctr=pricing';
+    //         // let success = function (result){
+    //         //     $('#result').html(result);
+    //         // };
+    //         // let dataType='text';
+    //         // $.post(url, data, success, dataType);
+    //     });
+    // });
 
     function loadData(plant_type) {
         $.ajax({
             url: '?ctr=get_plant&type_id=' + plant_type,
             dataType: 'json',
             success: function (data) {
-
                 $('#month').html("");
                 for (i = 0; i < data.length; i++) {
                     var stt = i + 1;

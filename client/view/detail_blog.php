@@ -1,4 +1,4 @@
-<?php include_once './layout/header.php'?>
+<?php include_once 'view/layout/header.php'?>
     <!-- Menu Area End -->
 
     <!-- Header Start -->
@@ -32,10 +32,10 @@
                         <!-- Block 1-->
                         <div class="block-1">
                             <div class="card">
-                                <img src="assets/img/blog-img/single-blog-details-img.jpg" alt="Blog Img">
+                                <img src="view/assets/img/blog-img/single-blog-details-img.jpg" alt="Blog Img">
                                 <div class="card-footer d-flex">
                                     <div class="card-footer-box d-flex">
-                                        <div class="author-box"><img src="assets/img/blog-img/author-avatar.png"
+                                        <div class="author-box"><img src="view/assets/img/blog-img/author-avatar.png"
                                                 alt="Author"><span>by John Doe</span></div>
                                         <div class="blog-date"><i class="far fa-calendar-alt"></i> 06 Sep, 2019</div>
                                         <div class="card-footer-share">
@@ -59,7 +59,7 @@
 
                                 <div
                                     class="blog-media-box d-inline-flex justify-content-center align-items-center position-relative">
-                                    <img src="assets/img/blog-img/block-2-1.jpg" alt="blog">
+                                    <img src="view/assets/img/blog-img/block-2-1.jpg" alt="blog">
 
                                     <!-- Button trigger Video -->
                                     <a class="video-btn venobox" data-vbtype="video" data-autoplay="true"
@@ -70,7 +70,7 @@
 
                                 <div
                                     class="blog-media-box d-inline-flex justify-content-center align-items-center position-relative">
-                                    <img src="assets/img/blog-img/block-2-2.jpg" alt="blog">
+                                    <img src="view/assets/img/blog-img/block-2-2.jpg" alt="blog">
                                 </div>
 
                             </div>
@@ -112,7 +112,7 @@
                                             this article</span></button></div>
                             </div>
                             <div class="about-author d-flex justify-content-between align-items-center">
-                                <div class="author-img"><img src="assets/img/blog-img/blog-details-author-65-1.png"
+                                <div class="author-img"><img src="view/assets/img/blog-img/blog-details-author-65-1.png"
                                         alt="avatar"></div>
                                 <div class="author-details">
                                     <h4 class="author-name color-orange">John Doe</h4>
@@ -141,7 +141,7 @@
                                 <div class="main-comment">
                                     <div class="about-author d-flex justify-content-between align-items-center">
                                         <div class="author-img"><img
-                                                src="assets/img/blog-img/blog-details-author-65-2.png" alt="avatar">
+                                                src="view/assets/img/blog-img/blog-details-author-65-2.png" alt="avatar">
                                         </div>
                                         <div class="author-details">
                                             <div class="d-flex justify-content-between align-items-center">
@@ -160,7 +160,7 @@
                                     <div
                                         class="about-author d-flex justify-content-between align-items-center under-comments">
                                         <div class="author-img"><img
-                                                src="assets/img/blog-img/blog-details-author-65-1.png" alt="avatar">
+                                                src="view/assets/img/blog-img/blog-details-author-65-1.png" alt="avatar">
                                         </div>
                                         <div class="author-details">
                                             <div class="d-flex justify-content-between align-items-center">
@@ -182,7 +182,7 @@
                                 <div class="main-comment">
                                     <div class="about-author d-flex justify-content-between align-items-center">
                                         <div class="author-img"><img
-                                                src="assets/img/blog-img/blog-details-author-65-1.png" alt="avatar">
+                                                src="view/assets/img/blog-img/blog-details-author-65-1.png" alt="avatar">
                                         </div>
                                         <div class="author-details">
                                             <div class="d-flex justify-content-between align-items-center">
@@ -288,17 +288,17 @@
                             <h4 class="widget-title color-orange font-w-semi-b position-relative">Recent Posts</h4>
                             <ul>
                                 <li><a href="single-blog.html" class="para-color d-flex align-items-center">
-                                        <figure><img src="assets/img/blog-img/sidebar-recent-posts-1.jpg" alt="recent">
+                                        <figure><img src="view/assets/img/blog-img/sidebar-recent-posts-1.jpg" alt="recent">
                                         </figure>
                                         <p>Today is the Best Day to Start the Training<span>July 04, 2019</span></p>
                                     </a></li>
                                 <li><a href="single-blog.html" class="para-color d-flex align-items-center">
-                                        <figure><img src="assets/img/blog-img/sidebar-recent-posts-2.jpg" alt="recent">
+                                        <figure><img src="view/assets/img/blog-img/sidebar-recent-posts-2.jpg" alt="recent">
                                         </figure>
                                         <p>Stretching is important! for the<span>July 04, 2019</span></p>
                                     </a></li>
                                 <li><a href="single-blog.html" class="para-color d-flex align-items-center">
-                                        <figure><img src="assets/img/blog-img/sidebar-recent-posts-3.jpg" alt="recent">
+                                        <figure><img src="view/assets/img/blog-img/sidebar-recent-posts-3.jpg" alt="recent">
                                         </figure>
                                         <p>Offseason is Finished Now What?<span>July 04, 2019</span></p>
                                     </a></li>
@@ -328,51 +328,51 @@
                             <h4 class="widget-title color-orange font-w-semi-b position-relative">Instagram</h4>
                             <ul>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-1.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-1.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-2.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-2.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-3.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-3.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-4.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-4.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-5.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-5.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-6.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-6.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-7.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-7.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-8.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-8.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-9.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-9.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-10.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-10.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-11.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-11.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                                 <li><a href="#">
-                                        <figure><img src="assets/img/blog-img/sidebar-instagram-img-12.png"
+                                        <figure><img src="view/assets/img/blog-img/sidebar-instagram-img-12.png"
                                                 alt="instagram"></figure>
                                     </a></li>
                             </ul>
@@ -389,4 +389,4 @@
     <!-- Single Blog Details Page Area End -->
 
     <!-- Footer Start -->
-    <?php include_once './layout/footer.php'?>
+    <?php include_once 'view/layout/footer.php'?>

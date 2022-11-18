@@ -5,13 +5,13 @@ class m_plant extends database {
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
-    public function get_plant($type_id){
-        $sql="SELECT pl.*,plt.type_id,plt.name_type FROM plant as pl
-                inner join plant_type as plt on plt.plant_id=pl.id
-                where plt.type_id=?
+    public function get_plant($plant_type){
+        $sql="SELECT pl.*,plt.name_type FROM plant as pl
+                inner join plant_type as plt on plt.id=pl.plant_type
+                where pl.plant_type=?
                 ";
         $this->setQuery($sql);
-        return $this->loadAllRows(array($type_id));
+        return $this->loadAllRows(array($plant_type));
     }
 //    public function get_month($name_type){
 //        $sql="SELECT pl.* FROM plant_type as plt

@@ -1,4 +1,4 @@
-<?php include_once './layout/header.php'?>
+<?php include_once 'view/layout/header.php'?>
 <header class="page-banner-area trainers-page-banner">
     <div class="section-overlay d-flex">
         <div class="container">
@@ -21,7 +21,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 content-text m-b-md-5 wow fadeInLeft">
                         <div class="feature-title"
-                             style="background-image: url(./themes/citigym/images/services/sports-couple-doing-battle-ropes-cross-fitness-3PJLG75.jpg)">
+                             style="background-image: url(view/themes/citigym/images/services/sports-couple-doing-battle-ropes-cross-fitness-3PJLG75.jpg)">
 <!--                            Stretching-->
                             test
                         </div>
@@ -32,12 +32,12 @@
                     </div>
                     <div class="col-lg-6 content-bg stripe-section wow fadeInRight">
                         <div class="stripe-vector-1"><img alt="Hình đăng ký tham quan CLB"
-                                                          src="https://citigym.com.vn/themes/citigym/images/svg/stripe-section-left-grey.svg">
+                                                          src="view/themes/citigym/images/svg/stripe-section-left-grey.svg">
                         </div>
                         <div class="stripe-vector-2"><img alt="Hình đăng ký tham quan CLB"
-                                                          src="https://citigym.com.vn/themes/citigym/images/svg/stripe-section-right-grey.svg">
+                                                          src="view/themes/citigym/images/svg/stripe-section-right-grey.svg">
                         </div>
-                        <img alt="" src="./themes/citigym/images/features/af1i9380-removebg.png"/>
+                        <img alt="" src="view/themes/citigym/images/features/af1i9380-removebg.png"/>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="item">
                             <div class="item-img">
-                                <img src="./themes/citigym/images/features/feature-2.jpg"
+                                <img src="view/themes/citigym/images/features/feature-2.jpg"
                                      alt="Hình đăng ký tham quan CLB" class="content"/>
                             </div>
                             <div class="content-overlay">
@@ -71,7 +71,7 @@
                         <div class="item">
                             <div class="item-img">
                                 <img alt="Hình đăng ký tham quan CLB"
-                                     src="./themes/citigym/images/features/feature-1.jpg" class="content"/>
+                                     src="view/themes/citigym/images/features/feature-1.jpg" class="content"/>
                             </div>
                             <div class="content-overlay">
                                 <div class="content">
@@ -89,7 +89,7 @@
                         <div class="item">
                             <div class="item-img">
                                 <img alt="Hình đăng ký tham quan CLB"
-                                     src="./themes/citigym/images/features/feature-3.jpg" class="content"/>
+                                     src="view/themes/citigym/images/features/feature-3.jpg" class="content"/>
                             </div>
                             <div class="content-overlay">
                                 <div class="content">
@@ -106,7 +106,7 @@
                         <div class="item">
                             <div class="item-img">
                                 <img alt="Hình đăng ký tham quan CLB"
-                                     src="./themes/citigym/images/features/feature-4.jpg" class="content"/>
+                                     src="view/themes/citigym/images/features/feature-4.jpg" class="content"/>
                             </div>
                             <div class="content-overlay">
                                 <div class="content">
@@ -203,4 +203,4 @@
             </div>
         </section>
     </div>
-<?php include_once './layout/footer.php'?>
+<?php include_once 'view/layout/footer.php'?>
