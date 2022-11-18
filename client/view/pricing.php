@@ -105,6 +105,7 @@
     //         // $.post(url, data, success, dataType);
     //     });
     // });
+    q
 
     function loadData(plant_type) {
         $.ajax({
