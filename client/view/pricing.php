@@ -89,8 +89,6 @@
             loadData(plant_type);
 
         });
-
-
     });
     // $(function() {
     //     $('#btn_submit').submit(function () {
@@ -105,7 +103,7 @@
     //         // $.post(url, data, success, dataType);
     //     });
     // });
-    q
+
 
     function loadData(plant_type) {
         $.ajax({
@@ -116,23 +114,13 @@
                 for (i = 0; i < data.length; i++) {
                     var stt = i + 1;
                     var plant = data[i];
-                    if (stt == 1) {
-                        var str = `
-                                  <a class="item-month show active"
+                    var str = `
+                                  <a class="item-month show ${stt == 1 ? 'active' : null}"
                                      stt="${stt}"
                                      href="#package-${plant['name_type']}-${plant['id']}"
                                      data-toggle="tab">
                                       <div class="title">${plant['plant_exp']}</div> tháng
                                   </a>`;
-                    } else {
-                        var str = `
-                                   <a class="item-month"
-                                      stt="${stt}"
-                                      href="#package-${plant['name_type']}-${plant['id']}"
-                                      data-toggle="tab">
-                                      <div class="title">${plant['plant_exp']}</div> tháng
-                                   </a>`;
-                    }
 
                     $('#month').append(str);
                 }
@@ -140,9 +128,8 @@
                 for (i = 0; i < data.length; i++) {
                     var plant = data[i];
                     var stt = i + 1;
-                    if (stt == 1) {
-                        var price = `
-                                     <ul class="tab-pane fade active show" id="package-${plant['name_type']}-${plant['id']}" stt="${stt}">
+                    var price = `
+                                     <ul class="tab-pane fade show ${stt == 1 ? 'active' : null}" id="package-${plant['name_type']}-${plant['id']}">
                                             <li>
                                                 <div class="label-text">Thời gian tập luyện:</div>
                                                 <div class="label-title text-space">${plant['plant_exp']} tháng</div>
@@ -156,80 +143,40 @@
                                             </li>
                                             <li>
                                                 <div class="label-text">Chi phí / tháng</div>
-                                                 <div class="label-title text-space">
+                                                <div class="label-title text-space">
                                                             ${(plant['plant_cost'] / plant['plant_exp']).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ
-                                                 </div>
+                                                </div>
                                             </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
+                                            <li>
+                                                 <div class="label-text">Chi phí / ngày:</div>
+                                                 <div class="label-title text-space">
                                                             ${(plant['plant_cost'] / (plant['plant_exp'] * 30)).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ</div>
-                                                    </li>
+                                            </li>
 
                                             <li>
-                                                <button type="submit" class="btn btn-brand btn-sm" id="btn_submit"
-                                                        data-toggle="modal" data-target=".modal-sign-up" >Đăng ký ngay</button>
+                                                 <button type="submit" class="btn btn-brand btn-sm" id="btn_submit"
+                                                                data-toggle="modal" data-target="#contactForm" data-id="${plant['id']}">Đăng ký ngay</button>
                                             </li>
                                      </ul>
                     `;
-                    } else {
-                        var price = `
-                                     <ul class="tab-pane fade show" id="package-${plant['name_type']}-${plant['id']}" stt="${stt}">
-                                            <li>
-                                                <div class="label-text">Thời gian tập luyện:</div>
-                                                <div class="label-title text-space">${plant['plant_exp']} tháng</div>
-                                            </li>
-
-                                            <li>
-                                                 <div class="label-text">Tổng chi phí:</div>
-                                                 <div class="label-title text-space">
-                                                            ${plant['plant_cost'].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ
-                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="label-text">Chi phí / tháng</div>
-                                                 <div class="label-title text-space">
-                                                            ${(plant['plant_cost'] / plant['plant_exp']).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ
-                                                 </div>
-                                            </li>
-                                                    <li>
-                                                        <div class="label-text">Chi phí / ngày:</div>
-                                                        <div class="label-title text-space">
-                                                            ${(plant['plant_cost'] / (plant['plant_exp'] * 30)).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ</div>
-                                                    </li>
-
-                                            <li>
-                                                <button type="submit" class="btn btn-brand btn-sm" id="btn_submit"
-                                                        data-toggle="modal" data-target=".modal-sign-up" >Đăng ký ngay</button>
-                                            </li>
-                                     </ul>
-                    `;
-                    }
                     $('#price').append(price);
                 }
             }
         });
     }
 
-
-
-// $(function () {
-//     $('#btn_submit"').on('click',function (e) {
-//         e.preventDefault();
-//
-//         $.ajax({
-//             type:'POST',
-//             url:'?ctr=pricing',
-//             data:{
-//                 type_id: $('.nav-link').hasClass('active').attr('data-package-list'),
-//             }
-//         })
-//     })
-// })
-
-
 </script>
-
+<script>
+    $(function () {
+        $('#contactForm').on('show.bs.modal', function (e) {
+            let data_month = $(e.relatedTarget).attr('data-id');
+            console.log(data_month);
+            $('input[name="plant_id"]').val(function (index, value) {
+                return value + data_month;
+            });
+        })
+    })
+</script>
 
 <!--                        ===================================-->
 <!--                            start table dịch vụ-->
@@ -531,66 +478,85 @@
 <!--                        ===================================-->
 <!--                            start form đăng kí tư vấn-->
 <!--                        ===================================-->
-<div class="modal modal-sign-up fade">
-    <form method="POST" action="?ctr=sign_up" accept-charset="UTF-8" id="contactForm">
-<!--        <input name="_token" type="hidden" value="vfHqCVUyd7zXTPHaUdvoYcPmsnoDXrZxagdbizbL">-->
+
+<div class="modal modal-sign-up fade" id="contactForm">
+    <form method="POST" action="?ctr=user_signup" accept-charset="UTF-8">
+        <!--        <input name="_token" type="hidden" value="vfHqCVUyd7zXTPHaUdvoYcPmsnoDXrZxagdbizbL">-->
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title title-s1">Đăng ký gói dịch vụ</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="remixicon-close-line"></i>
+                    <button type="button" class="close" id="btn_close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
                 <div class="modal-body p-x-3 p-y-3">
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" name="fname" class="form-control" placeholder="Họ" />
-                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
-                                        data-field="name"></ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" name="lname" class="form-control" placeholder="Tên" />
-                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
-                                        data-field="name"></ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" />
-                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
-                                        data-field="name"></ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" name="address" class="form-control" placeholder="Địa chỉ" />
-                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
-                                        data-field="name"></ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="number" name="phone" class="form-control"
-                                           placeholder="Số điện thoại" />
-                                    <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
-                                        data-field="phone"></ul>
-                                </div>
-                            </div>
+                    <div class="row">
 
+                        <div class="col-md-12" hidden>
+                            <div class="form-group">
+                                <input type="text" name="plant_id" id="data_month" class="form-control" placeholder="tháng"
+                                       value=""/>
+                                <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                    data-field="name"></ul>
+                            </div>
                         </div>
-                        <button type="submit" data-control="submit" class="btn btn-brand" name="btn_signup_user">Đăng ký ngay</button>
-                    </form>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" name="fist_name" class="form-control" placeholder="Họ"/>
+                                <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                    data-field="fname"></ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" name="last_name" class="form-control" placeholder="Tên"/>
+                                <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                    data-field="lname"></ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email"/>
+                                <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                    data-field="email"></ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" name="address" class="form-control" placeholder="Địa chỉ"/>
+                                <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                    data-field="address"></ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="number" name="phone" class="form-control"
+                                       placeholder="Số điện thoại"/>
+                                <ul class="list-unstyled ml-1 mt-1" data-validation="eden-validation"
+                                    data-field="phone"></ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="submit" data-control="submit" class="btn btn-brand" name="btn_signup_user"
+                            id="btn_signup">Đăng ký ngay
+                    </button>
                 </div>
             </div>
         </div>
     </form>
 </div>
 
+<script>
+    $(function () {
+        $('#btn_close').on('click', function () {
+            $('input[name="month"]').val("");
+        });
+    })
+</script>
 <!--                        ===================================-->
 <!--                            end form đăng kí tư vấn-->
 <!--                        ===================================-->
@@ -598,17 +564,17 @@
 </div>
 </main>
 
-<script>
-    $(document).ready(function () {
-        setTimeout(function () {
-            $('.popup').addClass('show');
-        }, 2 * 1000);
-
-        setTimeout(function () {
-            $('.popup .close').trigger('click');
-        }, 30 * 1000);
-    });
-</script>
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--        setTimeout(function () {-->
+<!--            $('.popup').addClass('show');-->
+<!--        }, 2 * 1000);-->
+<!---->
+<!--        setTimeout(function () {-->
+<!--            $('.popup .close').trigger('click');-->
+<!--        }, 30 * 1000);-->
+<!--    });-->
+<!--</script>-->
 
 <script>
     // Change to Short Title for Package Title

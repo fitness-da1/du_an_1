@@ -17,9 +17,9 @@
                         <div class="col-md-9">
                             <select class="select2 form-control custom-select"
                                     style="width: 20%; height:36px;" name="status_type" onchange="this.form.submit()">
-                                <option value="" <?php if (isset($status)&&$status==null){ echo 'selected';}?> >All</option>
-                               <option value="0" <?php if (isset($status)&&$status==0){echo 'selected';}?> >Active</option>
-                                <option value="1" <?php if (isset($status)&&$status==1){echo 'selected';}?> >Pending</option>
+                                <option value="" <?php if (isset($status)&&$status==null){ echo 'selected';}?> >Tất cả</option>
+                               <option value="0" <?php if (isset($status)&&$status==0){echo 'selected';}?> >Đã thanh toán</option>
+                                <option value="1" <?php if (isset($status)&&$status==1){echo 'selected';}?> >Chờ thanh toán</option>
                             </select>
                         </div>
                     </form>
@@ -46,7 +46,7 @@
                                 <td><?= $value->address ?></td>
                                 <td><?= $value->phone_number ?></td>
                                 <td><?=$value->plant_name ?></td>
-                                <td><?=$value->status==0?'Active':'Pending'?></td>
+                                <td><?=$value->status==0?'Đã thanh toán':'Chờ thanh toán'?></td>
                                 <td>
                                     <?php if ($value->status==1): ?>
                                     <button type="button" class="btn btn-primary" onclick="location.href='?ctr=user_active&user_id=<?= $value->id ?>'">Active</button>

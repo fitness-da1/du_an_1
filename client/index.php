@@ -7,7 +7,11 @@ include_once 'controllers/c_trainer.php';
 include_once 'controllers/c_gallery.php';
 include_once 'controllers/c_blog.php';
 include_once 'controllers/c_contact.php';
+include_once 'controllers/c_user.php';
+include_once 'controllers/c_payment.php';
+
 include_once 'models/m_plant.php';
+include_once 'models/m_user.php';
 
 $ctr = isset($_GET['ctr']) ? $_GET['ctr'] : '/';
 session_start();
@@ -59,6 +63,14 @@ switch ($ctr) {
     case 'get_plant':
         $plant = new c_plant();
         $plant->get_plant();
+        break;
+    case 'user_signup':
+        $user = new c_user();
+        $user->user_signup();
+        break;
+    case 'checkout_form':
+        $pay = new c_payment();
+        $pay->show_payment();
         break;
     default :
         include_once 'view/404.php';
