@@ -17,10 +17,10 @@ class m_contact extends database {
         return $this->loadRow(array($id));
     }
 
-    public function edit_contact($full_name, $email, $message, $status, $id) {
-        $sql = "UPDATE contact set full_name = ?,email = ?,message = ?,status=? where id = ?";
+    public function edit_contact($status, $id) {
+        $sql = "UPDATE contact set status=? where id = ?";
         $this->setQuery($sql);
-        return $this->execute(array($full_name, $email, $message, $status, $id));
+        return $this->execute(array($status, $id));
     }
     public  function delete_contact($id){
         $sql="DELETE from contact where id=?";

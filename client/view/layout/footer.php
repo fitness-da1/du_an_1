@@ -172,6 +172,7 @@
 
 <!-- Custom scripts for this template -->
 <script src="view/assets/js/custom.js"></script>
+
 <script src="https://kit.fontawesome.com/95ecdda2aa.js" crossorigin="anonymous"></script>
 
 

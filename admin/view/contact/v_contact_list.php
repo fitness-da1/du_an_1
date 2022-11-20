@@ -14,6 +14,7 @@
                                 <th>Email</th>
                                 <th>Message</th>
                                 <th>Status</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                          <tbody>
@@ -25,13 +26,10 @@
                                 <td><?= $value->full_name ?></td>
                                 <td><?= $value->email ?></td>
                                 <td><?= $value->message ?></td>
-                                <td><?= $value->status==0?'Hoạt động':'Không hoạt động' ?></td>
+                                <td style="color: <?= $value->status==0?'green':'red' ?>"><?= $value->status==0?'Đã xác nhận':'Chờ xác nhận' ?></td>
                                 <td>
-                                    <button type="button" class="btn btn-primary" onclick="location.href='?ctr=contact_edit&id=<?= $value->id ?>'">Sửa
-                                    </button>
-                                    <button type="button" class="btn btn-primary"
-                                            onclick="return confirm_delete('<?= $value->id ?>','<?= $value->fullname ?>') ">Xóa
-                                    </button>
+                                    <button type="button" class="btn btn-primary" onclick="location.href='?ctr=contact_update&id=<?= $value->id ?>'" <?= $value->status==0?'hidden':null ?>>Xác nhận</button>
+                                    <button type="button" class="btn btn-primary" onclick="return confirm_delete('<?= $value->id ?>','<?= $value->full_name ?>')">Xóa</button>
                                 </td>
 
                             </tr>
@@ -44,6 +42,7 @@
                                 <th>Email</th>
                                 <th>Message</th>
                                 <th>Status</th>
+                                <th>Action</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -68,6 +67,13 @@
      *       Basic Table                   *
      ****************************************/
     $('#zero_config').DataTable();
+
+    function confirm_delete(id,name){
+        if(confirm('Bạn chắc chắn muốn xóa contact '+name)){
+            window.open('?ctr=contact_delete&id='+id,'_self');
+        }
+    }
 </script>
+
 
 <?php include_once '././view/layout/footer.php'; ?>

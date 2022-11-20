@@ -26,12 +26,13 @@
             <div class="row">
 
                 <!-- single trainer start-->
+                <?php $stt=0; foreach ($trainer as $tr): $stt++;?>
                 <div class="col-12 col-sm-6 col-md-3">
                     <div class="single-trainer wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".2s">
-                        <img src="./view/assets/img/expert-trainers-img/1.jpg" alt="Trainer">
+                        <img src="./view/assets/img/expert-trainers-img/<?=$stt?>.jpg" alt="Trainer">
                         <div class="single-trainer-upper">
-                            <h5 class="trainer-name">Petter Jone</h5>
-                            <p class="trainer-designation">Strength Trainning</p>
+                            <h5 class="trainer-name"><?=$tr->trainer_name?></h5>
+                            <p class="trainer-designation"><?=$tr->categories_name?></p>
                             <div class="trainer-social">
                                 <ul>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -42,139 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- single trainer end-->
-
-                <!-- single trainer start-->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single-trainer wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".3s">
-                        <img src="./view/assets/img/expert-trainers-img/2.jpg" alt="Trainer">
-                        <div class="single-trainer-upper">
-                            <h5 class="trainer-name">Petter Cattie</h5>
-                            <p class="trainer-designation">Strength Trainning</p>
-                            <div class="trainer-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single trainer end-->
-
-                <!-- single trainer start-->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single-trainer wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".4s">
-                        <img src="./view/assets/img/expert-trainers-img/3.jpg" alt="Trainer">
-                        <div class="single-trainer-upper">
-                            <h5 class="trainer-name">Johns Jone</h5>
-                            <p class="trainer-designation">Strength Trainning</p>
-                            <div class="trainer-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single trainer end-->
-
-                <!-- single trainer start-->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single-trainer wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".5s">
-                        <img src="./view/assets/img/expert-trainers-img/4.jpg" alt="Trainer">
-                        <div class="single-trainer-upper">
-                            <h5 class="trainer-name">Jannie Cate</h5>
-                            <p class="trainer-designation">Strength Trainning</p>
-                            <div class="trainer-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single trainer end-->
-
-                <!-- single trainer start-->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single-trainer wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".6s">
-                        <img src="./view/assets/img/expert-trainers-img/5.jpg" alt="Trainer">
-                        <div class="single-trainer-upper">
-                            <h5 class="trainer-name">Petter Wilson</h5>
-                            <p class="trainer-designation">Strength Trainning</p>
-                            <div class="trainer-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single trainer end-->
-
-                <!-- single trainer start-->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single-trainer wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".7s">
-                        <img src="./view/assets/img/expert-trainers-img/6.jpg" alt="Trainer">
-                        <div class="single-trainer-upper">
-                            <h5 class="trainer-name">Petter Jone</h5>
-                            <p class="trainer-designation">Strength Trainning</p>
-                            <div class="trainer-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single trainer end-->
-
-                <!-- single trainer start-->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single-trainer wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".8s">
-                        <img src="./view/assets/img/expert-trainers-img/7.jpg" alt="Trainer">
-                        <div class="single-trainer-upper">
-                            <h5 class="trainer-name">Cattie Jone</h5>
-                            <p class="trainer-designation">Strength Trainning</p>
-                            <div class="trainer-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- single trainer end-->
-
-                <!-- single trainer start-->
-                <div class="col-12 col-sm-6 col-md-3">
-                    <div class="single-trainer wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".9s">
-                        <img src="./view/assets/img/expert-trainers-img/8.jpg" alt="Trainer">
-                        <div class="single-trainer-upper">
-                            <h5 class="trainer-name">Michale Jone</h5>
-                            <p class="trainer-designation">Strength Trainning</p>
-                            <div class="trainer-social">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<?php endforeach;?>
                 <!-- single trainer end-->
 
             </div>
@@ -195,7 +64,7 @@
                                 <h2>We Are Ready to Help You To Get Perfect Fitness!</h2>
                                 <p>Aliquam erat volutpat. Curabitur tempor nibh quis arcu convallis, sed viverra quam
                                     sollicitudin. Proin sed augue sed neque ultricies condimentum. </p>
-                                <div><a href="pricing-table.html"
+                                <div><a href="?ctr=pricing"
                                         class="btn btn-effect section-button text-uppercase">Join Now</a></div>
                                 <img class="we-are-ready-floating-img position-absolute paroller"
                                     src="./view/assets/img/about-img/call-to-action-float-img.png" alt="img"
@@ -220,7 +89,7 @@
                                 <p>Up t0 2 month free <span>$320/</span> month family Membership</p>
                             </div>
                             <div class="membership-offer-right">
-                                <a href="contact.php" class="btn btn-effect section-button text-uppercase">Contact
+                                <a href="?ctr=contact" class="btn btn-effect section-button text-uppercase">Contact
                                     Us</a>
                             </div>
                         </div>

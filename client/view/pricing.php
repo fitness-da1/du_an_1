@@ -75,7 +75,6 @@
 </section>
 
 <script>
-
     $(document).ready(function () {
         if ($(".nav-link").hasClass('active')) {
             $('.tab-pane').addClass('active');
@@ -90,20 +89,6 @@
 
         });
     });
-    // $(function() {
-    //     $('#btn_submit').submit(function () {
-    //         // e.preventDefault();
-    //         console.log(65851);
-    //         // let data = {type_id: $('.nav-link.active').attr('data-package-list')};
-    //         // let url ='?ctr=pricing';
-    //         // let success = function (result){
-    //         //     $('#result').html(result);
-    //         // };
-    //         // let dataType='text';
-    //         // $.post(url, data, success, dataType);
-    //     });
-    // });
-
 
     function loadData(plant_type) {
         $.ajax({

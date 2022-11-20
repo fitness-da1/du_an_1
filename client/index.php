@@ -12,6 +12,9 @@ include_once 'controllers/c_payment.php';
 
 include_once 'models/m_plant.php';
 include_once 'models/m_user.php';
+include_once 'models/m_categorie.php';
+include_once 'models/m_trainer.php';
+include_once 'models/m_contact.php';
 
 $ctr = isset($_GET['ctr']) ? $_GET['ctr'] : '/';
 session_start();
@@ -55,6 +58,10 @@ switch ($ctr) {
     case 'contact':
         $contact = new c_contact();
         $contact->show_contact();
+        break;
+    case 'contact_submit':
+        $contact = new c_contact();
+        $contact->add_contact();
         break;
     case 'pricing':
         $plant = new c_plant();

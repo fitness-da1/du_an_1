@@ -19,7 +19,12 @@
         </div>
     </header>
     <!-- Header End -->
-
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
     <!-- Map Area Start -->
     <section class="map-area">
         <!--    Map Part Start-->
@@ -28,6 +33,14 @@
                 height="500" style="border:0;" allowfullscreen=""></iframe></div>
         <div class="container">
             <div class="contact-part">
+<!--                noti-->
+<!--                <div class="alert alert-warning alert-dismissible fade show" role="alert">-->
+<!--                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.-->
+<!--                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span>-->
+<!--                    </button>-->
+<!--                </div>-->
+
                 <div class="row">
                     <div class="col-sm-12 col-md-6">
                         <div class="contact-wraper">
@@ -37,18 +50,19 @@
                                     Cras in vulputate est consectetur adipiscing elit. Ut vehicula volutpat porta.</p>
                             </div>
                             <div class="contact-form-area">
-                                <form action="#">
+
+                                <form action="?ctr=contact_submit" method="post">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" placeholder="Your Name:"
-                                                    id="name" required>
+                                                    id="name" name="name" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <input type="email" class="form-control" placeholder="Your Email:"
-                                                    id="user-email" required>
+                                                    id="user-email" name="email" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
@@ -57,12 +71,13 @@
                                                     placeholder="Enter Your Message:" id="message" required></textarea>
                                             </div>
                                             <div class="contact-sub-btn">
-                                                <button type="button"
-                                                    class="btn btn-effect section-button text-uppercase">Submit</button>
+                                                <button type="submit"
+                                                    class="btn btn-effect section-button text-uppercase" name="btn_contact">Submit</button>
                                             </div>
                                         </div>
                                     </div>
                                 </form>
+
                             </div>
                         </div>
                     </div>

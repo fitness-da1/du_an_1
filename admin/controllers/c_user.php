@@ -100,7 +100,7 @@ class c_user
             $id = $_GET['id'];
             $m_user = new m_user();
             $m_user->delete_user($id);
-            header('location:?ctr=class_list&dl=success');
+            header('location:?ctr=user_list&dl=success');
         }
     }
 
