@@ -26,7 +26,7 @@
                                 <div class="col-md-9">
                                     <div class="custom-file">
                                         <input type="file" name="image" class="custom-file-input" id="validatedCustomFile">
-                                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                        <label class="custom-file-label" for="validatedCustomFile" id="file-label">Choose file...</label>
                                         <div class="invalid-feedback">Example invalid custom file feedback</div>
                                     </div>
                                 </div>
@@ -45,4 +45,16 @@
         </div>
     </div>
 </div>
-<?php include_once '././view/layout/footer.php'; ?>
+<!--hiển thị file name-->
+<script>
+    let fileInput = document.querySelector('#validatedCustomFile');
+    let filelabel = document.querySelector('#file-label');
+    fileInput.addEventListener("change",()=>{
+        filelabel.innerHTML="";
+        for (i of fileInput.files){
+            let fileName=i.name;
+            filelabel.innerHTML=`<p>${fileName}</p>`;
+        }
+    })
+</script>
+<?php include_once 'view/layout/footer.php'; ?>

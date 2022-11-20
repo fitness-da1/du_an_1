@@ -25,7 +25,7 @@
                                 <td><?= $value->id?></td>
                                 <td><?= $value->post_name?></td>
                                 <td><?= $value->post_content?></td>
-                                <td><img src="" alt="<?= $value->post_avatar?>"></td>
+                                <td><img src="../public/image/<?= $value->post_avatar?>" alt="<?= $value->post_avatar?>" height="40" width="40"></td>
                                 <td><?= $value->post_viewer?></td>
                                 <td><?= $value->post_time?></td>
                                 <td>

@@ -16,6 +16,6 @@ class c_user
             $m_user = new m_user();
             $m_user->insert_user($id, $fist_name, $last_name, $email, $address, $phone_number, $image, $plant, $status);
         }
-        header('location:?ctr=checkout_form');
+//        header('location:?ctr=checkout_form');
     }
 }
