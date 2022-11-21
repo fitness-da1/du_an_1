@@ -36,24 +36,22 @@
                                 <div class="card-footer d-flex">
                                     <div class="card-footer-box d-flex">
                                         <div class="author-box"><img src="view/assets/img/blog-img/author-avatar.png"
-                                                alt="Author"><span>by John Doe</span></div>
-                                        <div class="blog-date"><i class="far fa-calendar-alt"></i> 06 Sep, 2019</div>
-                                        <div class="card-footer-share">
+                                                alt="Author"><span>by <?=$detail_blog->id_author==1?'admin':'admin'?></span></div>
+                                        <div class="blog-date"><i class="far fa-calendar-alt"></i><?=$detail_blog->post_time?></div>
+                                        <!-- <div class="card-footer-share">
                                             <i class="far fa-comments"></i>07 Comments
-                                        </div>
+                                        </div> -->
                                         <div class="card-footer-share">
-                                            <i class="far fa-thumbs-up"></i>30
+                                        <i class="fa-regular fa-eye"></i><?=$detail_blog->post_viewer?>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <h2 class="card-title">Yoga for Keep You Fit and Balanced</h2>
+                                    <h2 class="card-title"><?=$detail_blog->post_name?></h2>
                                 </div>
                             </div>
 
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem den aperiam, eaque ipsa quae
-                                ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                           
 
                             <div class="blog-content-media">
 
@@ -74,19 +72,7 @@
                                 </div>
 
                             </div>
-
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                Neque porro quisquam est, qui dolorem ipsum quia. sed quia ipsum den consequuntur magni
-                                dolores eos.</p>
-
-                            <p>Dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                                incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-
-                            <p>Corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel
-                                eum iure reprehenderit
-                                qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
-                                eum fugiat quo voluptas nulla pariatur.</p>
+                            <p><?=$detail_blog->post_content?></p>
 
                             <blockquote class="position-relative">
                                 <p><span class="position-absolute"><i class="flaticon-left-quote"></i></span>Sed ut

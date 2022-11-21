@@ -95,6 +95,8 @@
             url: '?ctr=get_plant&type_id=' + plant_type,
             dataType: 'json',
             success: function (data) {
+               
+
                 $('#month').html("");
                 for (i = 0; i < data.length; i++) {
                     var stt = i + 1;
@@ -112,6 +114,7 @@
                 $('#price').html("");
                 for (i = 0; i < data.length; i++) {
                     var plant = data[i];
+                    console.log(plant);
                     var stt = i + 1;
                     var price = `
                                      <ul class="tab-pane fade show ${stt == 1 ? 'active' : null}" id="package-${plant['name_type']}-${plant['id']}">
@@ -123,7 +126,7 @@
                                             <li>
                                                  <div class="label-text">Tổng chi phí:</div>
                                                  <div class="label-title text-space">
-                                                            ${plant['plant_cost'].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ
+                                                            ${plant['plant_cost'].toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")} VNĐ
                                                  </div>
                                             </li>
                                             <li>

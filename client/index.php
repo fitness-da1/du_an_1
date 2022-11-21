@@ -11,6 +11,7 @@ include_once 'controllers/c_user.php';
 include_once 'controllers/c_payment.php';
 
 include_once 'models/m_plant.php';
+include_once 'models/m_blog.php';
 include_once 'models/m_user.php';
 include_once 'models/m_categorie.php';
 include_once 'models/m_trainer.php';
