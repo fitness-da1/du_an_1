@@ -18,15 +18,14 @@
                                     <label for="post_content" class="col-sm-3 text-right control-label col-form-label">Post content</label>
                                     <div class="col-sm-9">
                                         <textarea name="post_content" cols="40" rows="16" id="post_content" class="form-control"><?=$blog->post_content?></textarea>
-<!--                                        <input type="text" class="form-control" id="post_content" name="post_content" placeholder=" post content Here" value="">-->
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 text-right control-label col-form-label">Upload Image</label>
                                     <div class="col-md-9">
                                         <div class="custom-file">
-                                            <input type="file" name="image" class="custom-file-input" id="validatedCustomFile">
-                                            <label class="custom-file-label" for="validatedCustomFile"><?=$blog->post_avatar?></label>
+                                            <input type="file" name="post_avatar" class="custom-file-input" id="validatedCustomFile">
+                                            <label class="custom-file-label" for="validatedCustomFile" id="file-label"><?=$blog->post_avatar?></label>
                                             <div class="invalid-feedback">Example invalid custom file feedback</div>
                                         </div>
                                     </div>
@@ -45,4 +44,15 @@
             </div>
         </div>
     </div>
+    <script>
+        let fileInput = document.querySelector('#validatedCustomFile');
+        let filelabel = document.querySelector('#file-label');
+        fileInput.addEventListener("change",()=>{
+            filelabel.innerHTML="";
+            for (i of fileInput.files){
+                let fileName=i.name;
+                filelabel.innerHTML=`<p>${fileName}</p>`;
+            }
+        })
+    </script>
 <?php include_once '././view/layout/footer.php'; ?>

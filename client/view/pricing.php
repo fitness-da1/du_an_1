@@ -42,7 +42,6 @@
                             </ul>
 
                     <div class="tab-content">
-
                         <div class="tab-pane fade show " id="package-personal-list">
                             <div class="row align-items-center">
 
@@ -61,8 +60,8 @@
 
                             </div>
                         </div>
-
                     </div>
+
                 </span>
             </div>
 
@@ -102,7 +101,7 @@
                     var stt = i + 1;
                     var plant = data[i];
                     var str = `
-                                  <a class="item-month show ${stt == 1 ? 'active' : null}"
+                                  <a class="item-month show ${stt == 1 ? 'active' : ''}"
                                      stt="${stt}"
                                      href="#package-${plant['name_type']}-${plant['id']}"
                                      data-toggle="tab">
@@ -117,7 +116,7 @@
                     console.log(plant);
                     var stt = i + 1;
                     var price = `
-                                     <ul class="tab-pane fade show ${stt == 1 ? 'active' : null}" id="package-${plant['name_type']}-${plant['id']}">
+                                     <ul class="tab-pane fade show ${stt == 1 ? 'active' : ''}" id="package-${plant['name_type']}-${plant['id']}">
                                             <li>
                                                 <div class="label-text">Thời gian tập luyện:</div>
                                                 <div class="label-title text-space">${plant['plant_exp']} tháng</div>
@@ -158,7 +157,7 @@
     $(function () {
         $('#contactForm').on('show.bs.modal', function (e) {
             let data_month = $(e.relatedTarget).attr('data-id');
-            console.log(data_month);
+            // console.log(data_month);
             $('input[name="plant_id"]').val(function (index, value) {
                 return value + data_month;
             });
@@ -541,7 +540,7 @@
 <script>
     $(function () {
         $('#btn_close').on('click', function () {
-            $('input[name="month"]').val("");
+            $('input[name="plant_id"]').val("");
         });
     })
 </script>

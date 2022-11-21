@@ -1,10 +1,10 @@
 <?php
 require_once ("database.php");
 class m_blog extends database {
-    public function insert_blog($id, $post_name, $post_content, $post_avatar) {
-        $sql = "INSERT INTO blog  VALUES (?,?,?,?)";
+    public function insert_blog($id,$id_author, $post_name, $post_content, $post_avatar,$post_view,$post_time) {
+        $sql = "INSERT INTO blog  VALUES (?,?,?,?,?,?,?)";
         $this->setQuery($sql);
-        return $this->execute(array($id, $post_name, $post_content, $post_avatar));
+        return $this->execute(array($id,$id_author, $post_name, $post_content, $post_avatar,$post_view,$post_time));
     }
     public function read_blog() {
         $sql = "SELECT * from blog";
